@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnChooseFile" xml:space="preserve">
+    <value>选择文件</value>
+  </data>
+  <data name="btnImport" xml:space="preserve">
+    <value>导入</value>
+  </data>
+  <data name="btnImportPreview" xml:space="preserve">
+    <value>导入检测</value>
+  </data>
+  <data name="FileNotExist" xml:space="preserve">
+    <value>文件不存在，请重新选择！</value>
+    <comment>提示信息</comment>
+  </data>
+  <data name="ImportContractError" xml:space="preserve">
+    <value>导入合同错误</value>
+  </data>
+  <data name="ImportContracts" xml:space="preserve">
+    <value>导入合同</value>
+  </data>
+  <data name="lblPath" xml:space="preserve">
+    <value>文件路径:</value>
+  </data>
+  <data name="Wait" xml:space="preserve">
+    <value>正在执行，请稍后......</value>
+  </data>
+  <data name="CheckAllRatioCycleDisEnable" xml:space="preserve">
+    <value>{0}.{1} 百分比规则不可以大小周期都禁用</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="CheckAllRuleDisEnable" xml:space="preserve">
+    <value>{0}.{1} 至少要启用一个规则</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="CheckConditionError" xml:space="preserve">
+    <value>{0}.{1} 条件不正确</value>
+    <comment>校验提示信息</comment>
+  </data>
+  <data name="CheckEntityHasNoVendor" xml:space="preserve">
+    <value>{0}.{1} 实体没有关联业主</value>
+    <comment>校验提示信息</comment>
+  </data>
+  <data name="CheckEntityInfoRentTypeNotExist" xml:space="preserve">
+    <value>{0}.{1} 租金类型缺失</value>
+    <comment>校验提示信息</comment>
+  </data>
+  <data name="CheckEntityInfoSettingNotExist" xml:space="preserve">
+    <value>{0}.{1} 不存在实体信息设置数据</value>
+    <comment>校验提示信息</comment>
+  </data>
+  <data name="CheckFixedTimeIntervalError" xml:space="preserve">
+    <value>{0}.{1} 固定租金时间段不闭合或者有重叠或者最大最小值不等于实体到租日和起租日</value>
+    <comment>校验提示信息</comment>
+  </data>
+  <data name="CheckFixedTimeIntervalNotExist" xml:space="preserve">
+    <value>{0}.{1} 固定租金时间段缺失</value>
+    <comment>校验提示信息</comment>
+  </data>
+  <data name="CheckFormulaError" xml:space="preserve">
+    <value>{0}.{1} 公式不正确</value>
+    <comment>校验提示信息</comment>
+  </data>
+  <data name="CheckNotExistEntity" xml:space="preserve">
+    <value>{0}.{1} 合同中不存在实体</value>
+    <comment>校验提示信息</comment>
+  </data>
+  <data name="CheckNotExistVendor" xml:space="preserve">
+    <value>{0}.{1} 合同中不存在业主</value>
+    <comment>校验提示信息</comment>
+  </data>
+  <data name="CheckRatioConditionNotExist" xml:space="preserve">
+    <value>{0}.{1} 百分比条件公式缺失</value>
+    <comment>校验提示信息</comment>
+  </data>
+  <data name="CheckRatioCycleError" xml:space="preserve">
+    <value>{0}.{1} 大周期的结算周期必须大于小周期的结算周期！</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="CheckRatioCycleTypeNotExist" xml:space="preserve">
+    <value>{0}.{1} 百分比大小周期不存在</value>
+    <comment>校验提示信息</comment>
+  </data>
+  <data name="CheckRatioTimeIntervalError" xml:space="preserve">
+    <value>{0}.{1} 百分比租金时间段不闭合或者有重叠或者最大最小值不等于实体到租日和起租日</value>
+    <comment>校验提示信息</comment>
+  </data>
+  <data name="CheckRatioTimeIntervalNotExist" xml:space="preserve">
+    <value>{0}.{1} 百分比时间段不存在</value>
+    <comment>校验提示信息</comment>
+  </data>
+  <data name="CheckStoreDeptNotInTheCompany" xml:space="preserve">
+    <value>{0}.{1} 餐厅部门编号不在合同所属公司内</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="CheckVendorHasNoEntity" xml:space="preserve">
+    <value>{0}.{1} 业主没有关联实体</value>
+    <comment>校验提示信息</comment>
+  </data>
+  <data name="CheckVendorStatus" xml:space="preserve">
+    <value>{0}.业主“{1}”状态必须为Active！</value>
+    <comment>校验提示信息</comment>
+  </data>
+  <data name="NULLAmount" xml:space="preserve">
+    <value>{0}.{1} 租金规则金额为空</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="NULLAmountFormulaDesc" xml:space="preserve">
+    <value>{0}.{1} 租金规则公式为空</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="NULLAPStartDate" xml:space="preserve">
+    <value>{0}.{1} 实体是否出AP为是时,出AP日期空</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="NULLCalendar" xml:space="preserve">
+    <value>{0}.{1} 租金规则租赁/公历为空</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="NULLCycle" xml:space="preserve">
+    <value>{0}.{1} 租金规则结算周期为空</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="NullDescription" xml:space="preserve">
+    <value>{0}.{1} 租金规则的描述为空！</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="NULLEndDate" xml:space="preserve">
+    <value>{0}.{1} 租金规则时间段结束时间为空</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="NULLEntityName" xml:space="preserve">
+    <value>{0}.{1} 存在实体名称为空的实体</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="NULLFirstDueDate" xml:space="preserve">
+    <value>{0}.{1} 租金规则首次DUEDATE为空</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="NULLIsCalculateAP" xml:space="preserve">
+    <value>{0}.{1} 实体是否出AP为空</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="NULLIsPure" xml:space="preserve">
+    <value>{0}.{1} 租金规则是否纯百分比为空</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="NULLKioskNo" xml:space="preserve">
+    <value>{0}.{1} 实体为甜品店时,Kiosk编号不能为空</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="NULLPayType" xml:space="preserve">
+    <value>{0}.{1} 租金规则支付类型为空</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="NULLRealestateSales" xml:space="preserve">
+    <value>{0}.{1} 实体为餐厅/甜品店时地产提供年SALES不能为空</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="NULLRentEndDate" xml:space="preserve">
+    <value>{0}.{1} 实体租赁到期日为空</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="NULLRentStartDate" xml:space="preserve">
+    <value>{0}.{1} 实体起租日为空</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="NULLStartDate" xml:space="preserve">
+    <value>{0}.{1} 租金规则时间段开始时间为空</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="NULLStoreOrDeptNo" xml:space="preserve">
+    <value>{0}.{1} 实体餐厅/部门编号空</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="NULLTaxRate" xml:space="preserve">
+    <value>{0}.{1} 实体为餐厅/甜品店时税率不能为空</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="NULLZXStartDate" xml:space="preserve">
+    <value>{0}.{1} 固定租金直线租金起始日为空</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="CalcAPDateIsNull" xml:space="preserve">
+    <value>出AP日期为空</value>
+    <comment>数据校验</comment>
+  </data>
+  <data name="CompanyCodeError" xml:space="preserve">
+    <value>公司编码错误</value>
+    <comment>数据校验</comment>
+  </data>
+  <data name="CompanyNameNotMatch" xml:space="preserve">
+    <value>公司名称不符</value>
+    <comment>数据校验</comment>
+  </data>
+  <data name="CycleError" xml:space="preserve">
+    <value>结算周期取值错误</value>
+    <comment>数据校验</comment>
+  </data>
+  <data name="CycleIsNull" xml:space="preserve">
+    <value>结算周期为空</value>
+    <comment>数据校验</comment>
+  </data>
+  <data name="CycleTypeError" xml:space="preserve">
+    <value>租赁/公历取值错误</value>
+    <comment>数据校验</comment>
+  </data>
+  <data name="CycleTypeIsNull" xml:space="preserve">
+    <value>租赁/公历为空</value>
+    <comment>数据校验</comment>
+  </data>
+  <data name="EntityNameIsNull" xml:space="preserve">
+    <value>实体名称为空</value>
+    <comment>数据校验</comment>
+  </data>
+  <data name="EntityTypeError" xml:space="preserve">
+    <value>实体类型错误</value>
+    <comment>数据校验</comment>
+  </data>
+  <data name="EntityTypeIsNull" xml:space="preserve">
+    <value>实体类型为空</value>
+    <comment>数据校验</comment>
+  </data>
+  <data name="FormulaIsNull" xml:space="preserve">
+    <value>公式为空</value>
+    <comment>数据校验</comment>
+  </data>
+  <data name="IsCalcAPIsNull" xml:space="preserve">
+    <value>是否出AP为空</value>
+    <comment>数据校验</comment>
+  </data>
+  <data name="IsCalcAPValueError" xml:space="preserve">
+    <value>是否出AP取值错误</value>
+    <comment>数据校验</comment>
+  </data>
+  <data name="OpenDateIsNull" xml:space="preserve">
+    <value>开业日为空</value>
+    <comment>数据校验</comment>
+  </data>
+  <data name="PaymentTypeError" xml:space="preserve">
+    <value>支付类型取值错误</value>
+    <comment>数据校验</comment>
+  </data>
+  <data name="PaymentTypeIsNull" xml:space="preserve">
+    <value>支付类型为空</value>
+    <comment>数据校验</comment>
+  </data>
+  <data name="RentEndDateIsNull" xml:space="preserve">
+    <value>租赁到期日为空</value>
+    <comment>数据校验</comment>
+  </data>
+  <data name="RentStartDateIsNull" xml:space="preserve">
+    <value>起租日为空</value>
+    <comment>数据校验</comment>
+  </data>
+  <data name="RentTypeIsNull" xml:space="preserve">
+    <value>租金类型为空</value>
+    <comment>数据校验</comment>
+  </data>
+  <data name="StoreDeptNoError" xml:space="preserve">
+    <value>餐厅/部门编号错误</value>
+    <comment>数据校验</comment>
+  </data>
+  <data name="StoreDeptNoIsNull" xml:space="preserve">
+    <value>餐厅/部门编号为空</value>
+    <comment>数据校验</comment>
+  </data>
+  <data name="SummaryError" xml:space="preserve">
+    <value>摘要错误</value>
+    <comment>数据校验</comment>
+  </data>
+  <data name="SummaryIsNull" xml:space="preserve">
+    <value>摘要为空</value>
+    <comment>数据校验</comment>
+  </data>
+  <data name="TaxRateIsNull" xml:space="preserve">
+    <value>税率为空</value>
+    <comment>数据校验</comment>
+  </data>
+  <data name="VendorNameIsNull" xml:space="preserve">
+    <value>业主名称为空</value>
+    <comment>数据校验</comment>
+  </data>
+  <data name="ImportResult" xml:space="preserve">
+    <value>导入合同总数:{0}, 导入合同成功数:{1}, 导入合同失败数:{2}</value>
+    <comment>执行结果</comment>
+  </data>
+  <data name="ContractIndex" xml:space="preserve">
+    <value>合同序号</value>
+    <comment>列标题</comment>
+  </data>
+  <data name="ExcelIndex" xml:space="preserve">
+    <value>Excel行号</value>
+    <comment>列标题</comment>
+  </data>
+  <data name="MessageInfo" xml:space="preserve">
+    <value>信息</value>
+    <comment>列标题</comment>
+  </data>
+  <data name="CheckMessage" xml:space="preserve">
+    <value>校验信息</value>
+    <comment>列标题</comment>
+  </data>
+  <data name="RelationData" xml:space="preserve">
+    <value>相关数据</value>
+    <comment>列标题</comment>
+  </data>
+  <data name="FileIsOpen" xml:space="preserve">
+    <value>选定的Excel文件被占用，请关掉Excel程序并重试！</value>
+  </data>
+  <data name="FormatError" xml:space="preserve">
+    <value>Excel格式错误或者未填入数据，请检查要导入的文件！</value>
+    <comment>提示信息</comment>
+  </data>
+  <data name="SheetFormatError" xml:space="preserve">
+    <value>以下Sheet的格式错误:{0}</value>
+    <comment>提示信息</comment>
+  </data>
+  <data name="FileExtensionIsProhibit" xml:space="preserve">
+    <value>当前上传的文件类型已被系统禁止!</value>
+  </data>
+  <data name="btnTemplate" xml:space="preserve">
+    <value>模版下载</value>
+  </data>
+</root>

@@ -1,0 +1,320 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Client", "2.Client", "{D939D6DA-AFE3-42B6-BAC3-518E08B8677B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Server", "1.Server", "{4C14F6FC-18D8-4161-8B4F-099669D785C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controls", "Controls", "{1BFC4BFD-F757-44AA-99B5-745AFA0FA9DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Install", "3.Install", "{77BA818F-0803-4E6A-9E22-0EC921FEC26D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MCD.UUP", "MCD.UUP", "{95284022-F5CB-43C9-96E4-CDBFD2848B77}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{0FF2D3C7-1F2D-4DEE-AAEC-92EF40888539}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RLPlanning", "RLPlanning", "{B6B45439-E589-4B6E-BE4D-E0355F8C1457}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCD.Controls", "Controls\MCD.Controls\MCD.Controls.csproj", "{3EF4AFCA-861F-4FD6-A154-4C81863A3130}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCD.DockContainer", "Controls\MCD.DockContainer\MCD.DockContainer.csproj", "{C75532C4-765B-418E-B09B-46D36B2ABDB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCD.UUP.Common", "MCD.UUP\MCD.UUP.Common\MCD.UUP.Common.csproj", "{B88B9325-98C7-4802-A43E-CBEDCFBEE456}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCD.UUP.Entity", "MCD.UUP\MCD.UUP.Entity\MCD.UUP.Entity.csproj", "{627D24F5-9577-423B-8EBF-0ED66A3B93F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCD.UUP.IServices", "MCD.UUP\MCD.UUP.IServices\MCD.UUP.IServices.csproj", "{275BFE58-D5B2-468A-97CB-4D96CFCBBC54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCD.UUP.Services", "MCD.UUP\MCD.UUP.Services\MCD.UUP.Services.csproj", "{E50DF06C-EB47-4DD2-9296-C18CD2ABBD81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCD.Common", "Common\MCD.Common\MCD.Common.csproj", "{D24BD75B-FA49-4F80-AFDB-BA1F352C5045}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCD.Framework.DALCommon", "Common\MCD.Framework.DALCommon\MCD.Framework.DALCommon.csproj", "{356A5869-D40C-4FE3-B893-B825E2C8CB7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCD.Framework.Entity", "Common\MCD.Framework.Entity\MCD.Framework.Entity.csproj", "{D6562CCF-3003-4C59-8682-2193AF88190C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCD.Framework.SqlDAL", "Common\MCD.Framework.SqlDAL\MCD.Framework.SqlDAL.csproj", "{9D3CD148-CBB9-4F1C-B17C-48298CFBB711}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCD.RLPlanning.IServices", "RLPlanning\1.Server\MCD.RLPlanning.IServices\MCD.RLPlanning.IServices.csproj", "{C8921C20-5C85-4111-9DE0-2DE318A7964C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCD.RLPlanning.Services", "RLPlanning\1.Server\MCD.RLPlanning.Services\MCD.RLPlanning.Services.csproj", "{614B93D9-3C37-44AF-AB9B-0FC1FD3426C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCD.RLPlanning.WinService", "RLPlanning\1.Server\MCD.RLPlanning.WinService\MCD.RLPlanning.WinService.csproj", "{1980CA54-C5A4-4D6A-BBB3-E60DBD21564E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCD.RLPlanning.Entity", "RLPlanning\2.Client\MCD.RLPlanning.Entity\MCD.RLPlanning.Entity.csproj", "{2D9CB296-6F98-426B-8370-968202320D70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCD.RLPlanning.Business", "RLPlanning\2.Client\MCD.RLPlanning.Business\MCD.RLPlanning.Business.csproj", "{B03B00B0-97D7-48AE-A272-E33167BC0FDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCD.RLPlanning.Client", "RLPlanning\2.Client\MCD.RLPlanning.Client\MCD.RLPlanning.Client.csproj", "{38AF1277-DF08-4B26-AB5A-1A1DDB67EEA2}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "MCD.RLPlanning.Install", "RLPlanning\3.Install\MCD.RLPlanning.Install\MCD.RLPlanning.Install.vdproj", "{7504F756-ABF1-4021-BDB6-F0306B033997}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiveUpdate", "RLPlanning\1.Server\LiveUpdate\LiveUpdate.csproj", "{569A4472-288A-443E-8025-EA7D6EF68D6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCD.FileService", "RLPlanning\1.Server\MCD.FileService\MCD.FileService.csproj", "{DF270EE2-120A-412E-82CE-5CBB52C83BD6}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "MCD.RLPlanning.WinService.Install", "RLPlanning\3.Install\MCD.RLPlanning.WinService.Install\MCD.RLPlanning.WinService.Install.vdproj", "{DD2CEA3D-C87C-4A9D-8135-753563E78662}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 21
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://202.136.210.92:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Controls\\MCD.Controls\\MCD.Controls.csproj
+		SccProjectTopLevelParentUniqueName1 = Mcdonald's\u0020Rent\u0020and\u0020Lease\u0020Planning\u0020System\u0020Solution.sln
+		SccProjectName1 = Controls/MCD.Controls
+		SccLocalPath1 = Controls\\MCD.Controls
+		SccProjectUniqueName2 = Controls\\MCD.DockContainer\\MCD.DockContainer.csproj
+		SccProjectTopLevelParentUniqueName2 = Mcdonald's\u0020Rent\u0020and\u0020Lease\u0020Planning\u0020System\u0020Solution.sln
+		SccProjectName2 = Controls/MCD.DockContainer
+		SccLocalPath2 = Controls\\MCD.DockContainer
+		SccProjectUniqueName3 = MCD.UUP\\MCD.UUP.Common\\MCD.UUP.Common.csproj
+		SccProjectTopLevelParentUniqueName3 = Mcdonald's\u0020Rent\u0020and\u0020Lease\u0020Planning\u0020System\u0020Solution.sln
+		SccProjectName3 = MCD.UUP/MCD.UUP.Common
+		SccLocalPath3 = MCD.UUP\\MCD.UUP.Common
+		SccProjectUniqueName4 = MCD.UUP\\MCD.UUP.Entity\\MCD.UUP.Entity.csproj
+		SccProjectTopLevelParentUniqueName4 = Mcdonald's\u0020Rent\u0020and\u0020Lease\u0020Planning\u0020System\u0020Solution.sln
+		SccProjectName4 = MCD.UUP/MCD.UUP.Entity
+		SccLocalPath4 = MCD.UUP\\MCD.UUP.Entity
+		SccProjectUniqueName5 = MCD.UUP\\MCD.UUP.IServices\\MCD.UUP.IServices.csproj
+		SccProjectTopLevelParentUniqueName5 = Mcdonald's\u0020Rent\u0020and\u0020Lease\u0020Planning\u0020System\u0020Solution.sln
+		SccProjectName5 = MCD.UUP/MCD.UUP.IServices
+		SccLocalPath5 = MCD.UUP\\MCD.UUP.IServices
+		SccProjectUniqueName6 = MCD.UUP\\MCD.UUP.Services\\MCD.UUP.Services.csproj
+		SccProjectTopLevelParentUniqueName6 = Mcdonald's\u0020Rent\u0020and\u0020Lease\u0020Planning\u0020System\u0020Solution.sln
+		SccProjectName6 = MCD.UUP/MCD.UUP.Services
+		SccLocalPath6 = MCD.UUP\\MCD.UUP.Services
+		SccProjectUniqueName7 = Common\\MCD.Common\\MCD.Common.csproj
+		SccProjectTopLevelParentUniqueName7 = Mcdonald's\u0020Rent\u0020and\u0020Lease\u0020Planning\u0020System\u0020Solution.sln
+		SccProjectName7 = Common/MCD.Common
+		SccLocalPath7 = Common\\MCD.Common
+		SccProjectUniqueName8 = Common\\MCD.Framework.DALCommon\\MCD.Framework.DALCommon.csproj
+		SccProjectTopLevelParentUniqueName8 = Mcdonald's\u0020Rent\u0020and\u0020Lease\u0020Planning\u0020System\u0020Solution.sln
+		SccProjectName8 = Common/MCD.Framework.DALCommon
+		SccLocalPath8 = Common\\MCD.Framework.DALCommon
+		SccProjectUniqueName9 = Common\\MCD.Framework.Entity\\MCD.Framework.Entity.csproj
+		SccProjectTopLevelParentUniqueName9 = Mcdonald's\u0020Rent\u0020and\u0020Lease\u0020Planning\u0020System\u0020Solution.sln
+		SccProjectName9 = Common/MCD.Framework.Entity
+		SccLocalPath9 = Common\\MCD.Framework.Entity
+		SccProjectUniqueName10 = Common\\MCD.Framework.SqlDAL\\MCD.Framework.SqlDAL.csproj
+		SccProjectTopLevelParentUniqueName10 = Mcdonald's\u0020Rent\u0020and\u0020Lease\u0020Planning\u0020System\u0020Solution.sln
+		SccProjectName10 = Common/MCD.Framework.SqlDAL
+		SccLocalPath10 = Common\\MCD.Framework.SqlDAL
+		SccProjectUniqueName11 = RLPlanning\\1.Server\\MCD.RLPlanning.IServices\\MCD.RLPlanning.IServices.csproj
+		SccProjectTopLevelParentUniqueName11 = Mcdonald's\u0020Rent\u0020and\u0020Lease\u0020Planning\u0020System\u0020Solution.sln
+		SccProjectName11 = RLPlanning/1.Server/MCD.RLPlanning.IServices
+		SccLocalPath11 = RLPlanning\\1.Server\\MCD.RLPlanning.IServices
+		SccProjectUniqueName12 = RLPlanning\\1.Server\\MCD.RLPlanning.Services\\MCD.RLPlanning.Services.csproj
+		SccProjectTopLevelParentUniqueName12 = Mcdonald's\u0020Rent\u0020and\u0020Lease\u0020Planning\u0020System\u0020Solution.sln
+		SccProjectName12 = RLPlanning/1.Server/MCD.RLPlanning.Services
+		SccLocalPath12 = RLPlanning\\1.Server\\MCD.RLPlanning.Services
+		SccProjectUniqueName13 = RLPlanning\\1.Server\\MCD.RLPlanning.WinService\\MCD.RLPlanning.WinService.csproj
+		SccProjectTopLevelParentUniqueName13 = Mcdonald's\u0020Rent\u0020and\u0020Lease\u0020Planning\u0020System\u0020Solution.sln
+		SccProjectName13 = RLPlanning/1.Server/MCD.RLPlanning.WinService
+		SccLocalPath13 = RLPlanning\\1.Server\\MCD.RLPlanning.WinService
+		SccProjectUniqueName14 = RLPlanning\\2.Client\\MCD.RLPlanning.Entity\\MCD.RLPlanning.Entity.csproj
+		SccProjectTopLevelParentUniqueName14 = Mcdonald's\u0020Rent\u0020and\u0020Lease\u0020Planning\u0020System\u0020Solution.sln
+		SccProjectName14 = RLPlanning/2.Client/MCD.RLPlanning.Entity
+		SccLocalPath14 = RLPlanning\\2.Client\\MCD.RLPlanning.Entity
+		SccProjectUniqueName15 = RLPlanning\\2.Client\\MCD.RLPlanning.Business\\MCD.RLPlanning.Business.csproj
+		SccProjectTopLevelParentUniqueName15 = Mcdonald's\u0020Rent\u0020and\u0020Lease\u0020Planning\u0020System\u0020Solution.sln
+		SccProjectName15 = RLPlanning/2.Client/MCD.RLPlanning.Business
+		SccLocalPath15 = RLPlanning\\2.Client\\MCD.RLPlanning.Business
+		SccProjectUniqueName16 = RLPlanning\\2.Client\\MCD.RLPlanning.Client\\MCD.RLPlanning.Client.csproj
+		SccProjectTopLevelParentUniqueName16 = Mcdonald's\u0020Rent\u0020and\u0020Lease\u0020Planning\u0020System\u0020Solution.sln
+		SccProjectName16 = RLPlanning/2.Client/MCD.RLPlanning.Client
+		SccLocalPath16 = RLPlanning\\2.Client\\MCD.RLPlanning.Client
+		SccProjectUniqueName17 = RLPlanning\\1.Server\\LiveUpdate\\LiveUpdate.csproj
+		SccProjectTopLevelParentUniqueName17 = Mcdonald's\u0020Rent\u0020and\u0020Lease\u0020Planning\u0020System\u0020Solution.sln
+		SccProjectName17 = RLPlanning/1.Server/LiveUpdate
+		SccLocalPath17 = RLPlanning\\1.Server\\LiveUpdate
+		SccProjectUniqueName18 = RLPlanning\\1.Server\\MCD.FileService\\MCD.FileService.csproj
+		SccProjectTopLevelParentUniqueName18 = Mcdonald's\u0020Rent\u0020and\u0020Lease\u0020Planning\u0020System\u0020Solution.sln
+		SccProjectName18 = RLPlanning/1.Server/MCD.FileService
+		SccLocalPath18 = RLPlanning\\1.Server\\MCD.FileService
+		SccProjectUniqueName19 = RLPlanning\\3.Install\\MCD.RLPlanning.Install\\MCD.RLPlanning.Install.vdproj
+		SccProjectTopLevelParentUniqueName19 = Mcdonald's\u0020Rent\u0020and\u0020Lease\u0020Planning\u0020System\u0020Solution.sln
+		SccProjectName19 = RLPlanning/3.Install/MCD.RLPlanning.Install
+		SccLocalPath19 = RLPlanning\\3.Install\\MCD.RLPlanning.Install
+		SccProjectUniqueName20 = RLPlanning\\3.Install\\MCD.RLPlanning.WinService.Install\\MCD.RLPlanning.WinService.Install.vdproj
+		SccProjectTopLevelParentUniqueName20 = Mcdonald's\u0020Rent\u0020and\u0020Lease\u0020Planning\u0020System\u0020Solution.sln
+		SccProjectName20 = RLPlanning/3.Install/MCD.RLPlanning.WinService.Install
+		SccLocalPath20 = RLPlanning\\3.Install\\MCD.RLPlanning.WinService.Install
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EF4AFCA-861F-4FD6-A154-4C81863A3130}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EF4AFCA-861F-4FD6-A154-4C81863A3130}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EF4AFCA-861F-4FD6-A154-4C81863A3130}.Debug|x86.ActiveCfg = Release|Any CPU
+		{3EF4AFCA-861F-4FD6-A154-4C81863A3130}.Debug|x86.Build.0 = Debug|Any CPU
+		{3EF4AFCA-861F-4FD6-A154-4C81863A3130}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EF4AFCA-861F-4FD6-A154-4C81863A3130}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EF4AFCA-861F-4FD6-A154-4C81863A3130}.Release|x86.ActiveCfg = Release|Any CPU
+		{C75532C4-765B-418E-B09B-46D36B2ABDB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C75532C4-765B-418E-B09B-46D36B2ABDB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C75532C4-765B-418E-B09B-46D36B2ABDB1}.Debug|x86.ActiveCfg = Release|Any CPU
+		{C75532C4-765B-418E-B09B-46D36B2ABDB1}.Debug|x86.Build.0 = Debug|Any CPU
+		{C75532C4-765B-418E-B09B-46D36B2ABDB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C75532C4-765B-418E-B09B-46D36B2ABDB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C75532C4-765B-418E-B09B-46D36B2ABDB1}.Release|x86.ActiveCfg = Release|Any CPU
+		{B88B9325-98C7-4802-A43E-CBEDCFBEE456}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B88B9325-98C7-4802-A43E-CBEDCFBEE456}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B88B9325-98C7-4802-A43E-CBEDCFBEE456}.Debug|x86.ActiveCfg = Release|Any CPU
+		{B88B9325-98C7-4802-A43E-CBEDCFBEE456}.Debug|x86.Build.0 = Debug|Any CPU
+		{B88B9325-98C7-4802-A43E-CBEDCFBEE456}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B88B9325-98C7-4802-A43E-CBEDCFBEE456}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B88B9325-98C7-4802-A43E-CBEDCFBEE456}.Release|x86.ActiveCfg = Release|Any CPU
+		{627D24F5-9577-423B-8EBF-0ED66A3B93F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{627D24F5-9577-423B-8EBF-0ED66A3B93F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{627D24F5-9577-423B-8EBF-0ED66A3B93F5}.Debug|x86.ActiveCfg = Release|Any CPU
+		{627D24F5-9577-423B-8EBF-0ED66A3B93F5}.Debug|x86.Build.0 = Debug|Any CPU
+		{627D24F5-9577-423B-8EBF-0ED66A3B93F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{627D24F5-9577-423B-8EBF-0ED66A3B93F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{627D24F5-9577-423B-8EBF-0ED66A3B93F5}.Release|x86.ActiveCfg = Release|Any CPU
+		{275BFE58-D5B2-468A-97CB-4D96CFCBBC54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{275BFE58-D5B2-468A-97CB-4D96CFCBBC54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{275BFE58-D5B2-468A-97CB-4D96CFCBBC54}.Debug|x86.ActiveCfg = Release|Any CPU
+		{275BFE58-D5B2-468A-97CB-4D96CFCBBC54}.Debug|x86.Build.0 = Debug|Any CPU
+		{275BFE58-D5B2-468A-97CB-4D96CFCBBC54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{275BFE58-D5B2-468A-97CB-4D96CFCBBC54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{275BFE58-D5B2-468A-97CB-4D96CFCBBC54}.Release|x86.ActiveCfg = Release|Any CPU
+		{E50DF06C-EB47-4DD2-9296-C18CD2ABBD81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E50DF06C-EB47-4DD2-9296-C18CD2ABBD81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E50DF06C-EB47-4DD2-9296-C18CD2ABBD81}.Debug|x86.ActiveCfg = Release|Any CPU
+		{E50DF06C-EB47-4DD2-9296-C18CD2ABBD81}.Debug|x86.Build.0 = Debug|Any CPU
+		{E50DF06C-EB47-4DD2-9296-C18CD2ABBD81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E50DF06C-EB47-4DD2-9296-C18CD2ABBD81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E50DF06C-EB47-4DD2-9296-C18CD2ABBD81}.Release|x86.ActiveCfg = Release|Any CPU
+		{D24BD75B-FA49-4F80-AFDB-BA1F352C5045}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D24BD75B-FA49-4F80-AFDB-BA1F352C5045}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D24BD75B-FA49-4F80-AFDB-BA1F352C5045}.Debug|x86.ActiveCfg = Release|Any CPU
+		{D24BD75B-FA49-4F80-AFDB-BA1F352C5045}.Debug|x86.Build.0 = Debug|Any CPU
+		{D24BD75B-FA49-4F80-AFDB-BA1F352C5045}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D24BD75B-FA49-4F80-AFDB-BA1F352C5045}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D24BD75B-FA49-4F80-AFDB-BA1F352C5045}.Release|x86.ActiveCfg = Release|Any CPU
+		{356A5869-D40C-4FE3-B893-B825E2C8CB7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{356A5869-D40C-4FE3-B893-B825E2C8CB7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{356A5869-D40C-4FE3-B893-B825E2C8CB7B}.Debug|x86.ActiveCfg = Release|Any CPU
+		{356A5869-D40C-4FE3-B893-B825E2C8CB7B}.Debug|x86.Build.0 = Debug|Any CPU
+		{356A5869-D40C-4FE3-B893-B825E2C8CB7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{356A5869-D40C-4FE3-B893-B825E2C8CB7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{356A5869-D40C-4FE3-B893-B825E2C8CB7B}.Release|x86.ActiveCfg = Release|Any CPU
+		{D6562CCF-3003-4C59-8682-2193AF88190C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6562CCF-3003-4C59-8682-2193AF88190C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6562CCF-3003-4C59-8682-2193AF88190C}.Debug|x86.ActiveCfg = Release|Any CPU
+		{D6562CCF-3003-4C59-8682-2193AF88190C}.Debug|x86.Build.0 = Debug|Any CPU
+		{D6562CCF-3003-4C59-8682-2193AF88190C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6562CCF-3003-4C59-8682-2193AF88190C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6562CCF-3003-4C59-8682-2193AF88190C}.Release|x86.ActiveCfg = Release|Any CPU
+		{9D3CD148-CBB9-4F1C-B17C-48298CFBB711}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D3CD148-CBB9-4F1C-B17C-48298CFBB711}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D3CD148-CBB9-4F1C-B17C-48298CFBB711}.Debug|x86.ActiveCfg = Release|Any CPU
+		{9D3CD148-CBB9-4F1C-B17C-48298CFBB711}.Debug|x86.Build.0 = Debug|Any CPU
+		{9D3CD148-CBB9-4F1C-B17C-48298CFBB711}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D3CD148-CBB9-4F1C-B17C-48298CFBB711}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D3CD148-CBB9-4F1C-B17C-48298CFBB711}.Release|x86.ActiveCfg = Release|Any CPU
+		{C8921C20-5C85-4111-9DE0-2DE318A7964C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8921C20-5C85-4111-9DE0-2DE318A7964C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8921C20-5C85-4111-9DE0-2DE318A7964C}.Debug|x86.ActiveCfg = Release|Any CPU
+		{C8921C20-5C85-4111-9DE0-2DE318A7964C}.Debug|x86.Build.0 = Debug|Any CPU
+		{C8921C20-5C85-4111-9DE0-2DE318A7964C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8921C20-5C85-4111-9DE0-2DE318A7964C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8921C20-5C85-4111-9DE0-2DE318A7964C}.Release|x86.ActiveCfg = Release|Any CPU
+		{614B93D9-3C37-44AF-AB9B-0FC1FD3426C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{614B93D9-3C37-44AF-AB9B-0FC1FD3426C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{614B93D9-3C37-44AF-AB9B-0FC1FD3426C3}.Debug|x86.ActiveCfg = Release|Any CPU
+		{614B93D9-3C37-44AF-AB9B-0FC1FD3426C3}.Debug|x86.Build.0 = Debug|Any CPU
+		{614B93D9-3C37-44AF-AB9B-0FC1FD3426C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{614B93D9-3C37-44AF-AB9B-0FC1FD3426C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{614B93D9-3C37-44AF-AB9B-0FC1FD3426C3}.Release|x86.ActiveCfg = Release|Any CPU
+		{1980CA54-C5A4-4D6A-BBB3-E60DBD21564E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1980CA54-C5A4-4D6A-BBB3-E60DBD21564E}.Debug|x86.ActiveCfg = Release|Any CPU
+		{1980CA54-C5A4-4D6A-BBB3-E60DBD21564E}.Debug|x86.Build.0 = Debug|Any CPU
+		{1980CA54-C5A4-4D6A-BBB3-E60DBD21564E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1980CA54-C5A4-4D6A-BBB3-E60DBD21564E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1980CA54-C5A4-4D6A-BBB3-E60DBD21564E}.Release|x86.ActiveCfg = Release|Any CPU
+		{2D9CB296-6F98-426B-8370-968202320D70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D9CB296-6F98-426B-8370-968202320D70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D9CB296-6F98-426B-8370-968202320D70}.Debug|x86.ActiveCfg = Release|Any CPU
+		{2D9CB296-6F98-426B-8370-968202320D70}.Debug|x86.Build.0 = Debug|Any CPU
+		{2D9CB296-6F98-426B-8370-968202320D70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D9CB296-6F98-426B-8370-968202320D70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D9CB296-6F98-426B-8370-968202320D70}.Release|x86.ActiveCfg = Release|Any CPU
+		{B03B00B0-97D7-48AE-A272-E33167BC0FDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B03B00B0-97D7-48AE-A272-E33167BC0FDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B03B00B0-97D7-48AE-A272-E33167BC0FDD}.Debug|x86.ActiveCfg = Release|Any CPU
+		{B03B00B0-97D7-48AE-A272-E33167BC0FDD}.Debug|x86.Build.0 = Debug|Any CPU
+		{B03B00B0-97D7-48AE-A272-E33167BC0FDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B03B00B0-97D7-48AE-A272-E33167BC0FDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B03B00B0-97D7-48AE-A272-E33167BC0FDD}.Release|x86.ActiveCfg = Release|Any CPU
+		{38AF1277-DF08-4B26-AB5A-1A1DDB67EEA2}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{38AF1277-DF08-4B26-AB5A-1A1DDB67EEA2}.Debug|Any CPU.Build.0 = Debug|x86
+		{38AF1277-DF08-4B26-AB5A-1A1DDB67EEA2}.Debug|x86.ActiveCfg = Release|x86
+		{38AF1277-DF08-4B26-AB5A-1A1DDB67EEA2}.Debug|x86.Build.0 = Release|x86
+		{38AF1277-DF08-4B26-AB5A-1A1DDB67EEA2}.Release|Any CPU.ActiveCfg = Release|x86
+		{38AF1277-DF08-4B26-AB5A-1A1DDB67EEA2}.Release|Any CPU.Build.0 = Release|x86
+		{38AF1277-DF08-4B26-AB5A-1A1DDB67EEA2}.Release|x86.ActiveCfg = Release|x86
+		{38AF1277-DF08-4B26-AB5A-1A1DDB67EEA2}.Release|x86.Build.0 = Release|x86
+		{7504F756-ABF1-4021-BDB6-F0306B033997}.Debug|Any CPU.ActiveCfg = Debug
+		{7504F756-ABF1-4021-BDB6-F0306B033997}.Debug|x86.ActiveCfg = Release
+		{7504F756-ABF1-4021-BDB6-F0306B033997}.Release|Any CPU.ActiveCfg = Release
+		{7504F756-ABF1-4021-BDB6-F0306B033997}.Release|x86.ActiveCfg = Release
+		{569A4472-288A-443E-8025-EA7D6EF68D6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{569A4472-288A-443E-8025-EA7D6EF68D6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{569A4472-288A-443E-8025-EA7D6EF68D6A}.Debug|x86.ActiveCfg = Release|Any CPU
+		{569A4472-288A-443E-8025-EA7D6EF68D6A}.Debug|x86.Build.0 = Debug|Any CPU
+		{569A4472-288A-443E-8025-EA7D6EF68D6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{569A4472-288A-443E-8025-EA7D6EF68D6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{569A4472-288A-443E-8025-EA7D6EF68D6A}.Release|x86.ActiveCfg = Release|Any CPU
+		{DF270EE2-120A-412E-82CE-5CBB52C83BD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF270EE2-120A-412E-82CE-5CBB52C83BD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF270EE2-120A-412E-82CE-5CBB52C83BD6}.Debug|x86.ActiveCfg = Release|Any CPU
+		{DF270EE2-120A-412E-82CE-5CBB52C83BD6}.Debug|x86.Build.0 = Debug|Any CPU
+		{DF270EE2-120A-412E-82CE-5CBB52C83BD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF270EE2-120A-412E-82CE-5CBB52C83BD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF270EE2-120A-412E-82CE-5CBB52C83BD6}.Release|x86.ActiveCfg = Release|Any CPU
+		{DD2CEA3D-C87C-4A9D-8135-753563E78662}.Debug|Any CPU.ActiveCfg = Debug
+		{DD2CEA3D-C87C-4A9D-8135-753563E78662}.Debug|x86.ActiveCfg = Debug
+		{DD2CEA3D-C87C-4A9D-8135-753563E78662}.Debug|x86.Build.0 = Debug
+		{DD2CEA3D-C87C-4A9D-8135-753563E78662}.Release|Any CPU.ActiveCfg = Release
+		{DD2CEA3D-C87C-4A9D-8135-753563E78662}.Release|x86.ActiveCfg = Release
+		{DD2CEA3D-C87C-4A9D-8135-753563E78662}.Release|x86.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4C14F6FC-18D8-4161-8B4F-099669D785C6} = {B6B45439-E589-4B6E-BE4D-E0355F8C1457}
+		{77BA818F-0803-4E6A-9E22-0EC921FEC26D} = {B6B45439-E589-4B6E-BE4D-E0355F8C1457}
+		{D939D6DA-AFE3-42B6-BAC3-518E08B8677B} = {B6B45439-E589-4B6E-BE4D-E0355F8C1457}
+		{C8921C20-5C85-4111-9DE0-2DE318A7964C} = {4C14F6FC-18D8-4161-8B4F-099669D785C6}
+		{614B93D9-3C37-44AF-AB9B-0FC1FD3426C3} = {4C14F6FC-18D8-4161-8B4F-099669D785C6}
+		{1980CA54-C5A4-4D6A-BBB3-E60DBD21564E} = {4C14F6FC-18D8-4161-8B4F-099669D785C6}
+		{569A4472-288A-443E-8025-EA7D6EF68D6A} = {4C14F6FC-18D8-4161-8B4F-099669D785C6}
+		{DF270EE2-120A-412E-82CE-5CBB52C83BD6} = {4C14F6FC-18D8-4161-8B4F-099669D785C6}
+		{3EF4AFCA-861F-4FD6-A154-4C81863A3130} = {1BFC4BFD-F757-44AA-99B5-745AFA0FA9DC}
+		{C75532C4-765B-418E-B09B-46D36B2ABDB1} = {1BFC4BFD-F757-44AA-99B5-745AFA0FA9DC}
+		{7504F756-ABF1-4021-BDB6-F0306B033997} = {77BA818F-0803-4E6A-9E22-0EC921FEC26D}
+		{DD2CEA3D-C87C-4A9D-8135-753563E78662} = {77BA818F-0803-4E6A-9E22-0EC921FEC26D}
+		{B88B9325-98C7-4802-A43E-CBEDCFBEE456} = {95284022-F5CB-43C9-96E4-CDBFD2848B77}
+		{627D24F5-9577-423B-8EBF-0ED66A3B93F5} = {95284022-F5CB-43C9-96E4-CDBFD2848B77}
+		{275BFE58-D5B2-468A-97CB-4D96CFCBBC54} = {95284022-F5CB-43C9-96E4-CDBFD2848B77}
+		{E50DF06C-EB47-4DD2-9296-C18CD2ABBD81} = {95284022-F5CB-43C9-96E4-CDBFD2848B77}
+		{D24BD75B-FA49-4F80-AFDB-BA1F352C5045} = {0FF2D3C7-1F2D-4DEE-AAEC-92EF40888539}
+		{356A5869-D40C-4FE3-B893-B825E2C8CB7B} = {0FF2D3C7-1F2D-4DEE-AAEC-92EF40888539}
+		{D6562CCF-3003-4C59-8682-2193AF88190C} = {0FF2D3C7-1F2D-4DEE-AAEC-92EF40888539}
+		{9D3CD148-CBB9-4F1C-B17C-48298CFBB711} = {0FF2D3C7-1F2D-4DEE-AAEC-92EF40888539}
+		{2D9CB296-6F98-426B-8370-968202320D70} = {D939D6DA-AFE3-42B6-BAC3-518E08B8677B}
+		{B03B00B0-97D7-48AE-A272-E33167BC0FDD} = {D939D6DA-AFE3-42B6-BAC3-518E08B8677B}
+		{38AF1277-DF08-4B26-AB5A-1A1DDB67EEA2} = {D939D6DA-AFE3-42B6-BAC3-518E08B8677B}
+	EndGlobalSection
+	GlobalSection(PowerDesigner) = preSolution
+		HasSWS = 1
+	EndGlobalSection
+EndGlobal

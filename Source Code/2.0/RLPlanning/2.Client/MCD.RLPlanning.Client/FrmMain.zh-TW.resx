@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>關於</value>
+    <comment>m.一0.1帮助</comment>
+  </data>
+  <data name="AccountInfo" xml:space="preserve">
+    <value>科目信息</value>
+    <comment>m.2.9基本信息</comment>
+  </data>
+  <data name="AreaInfo" xml:space="preserve">
+    <value>區域信息</value>
+    <comment>m.2.1基本信息</comment>
+  </data>
+  <data name="AverageCompareReport" xml:space="preserve">
+    <value>平均租金對比報表</value>
+    <comment>m.7.9报表管理</comment>
+  </data>
+  <data name="btnCancel" xml:space="preserve">
+    <value>註銷</value>
+  </data>
+  <data name="btnExit" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="btnPendingTask" xml:space="preserve">
+    <value>待處理任務</value>
+  </data>
+  <data name="Calculate" xml:space="preserve">
+    <value>租金計算</value>
+    <comment>m.4.1预测租金计算</comment>
+  </data>
+  <data name="CalculateResult" xml:space="preserve">
+    <value>租金計算結果</value>
+    <comment>m.4.2预测租金计算</comment>
+  </data>
+  <data name="Caption" xml:space="preserve">
+    <value>係統提示</value>
+  </data>
+  <data name="ChangePWD" xml:space="preserve">
+    <value>密碼修改</value>
+    <comment>m.2.5基本信息</comment>
+  </data>
+  <data name="CloseAccountManagement" xml:space="preserve">
+    <value>關帳管理</value>
+    <comment>m.5.1关帐</comment>
+  </data>
+  <data name="CompanyInfo" xml:space="preserve">
+    <value>公司信息</value>
+    <comment>m.2.2基本信息</comment>
+  </data>
+  <data name="ConfirmLogout" xml:space="preserve">
+    <value>確認註銷登錄嗎?</value>
+  </data>
+  <data name="ConfirmQuit" xml:space="preserve">
+    <value>確認退出係統嗎?</value>
+  </data>
+  <data name="ContractExpiresEarlyWarningReport" xml:space="preserve">
+    <value>合同到期預警報表</value>
+    <comment>m.7.3报表管理</comment>
+  </data>
+  <data name="ContractImport" xml:space="preserve">
+    <value>合同導入</value>
+    <comment>m.2.一2基本信息</comment>
+  </data>
+  <data name="ContractList" xml:space="preserve">
+    <value>合同列表</value>
+    <comment>m.2.一1基本信息</comment>
+  </data>
+  <data name="DeptInfo" xml:space="preserve">
+    <value>部門信息</value>
+    <comment>m.2.3基本信息</comment>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>English</value>
+    <comment>m.9.2语言</comment>
+  </data>
+  <data name="EntityTypeInfo" xml:space="preserve">
+    <value>實體類型</value>
+    <comment>m.8.1系统设置</comment>
+  </data>
+  <data name="FinishedTaskInfo" xml:space="preserve">
+    <value>已處理任務</value>
+    <comment>m.1.2任务管理</comment>
+  </data>
+  <data name="ForcastSalesMenu" xml:space="preserve">
+    <value>預測銷售數據(&amp;F)</value>
+    <comment>m.3.0预测销售数据</comment>
+  </data>
+  <data name="FrmMain" xml:space="preserve">
+    <value>租金預測係統</value>
+  </data>
+  <data name="GroupList" xml:space="preserve">
+    <value>用戶組設置</value>
+    <comment>m.8.4系统设置</comment>
+  </data>
+  <data name="GroupPermission" xml:space="preserve">
+    <value>用戶組權限設置</value>
+    <comment>m.8.5系统设置</comment>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>幫助</value>
+    <comment>m.一0.2帮助</comment>
+  </data>
+  <data name="HelpInfo" xml:space="preserve">
+    <value>幫助(&amp;H)</value>
+    <comment>m.一0.0帮助</comment>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>預測銷售數據導入</value>
+    <comment>m.3.1预测销售数据</comment>
+  </data>
+  <data name="KeyIn" xml:space="preserve">
+    <value>預測銷售數據錄入</value>
+    <comment>m.3.2预测销售数据</comment>
+  </data>
+  <data name="KioskInfo" xml:space="preserve">
+    <value>甜品店信息</value>
+    <comment>m.2.8基本信息</comment>
+  </data>
+  <data name="KioskStoreRelationChangReport" xml:space="preserve">
+    <value>甜品店掛靠關係變更報表</value>
+    <comment>m.7.4报表管理</comment>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>語言(&amp;L)</value>
+    <comment>m.9.0语言</comment>
+  </data>
+  <data name="lblSystemInfo" xml:space="preserve">
+    <value>當前登錄用戶:</value>
+  </data>
+  <data name="MasterMenu" xml:space="preserve">
+    <value>基本信息(&amp;M)</value>
+    <comment>m.2.0基本信息</comment>
+  </data>
+  <data name="ModifyRecordReport" xml:space="preserve">
+    <value>合同修改記錄報表</value>
+    <comment>m.7.7报表管理</comment>
+  </data>
+  <data name="ModuleList" xml:space="preserve">
+    <value>模塊設置</value>
+    <comment>m.8.3系统设置</comment>
+  </data>
+  <data name="PendingTaskInfo" xml:space="preserve">
+    <value>待處理任務</value>
+    <comment>m.1.1任务管理</comment>
+  </data>
+  <data name="PlanningColseManagementMenu" xml:space="preserve">
+    <value>關帳(&amp;C)</value>
+    <comment>m.5.0.关帐</comment>
+  </data>
+  <data name="RentCalculateReport" xml:space="preserve">
+    <value>租金計算報表</value>
+    <comment>m.7.6报表管理</comment>
+  </data>
+  <data name="ReportMenu" xml:space="preserve">
+    <value>報表管理(&amp;B)</value>
+    <comment>m.7.0报表管理</comment>
+  </data>
+  <data name="SalesCalculateMenu" xml:space="preserve">
+    <value>預測租金計算(&amp;R)</value>
+    <comment>m.4.0预测租金计算</comment>
+  </data>
+  <data name="SalesDataReport" xml:space="preserve">
+    <value>銷售數據報表</value>
+    <comment>m.7.5报表管理</comment>
+  </data>
+  <data name="ScheduleList" xml:space="preserve">
+    <value>同步計划設置</value>
+    <comment>m.6.1同步计划设置</comment>
+  </data>
+  <data name="SimpleChinese" xml:space="preserve">
+    <value>簡體中文</value>
+    <comment>m.9.1语言</comment>
+  </data>
+  <data name="StoreInfo" xml:space="preserve">
+    <value>餐廳信息</value>
+    <comment>m.2.7基本信息</comment>
+  </data>
+  <data name="SynchronizationMenu" xml:space="preserve">
+    <value>數據同步(&amp;S)</value>
+    <comment>m.6.0数据同步</comment>
+  </data>
+  <data name="SystemMenu" xml:space="preserve">
+    <value>係統設置(&amp;X)</value>
+    <comment>m.8.0系统设置</comment>
+  </data>
+  <data name="SystemParameterInfo" xml:space="preserve">
+    <value>係統參數</value>
+    <comment>m.8.2系统设置</comment>
+  </data>
+  <data name="TaskMenu" xml:space="preserve">
+    <value>任務管理(&amp;T)</value>
+    <comment>m.1.0任务管理</comment>
+  </data>
+  <data name="TraditionalChinese" xml:space="preserve">
+    <value>繁體中文</value>
+    <comment>m.9.3语言</comment>
+  </data>
+  <data name="TypeCodeInfo" xml:space="preserve">
+    <value>TypeCode信息</value>
+    <comment>m.2.一0基本信息</comment>
+  </data>
+  <data name="UserDeleteReport" xml:space="preserve">
+    <value>已刪除用戶報表</value>
+    <comment>m.7.1报表管理</comment>
+  </data>
+  <data name="UserInfo" xml:space="preserve">
+    <value>用戶信息</value>
+    <comment>m.2.4基本信息</comment>
+  </data>
+  <data name="UserOperationReport" xml:space="preserve">
+    <value>用戶信息操作日誌報表</value>
+    <comment>m.7.2报表管理</comment>
+  </data>
+  <data name="VendorInfo" xml:space="preserve">
+    <value>供應商西信息</value>
+    <comment>m.2.6基本信息</comment>
+  </data>
+  <data name="YearlyCompareReport" xml:space="preserve">
+    <value>年度對比報表</value>
+    <comment>m.7.8报表管理</comment>
+  </data>
+</root>

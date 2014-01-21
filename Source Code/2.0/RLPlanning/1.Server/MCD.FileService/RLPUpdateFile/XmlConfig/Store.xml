@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SqlMapConfig >
+  <!-- 数据库链接字符串名 -->
+  <Provider name="DBConnection"></Provider>
+  <Statements>
+    <Procedure id="SelectSingle" value="SRLS_USP_Master_SelectSingleStore">
+      <Parameters>
+        <Parameter name="@StoreNo" type="nvarchar(50)" direction="in"/>
+      </Parameters>
+    </Procedure>
+    <Procedure id="SelectTable"  value="SRLS_USP_Master_SelectStore">
+      <Parameters>
+        <Parameter name="@AreaID" type="uniqueidentifier" description="区域"/>
+        <Parameter name="@CompanyCode" type="nvarchar(32)" description="公司编号"/>
+        <Parameter name="@StoreNo" type="nvarchar(32)" description="餐厅编号"/>
+        <Parameter name="@Status" type="nvarchar(8)" description="状态"/>
+      </Parameters>
+    </Procedure>
+  </Statements>
+</SqlMapConfig>

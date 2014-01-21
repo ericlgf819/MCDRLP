@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SqlMapConfig >
+  <!-- 数据库链接字符串名 -->
+  <Provider name="DBConnection"></Provider>
+  <Statements>
+    <Procedure id="SelectTable"  value="SRLS_USP_System_SelectLog">
+      <Parameters>
+        <Parameter name="@StartDate" type="datetime" direction="in"/>
+        <Parameter name="@EndDate" type="datetime" direction="in"/>
+        <Parameter name="@LogType" type="nvarchar(32)" direction="in"/>
+        <Parameter name="@LogTitle" type="nvarchar(32)" direction="in"/>
+      </Parameters>
+    </Procedure>
+    <Procedure id="InsertEntity" value="SRLS_USP_System_InsertLog">
+      <Parameters>
+        <Parameter name="@LogType" type="nvarchar(32)"/>
+        <Parameter name="@LogTitle" type="nvarchar(32)"/>
+        <Parameter name="@LogSource" type="nvarchar(32)"/>
+        <Parameter name="@LogMessage" type="nvarchar(2048)"/>
+        <Parameter name="@UserID" type="uniqueidentifier"/>
+        <Parameter name="@EnglishName" type="nvarchar(32)"/>
+      </Parameters>
+    </Procedure>
+    <!-- 查询用户名是否存在 -->
+    <Procedure id="ExistsUserName" value="TIS_USP_ExistsUserName">
+      <Parameters>
+        <Parameter name="@UserName" type="varchar(32)" direction="in"/>
+        <Parameter name="@Result" type="bit" direction="out" description="0表示不存在，1表示存在"/>
+      </Parameters>
+    </Procedure>
+  </Statements>
+</SqlMapConfig>

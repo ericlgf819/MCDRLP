@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="393ee240-1d4c-447d-abf0-ff79a42f5305" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://202.136.210.92:9001/UUPService/PopedomService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PopedomService.xsd" MetadataType="Schema" ID="d7408292-d5bf-42ed-b6e9-a96b52fb08eb" SourceId="1" SourceUrl="http://张帮顺-个人电脑/UUPService/PopedomService.svc?xsd=xsd2" />
+    <MetadataFile FileName="PopedomService.disco" MetadataType="Disco" ID="f6c0f397-3e8f-4eee-bb63-a8a7c345a1a2" SourceId="1" SourceUrl="http://张帮顺-个人电脑/UUPService/PopedomService.svc?disco" />
+    <MetadataFile FileName="PopedomService1.xsd" MetadataType="Schema" ID="869fe966-2f5c-4917-a074-b5cd156b2095" SourceId="1" SourceUrl="http://张帮顺-个人电脑/UUPService/PopedomService.svc?xsd=xsd1" />
+    <MetadataFile FileName="PopedomService2.xsd" MetadataType="Schema" ID="de5abd04-98d4-44a4-8359-bb57bbe634e9" SourceId="1" SourceUrl="http://张帮顺-个人电脑/UUPService/PopedomService.svc?xsd=xsd0" />
+    <MetadataFile FileName="PopedomService.wsdl" MetadataType="Wsdl" ID="f275fd72-a965-4136-aa68-ad9fe41711ce" SourceId="1" SourceUrl="http://张帮顺-个人电脑/UUPService/PopedomService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

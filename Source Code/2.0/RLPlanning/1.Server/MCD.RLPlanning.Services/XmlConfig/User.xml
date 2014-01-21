@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SqlMapConfig >
+	<!-- 数据库链接字符串名 -->
+	<Provider name="DBConnection"></Provider>
+	<Statements>
+		<Procedure id="SelectSingle" value="SRLS_USP_Master_SelectSingleUser">
+			<Parameters>
+				<!-- 参数名、参数类型、参数方式的 In 或者是 Out，默认值为 In  -->
+				<Parameter name="@ID" type="uniqueidentifier" direction="in" />
+			</Parameters>
+		</Procedure>
+		<Procedure id="SelectTable" value="SRLS_USP_Master_SelectUsers">
+			<Parameters>
+				<Parameter name="@UserName" type="nvarchar(32)" direction="in" />
+				<Parameter name="@EnglishName" type="nvarchar(32)" direction="in" />
+				<Parameter name="@DeptCode" type="nvarchar(32)" direction="in" />
+				<Parameter name="@Status" type="tinyint" direction="in" />
+				<Parameter name="@GroupID" type="uniqueidentifier" direction="in" />
+				<Parameter name="@FromSRLS" type="bit" direction="in" />
+			</Parameters>
+		</Procedure>
+
+		<Procedure id="InsertEntity" value="SRLS_USP_Master_InsertSingleUser">
+			<Parameters>
+				<Parameter name="@UserName" type="nvarchar(32)" direction="in" />
+				<Parameter name="@Password" type="nvarchar(32)" direction="in" />
+				<Parameter name="@EnglishName" type="nvarchar(32)" direction="in" />
+				<Parameter name="@DeptCode" type="nvarchar(32)" direction="in" />
+				<Parameter name="@DeptName" type="nvarchar(32)" direction="in" />
+				<Parameter name="@GroupID" type="uniqueidentifier" direction="in" />
+				<Parameter name="@ChineseName" type="nvarchar(32)" direction="in" />
+				<Parameter name="@Email" type="nvarchar(32)" direction="in" />
+				<Parameter name="@CompanyCodes" type="nvarchar" direction="in" />
+				<Parameter name="@Remark" type="nvarchar(512)" direction="in" />
+				
+				<Parameter name="@OperationID" type="uniqueidentifier" direction="in" />
+				<Parameter name="@Result" type="nvarchar(50)" direction="out" />
+			</Parameters>
+		</Procedure>
+		<Procedure id="UpdateEntity" value="SRLS_USP_Master_UpdateSingleUser">
+			<Parameters>
+				<Parameter name="@ID" type="uniqueidentifier" direction="in" />
+				<Parameter name="@Password" type="nvarchar(32)" direction="in" />
+				<Parameter name="@EnglishName" type="nvarchar(32)" direction="in" />
+				<Parameter name="@DeptCode" type="nvarchar(32)" direction="in" />
+				<Parameter name="@DeptName" type="nvarchar(32)" direction="in" />
+				<Parameter name="@GroupID" type="uniqueidentifier" direction="in" />
+				<Parameter name="@ChineseName" type="nvarchar(32)" direction="in" />
+				<Parameter name="@Email" type="nvarchar(32)" direction="in" />
+				<Parameter name="@Disabled" type="bit" />
+				<Parameter name="@Locked" type="bit" />
+				<Parameter name="@CompanyCodes" type="nvarchar" direction="in" />
+				<Parameter name="@Remark" type="nvarchar(512)" direction="in" />
+
+				<Parameter name="@UpdateTime" type="datetime" />
+				<Parameter name="@OperationID" type="uniqueidentifier" />
+				<Parameter name="@Result" type="int" direction="out" />
+			</Parameters>
+		</Procedure>
+	</Statements>
+</SqlMapConfig>

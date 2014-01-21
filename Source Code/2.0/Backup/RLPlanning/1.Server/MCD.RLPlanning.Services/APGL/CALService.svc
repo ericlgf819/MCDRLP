@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="MCD.RLPlanning.Services.APGL.CALService" CodeBehind="CALService.svc.cs" %>

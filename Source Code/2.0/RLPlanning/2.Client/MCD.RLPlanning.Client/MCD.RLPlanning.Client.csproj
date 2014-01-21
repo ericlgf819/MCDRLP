@@ -1,0 +1,2137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{38AF1277-DF08-4B26-AB5A-1A1DDB67EEA2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MCD.RLPlanning.Client</RootNamespace>
+    <AssemblyName>MCD.RLPlanning</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>%24/Mcdonalds/Source Code/2.0/RLPlanning/2.Client/MCD.RLPlanning.Client</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <SccAuxPath>http://202.136.210.92:8080/tfs/defaultcollection</SccAuxPath>
+    <SccProvider>{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}</SccProvider>
+    <SignManifests>false</SignManifests>
+    <SignAssembly>false</SignAssembly>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <ApplicationIcon>LOGO2.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>http://localhost/MCD.SRLS.Client/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.Microsoft.Office.Core, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\0.Library\Interop.Microsoft.Office.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\SystemSettings.cs" />
+    <Compile Include="ContractMg\ContractImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContractMg\ContractImport.Designer.cs">
+      <DependentUpon>ContractImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContractMg\GLAdjustment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContractMg\GLAdjustment.Designer.cs">
+      <DependentUpon>GLAdjustment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContractMg\PopupTextComponent.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ContractMg\PopupTextComponent.Designer.cs">
+      <DependentUpon>PopupTextComponent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContractMg\PopupTextForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContractMg\PopupTextForm.Designer.cs">
+      <DependentUpon>PopupTextForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForcastSales\ImportErrBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForcastSales\ImportErrBox.Designer.cs">
+      <DependentUpon>ImportErrBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForcastSales\Import.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForcastSales\Import.Designer.cs">
+      <DependentUpon>Import.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForcastSales\KeyIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForcastSales\KeyIn.Designer.cs">
+      <DependentUpon>KeyIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForcastSales\KeyInBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForcastSales\KeyInBox.Designer.cs">
+      <DependentUpon>KeyInBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\AreaInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\AreaInfo.Designer.cs">
+      <DependentUpon>AreaInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\CompanyAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\CompanyAdd.Designer.cs">
+      <DependentUpon>CompanyAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\StoreAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\StoreAdd.Designer.cs">
+      <DependentUpon>StoreAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\StoreMultiCopy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\StoreMultiCopy.Designer.cs">
+      <DependentUpon>StoreMultiCopy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\KioskMultiCopy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\KioskMultiCopy.Designer.cs">
+      <DependentUpon>KioskMultiCopy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\TypeCodeEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\TypeCodeEdit.Designer.cs">
+      <DependentUpon>TypeCodeEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlanningSnapshot\CloseAccountErrors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlanningSnapshot\CloseAccountErrors.Designer.cs">
+      <DependentUpon>CloseAccountErrors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\AverageCompareReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\AverageCompareReport.Designer.cs">
+      <DependentUpon>AverageCompareReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\KioskStoreRelationChangReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\KioskStoreRelationChangReport.Designer.cs">
+      <DependentUpon>KioskStoreRelationChangReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ModifyRecordReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\ModifyRecordReport.Designer.cs">
+      <DependentUpon>ModifyRecordReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\SalesDataReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\SalesDataReport.Designer.cs">
+      <DependentUpon>SalesDataReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\YearlyCompareReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\YearlyCompareReport.Designer.cs">
+      <DependentUpon>YearlyCompareReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\RentCalculateReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\RentCalculateReport.Designer.cs">
+      <DependentUpon>RentCalculateReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesCalculate\CalculateDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesCalculate\CalculateDate.Designer.cs">
+      <DependentUpon>CalculateDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesCalculate\Calculate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesCalculate\Calculate.Designer.cs">
+      <DependentUpon>Calculate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesCalculate\CalculateResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesCalculate\CalculateResult.Designer.cs">
+      <DependentUpon>CalculateResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesCalculate\CalErrBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesCalculate\CalErrBox.Designer.cs">
+      <DependentUpon>CalErrBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\UUPGroupService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\UUPModuleService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\UUPPopedomService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="PlanningSnapshot\CloseAccountManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlanningSnapshot\CloseAccountManagement.Designer.cs">
+      <DependentUpon>CloseAccountManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setting\GroupPermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setting\GroupPermission.Designer.cs">
+      <DependentUpon>GroupPermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Synchronization\ScheduleAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Synchronization\ScheduleAdd.Designer.cs">
+      <DependentUpon>ScheduleAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Synchronization\ScheduleList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Synchronization\ScheduleList.Designer.cs">
+      <DependentUpon>ScheduleList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Workflow\BaseWorkflow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Workflow\BaseWorkflow.Designer.cs">
+      <DependentUpon>BaseWorkflow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\UpDownloadFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\UpDownloadFrm.Designer.cs">
+      <DependentUpon>UpDownloadFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\SysEnvironment.cs" />
+    <Compile Include="Common\WinAPI.cs" />
+    <Compile Include="Common\WinFormLanguage.cs" />
+    <Compile Include="BaseFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseFrm.Designer.cs">
+      <DependentUpon>BaseFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseEdit.Designer.cs">
+      <DependentUpon>BaseEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseList.Designer.cs">
+      <DependentUpon>BaseList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\FormHandler.cs" />
+    <Compile Include="BasePhase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasePhase.Designer.cs">
+      <DependentUpon>BasePhase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseUserControl.Designer.cs">
+      <DependentUpon>BaseUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContractMg\IEntityEnabled.cs" />
+    <Compile Include="ContractMg\IRentRule.cs" />
+    <Compile Include="ContractMg\ToolPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ContractMg\ToolPanel.Designer.cs">
+      <DependentUpon>ToolPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ContractExpiresEarlyWarningReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\ContractExpiresEarlyWarningReport.Designer.cs">
+      <DependentUpon>ContractExpiresEarlyWarningReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\EnumType.cs" />
+    <Compile Include="Common\SysAttach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\SysAttach.Designer.cs">
+      <DependentUpon>SysAttach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContractMg\ContractEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContractMg\ContractEdit.Designer.cs">
+      <DependentUpon>ContractEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContractMg\EntityEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContractMg\EntityEdit.Designer.cs">
+      <DependentUpon>EntityEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContractMg\FixedRulePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ContractMg\FixedRulePanel.Designer.cs">
+      <DependentUpon>FixedRulePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContractMg\FixedTimeIntervalPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ContractMg\FixedTimeIntervalPanel.Designer.cs">
+      <DependentUpon>FixedTimeIntervalPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContractMg\ConditionAmountPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ContractMg\ConditionAmountPanel.designer.cs">
+      <DependentUpon>ConditionAmountPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContractMg\RatioCyclePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ContractMg\RatioCyclePanel.designer.cs">
+      <DependentUpon>RatioCyclePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContractMg\RatioTimeIntervalPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ContractMg\RatioTimeIntervalPanel.designer.cs">
+      <DependentUpon>RatioTimeIntervalPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContractMg\RatioRulePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ContractMg\RatioRulePanel.Designer.cs">
+      <DependentUpon>RatioRulePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContractMg\RentRulePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ContractMg\RentRulePanel.designer.cs">
+      <DependentUpon>RentRulePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContractMg\VendorEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContractMg\VendorEdit.Designer.cs">
+      <DependentUpon>VendorEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAbout.Designer.cs">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmError.Designer.cs">
+      <DependentUpon>FrmError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWait.Designer.cs">
+      <DependentUpon>FrmWait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\AccountInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\AccountInfo.Designer.cs">
+      <DependentUpon>AccountInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\ChangePWD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\ChangePWD.Designer.cs">
+      <DependentUpon>ChangePWD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContractMg\ContractList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContractMg\ContractList.Designer.cs">
+      <DependentUpon>ContractList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\KioskInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\KioskInfo.Designer.cs">
+      <DependentUpon>KioskInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setting\EntityTypeInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setting\EntityTypeInfo.Designer.cs">
+      <DependentUpon>EntityTypeInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\StoreEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\StoreEdit.Designer.cs">
+      <DependentUpon>StoreEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\TypeCodeInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\TypeCodeInfo.Designer.cs">
+      <DependentUpon>TypeCodeInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\UserAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\UserAdd.Designer.cs">
+      <DependentUpon>UserAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\CompanyEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\CompanyEdit.Designer.cs">
+      <DependentUpon>CompanyEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\UserDeleteReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\UserDeleteReport.Designer.cs">
+      <DependentUpon>UserDeleteReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\DeptInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\DeptInfo.Designer.cs">
+      <DependentUpon>DeptInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\KioskAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\KioskAdd.Designer.cs">
+      <DependentUpon>KioskAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\UserEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\UserEdit.Designer.cs">
+      <DependentUpon>UserEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\UserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\UserInfo.Designer.cs">
+      <DependentUpon>UserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\CompanyInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\CompanyInfo.Designer.cs">
+      <DependentUpon>CompanyInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\VendorInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\VendorInfo.Designer.cs">
+      <DependentUpon>VendorInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\StoreInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\StoreInfo.Designer.cs">
+      <DependentUpon>StoreInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ContractMg\ContractImport.en.resx">
+      <DependentUpon>ContractImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\ContractImport.resx">
+      <DependentUpon>ContractImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\ContractImport.zh-CN.resx">
+      <DependentUpon>ContractImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\ContractImport.zh-TW.resx">
+      <DependentUpon>ContractImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\GLAdjustment.en.resx">
+      <DependentUpon>GLAdjustment.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\GLAdjustment.resx">
+      <DependentUpon>GLAdjustment.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\GLAdjustment.zh-CN.resx">
+      <DependentUpon>GLAdjustment.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\GLAdjustment.zh-TW.resx">
+      <DependentUpon>GLAdjustment.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\PopupTextForm.en.resx">
+      <DependentUpon>PopupTextForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\PopupTextForm.resx">
+      <DependentUpon>PopupTextForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\PopupTextForm.zh-CN.resx">
+      <DependentUpon>PopupTextForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\PopupTextForm.zh-TW.resx">
+      <DependentUpon>PopupTextForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForcastSales\Import.en.resx">
+      <DependentUpon>Import.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForcastSales\Import.resx">
+      <DependentUpon>Import.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForcastSales\Import.zh-CN.resx">
+      <DependentUpon>Import.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForcastSales\Import.zh-TW.resx">
+      <DependentUpon>Import.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForcastSales\ImportErrBox.en.resx">
+      <DependentUpon>ImportErrBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForcastSales\ImportErrBox.resx">
+      <DependentUpon>ImportErrBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForcastSales\ImportErrBox.zh-CN.resx">
+      <DependentUpon>ImportErrBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForcastSales\ImportErrBox.zh-TW.resx">
+      <DependentUpon>ImportErrBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForcastSales\KeyIn.en.resx">
+      <DependentUpon>KeyIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForcastSales\KeyIn.resx">
+      <DependentUpon>KeyIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForcastSales\KeyIn.zh-CN.resx">
+      <DependentUpon>KeyIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForcastSales\KeyIn.zh-TW.resx">
+      <DependentUpon>KeyIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForcastSales\KeyInBox.en.resx">
+      <DependentUpon>KeyInBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForcastSales\KeyInBox.resx">
+      <DependentUpon>KeyInBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForcastSales\KeyInBox.zh-CN.resx">
+      <DependentUpon>KeyInBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForcastSales\KeyInBox.zh-TW.resx">
+      <DependentUpon>KeyInBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.en.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.zh-TW.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\AreaInfo.en.resx">
+      <DependentUpon>AreaInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\AreaInfo.resx">
+      <DependentUpon>AreaInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\AreaInfo.zh-CN.resx">
+      <DependentUpon>AreaInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\AreaInfo.zh-TW.resx">
+      <DependentUpon>AreaInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\CompanyAdd.en.resx">
+      <DependentUpon>CompanyAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\CompanyAdd.resx">
+      <DependentUpon>CompanyAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\CompanyAdd.zh-CN.resx">
+      <DependentUpon>CompanyAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\CompanyAdd.zh-TW.resx">
+      <DependentUpon>CompanyAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\StoreAdd.en.resx">
+      <DependentUpon>StoreAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\StoreAdd.resx">
+      <DependentUpon>StoreAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\StoreAdd.zh-CN.resx">
+      <DependentUpon>StoreAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\StoreAdd.zh-TW.resx">
+      <DependentUpon>StoreAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\StoreMultiCopy.en.resx">
+      <DependentUpon>StoreMultiCopy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\StoreMultiCopy.resx">
+      <DependentUpon>StoreMultiCopy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\StoreMultiCopy.zh-CN.resx">
+      <DependentUpon>StoreMultiCopy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\StoreMultiCopy.zh-TW.resx">
+      <DependentUpon>StoreMultiCopy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\KioskMultiCopy.en.resx">
+      <DependentUpon>KioskMultiCopy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\KioskMultiCopy.resx">
+      <DependentUpon>KioskMultiCopy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\KioskMultiCopy.zh-CN.resx">
+      <DependentUpon>KioskMultiCopy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\KioskMultiCopy.zh-TW.resx">
+      <DependentUpon>KioskMultiCopy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\TypeCodeEdit.en.resx">
+      <DependentUpon>TypeCodeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\TypeCodeEdit.resx">
+      <DependentUpon>TypeCodeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\TypeCodeEdit.zh-CN.resx">
+      <DependentUpon>TypeCodeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\TypeCodeEdit.zh-TW.resx">
+      <DependentUpon>TypeCodeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlanningSnapshot\CloseAccountErrors.en.resx">
+      <DependentUpon>CloseAccountErrors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlanningSnapshot\CloseAccountErrors.resx">
+      <DependentUpon>CloseAccountErrors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlanningSnapshot\CloseAccountErrors.zh-CN.resx">
+      <DependentUpon>CloseAccountErrors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlanningSnapshot\CloseAccountErrors.zh-TW.resx">
+      <DependentUpon>CloseAccountErrors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\AverageCompareReport.en.resx">
+      <DependentUpon>AverageCompareReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\AverageCompareReport.resx">
+      <DependentUpon>AverageCompareReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\AverageCompareReport.zh-CN.resx">
+      <DependentUpon>AverageCompareReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\AverageCompareReport.zh-TW.resx">
+      <DependentUpon>AverageCompareReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\KioskStoreRelationChangReport.en.resx">
+      <DependentUpon>KioskStoreRelationChangReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\KioskStoreRelationChangReport.resx">
+      <DependentUpon>KioskStoreRelationChangReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\KioskStoreRelationChangReport.zh-CN.resx">
+      <DependentUpon>KioskStoreRelationChangReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\KioskStoreRelationChangReport.zh-TW.resx">
+      <DependentUpon>KioskStoreRelationChangReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ModifyRecordReport.en.resx">
+      <DependentUpon>ModifyRecordReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ModifyRecordReport.resx">
+      <DependentUpon>ModifyRecordReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ModifyRecordReport.zh-CN.resx">
+      <DependentUpon>ModifyRecordReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ModifyRecordReport.zh-TW.resx">
+      <DependentUpon>ModifyRecordReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\SalesDataReport.en.resx">
+      <DependentUpon>SalesDataReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\SalesDataReport.resx">
+      <DependentUpon>SalesDataReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\SalesDataReport.zh-CN.resx">
+      <DependentUpon>SalesDataReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\SalesDataReport.zh-TW.resx">
+      <DependentUpon>SalesDataReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\YearlyCompareReport.en.resx">
+      <DependentUpon>YearlyCompareReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\YearlyCompareReport.resx">
+      <DependentUpon>YearlyCompareReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\YearlyCompareReport.zh-CN.resx">
+      <DependentUpon>YearlyCompareReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\YearlyCompareReport.zh-TW.resx">
+      <DependentUpon>YearlyCompareReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlanningSnapshot\CloseAccountManagement.en.resx">
+      <DependentUpon>CloseAccountManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlanningSnapshot\CloseAccountManagement.resx">
+      <DependentUpon>CloseAccountManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlanningSnapshot\CloseAccountManagement.zh-CN.resx">
+      <DependentUpon>CloseAccountManagement.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlanningSnapshot\CloseAccountManagement.zh-TW.resx">
+      <DependentUpon>CloseAccountManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RentCalculateReport.en.resx">
+      <DependentUpon>RentCalculateReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RentCalculateReport.resx">
+      <DependentUpon>RentCalculateReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RentCalculateReport.zh-CN.resx">
+      <DependentUpon>RentCalculateReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RentCalculateReport.zh-TW.resx">
+      <DependentUpon>RentCalculateReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesCalculate\CalculateDate.en.resx">
+      <DependentUpon>CalculateDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesCalculate\CalculateDate.resx">
+      <DependentUpon>CalculateDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesCalculate\Calculate.en.resx">
+      <DependentUpon>Calculate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesCalculate\Calculate.resx">
+      <DependentUpon>Calculate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesCalculate\Calculate.zh-CN.resx">
+      <DependentUpon>Calculate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesCalculate\Calculate.zh-TW.resx">
+      <DependentUpon>Calculate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesCalculate\CalculateDate.zh-CN.resx">
+      <DependentUpon>CalculateDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesCalculate\CalculateDate.zh-TW.resx">
+      <DependentUpon>CalculateDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesCalculate\CalculateResult.en.resx">
+      <DependentUpon>CalculateResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesCalculate\CalculateResult.resx">
+      <DependentUpon>CalculateResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesCalculate\CalculateResult.zh-CN.resx">
+      <DependentUpon>CalculateResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesCalculate\CalculateResult.zh-TW.resx">
+      <DependentUpon>CalculateResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesCalculate\CalErrBox.en.resx">
+      <DependentUpon>CalErrBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesCalculate\CalErrBox.resx">
+      <DependentUpon>CalErrBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesCalculate\CalErrBox.zh-CN.resx">
+      <DependentUpon>CalErrBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesCalculate\CalErrBox.zh-TW.resx">
+      <DependentUpon>CalErrBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\GroupPermission.en.resx">
+      <DependentUpon>GroupPermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\GroupPermission.resx">
+      <DependentUpon>GroupPermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\GroupPermission.zh-CN.resx">
+      <DependentUpon>GroupPermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\GroupPermission.zh-TW.resx">
+      <DependentUpon>GroupPermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Synchronization\ScheduleAdd.en.resx">
+      <DependentUpon>ScheduleAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Synchronization\ScheduleAdd.resx">
+      <DependentUpon>ScheduleAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Synchronization\ScheduleAdd.zh-CN.resx">
+      <DependentUpon>ScheduleAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Synchronization\ScheduleAdd.zh-TW.resx">
+      <DependentUpon>ScheduleAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Synchronization\ScheduleList.en.resx">
+      <DependentUpon>ScheduleList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Synchronization\ScheduleList.resx">
+      <DependentUpon>ScheduleList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Synchronization\ScheduleList.zh-CN.resx">
+      <DependentUpon>ScheduleList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Synchronization\ScheduleList.zh-TW.resx">
+      <DependentUpon>ScheduleList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseEdit.en.resx">
+      <DependentUpon>BaseEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseEdit.zh-CN.resx">
+      <DependentUpon>BaseEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseEdit.zh-TW.resx">
+      <DependentUpon>BaseEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseFrm.en.resx">
+      <DependentUpon>BaseFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseFrm.resx">
+      <DependentUpon>BaseFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseEdit.resx">
+      <DependentUpon>BaseEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseFrm.zh-CN.resx">
+      <DependentUpon>BaseFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseFrm.zh-TW.resx">
+      <DependentUpon>BaseFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseList.en.resx">
+      <DependentUpon>BaseList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseList.resx">
+      <DependentUpon>BaseList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseList.zh-CN.resx">
+      <DependentUpon>BaseList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseList.zh-TW.resx">
+      <DependentUpon>BaseList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasePhase.en.resx">
+      <DependentUpon>BasePhase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasePhase.resx">
+      <DependentUpon>BasePhase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasePhase.zh-CN.resx">
+      <DependentUpon>BasePhase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasePhase.zh-TW.resx">
+      <DependentUpon>BasePhase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseUserControl.resx">
+      <DependentUpon>BaseUserControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\UpDownloadFrm.resx">
+      <DependentUpon>UpDownloadFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\ConditionAmountPanel.en.resx">
+      <DependentUpon>ConditionAmountPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\ConditionAmountPanel.zh-CN.resx">
+      <DependentUpon>ConditionAmountPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\ConditionAmountPanel.zh-TW.resx">
+      <DependentUpon>ConditionAmountPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\FixedRulePanel.en.resx">
+      <DependentUpon>FixedRulePanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\FixedRulePanel.zh-CN.resx">
+      <DependentUpon>FixedRulePanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\FixedRulePanel.zh-TW.resx">
+      <DependentUpon>FixedRulePanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\FixedTimeIntervalPanel.en.resx">
+      <DependentUpon>FixedTimeIntervalPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\FixedTimeIntervalPanel.zh-CN.resx">
+      <DependentUpon>FixedTimeIntervalPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\FixedTimeIntervalPanel.zh-TW.resx">
+      <DependentUpon>FixedTimeIntervalPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\RatioCyclePanel.en.resx">
+      <DependentUpon>RatioCyclePanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\RatioCyclePanel.zh-CN.resx">
+      <DependentUpon>RatioCyclePanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\RatioCyclePanel.zh-TW.resx">
+      <DependentUpon>RatioCyclePanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\RatioRulePanel.en.resx">
+      <DependentUpon>RatioRulePanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\RatioRulePanel.zh-CN.resx">
+      <DependentUpon>RatioRulePanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\RatioRulePanel.zh-TW.resx">
+      <DependentUpon>RatioRulePanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\RatioTimeIntervalPanel.en.resx">
+      <DependentUpon>RatioTimeIntervalPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\RatioTimeIntervalPanel.zh-CN.resx">
+      <DependentUpon>RatioTimeIntervalPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\RatioTimeIntervalPanel.zh-TW.resx">
+      <DependentUpon>RatioTimeIntervalPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\RentRulePanel.en.resx">
+      <DependentUpon>RentRulePanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\RentRulePanel.zh-CN.resx">
+      <DependentUpon>RentRulePanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\RentRulePanel.zh-TW.resx">
+      <DependentUpon>RentRulePanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\ToolPanel.resx">
+      <DependentUpon>ToolPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ContractExpiresEarlyWarningReport.en.resx">
+      <DependentUpon>ContractExpiresEarlyWarningReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ContractExpiresEarlyWarningReport.resx">
+      <DependentUpon>ContractExpiresEarlyWarningReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ContractExpiresEarlyWarningReport.zh-CN.resx">
+      <DependentUpon>ContractExpiresEarlyWarningReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ContractExpiresEarlyWarningReport.zh-TW.resx">
+      <DependentUpon>ContractExpiresEarlyWarningReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\SysAttach.en.resx">
+      <DependentUpon>SysAttach.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\SysAttach.resx">
+      <DependentUpon>SysAttach.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\SysAttach.zh-CN.resx">
+      <DependentUpon>SysAttach.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\SysAttach.zh-TW.resx">
+      <DependentUpon>SysAttach.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\ContractEdit.en.resx">
+      <DependentUpon>ContractEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\ContractEdit.resx">
+      <DependentUpon>ContractEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\ContractEdit.zh-CN.resx">
+      <DependentUpon>ContractEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\ContractEdit.zh-TW.resx">
+      <DependentUpon>ContractEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\EntityEdit.en.resx">
+      <DependentUpon>EntityEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\EntityEdit.resx">
+      <DependentUpon>EntityEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\EntityEdit.zh-CN.resx">
+      <DependentUpon>EntityEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\EntityEdit.zh-TW.resx">
+      <DependentUpon>EntityEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\FixedRulePanel.resx">
+      <DependentUpon>FixedRulePanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\FixedTimeIntervalPanel.resx">
+      <DependentUpon>FixedTimeIntervalPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\ConditionAmountPanel.resx">
+      <DependentUpon>ConditionAmountPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\RatioCyclePanel.resx">
+      <DependentUpon>RatioCyclePanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\RatioTimeIntervalPanel.resx">
+      <DependentUpon>RatioTimeIntervalPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\RatioRulePanel.resx">
+      <DependentUpon>RatioRulePanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\RentRulePanel.resx">
+      <DependentUpon>RentRulePanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\VendorEdit.en.resx">
+      <DependentUpon>VendorEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\VendorEdit.resx">
+      <DependentUpon>VendorEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\VendorEdit.zh-CN.resx">
+      <DependentUpon>VendorEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\VendorEdit.zh-TW.resx">
+      <DependentUpon>VendorEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAbout.en.resx">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAbout.resx">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAbout.zh-CN.resx">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAbout.zh-TW.resx">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmError.en.resx">
+      <DependentUpon>FrmError.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmError.resx">
+      <DependentUpon>FrmError.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmError.zh-CN.resx">
+      <DependentUpon>FrmError.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmError.zh-TW.resx">
+      <DependentUpon>FrmError.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.zh-CN.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWait.en.resx">
+      <DependentUpon>FrmWait.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWait.resx">
+      <DependentUpon>FrmWait.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWait.zh-CN.resx">
+      <DependentUpon>FrmWait.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWait.zh-TW.resx">
+      <DependentUpon>FrmWait.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.en.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.zh-CN.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.zh-TW.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\AccountInfo.en.resx">
+      <DependentUpon>AccountInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\AccountInfo.resx">
+      <DependentUpon>AccountInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\AccountInfo.zh-CN.resx">
+      <DependentUpon>AccountInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\AccountInfo.zh-TW.resx">
+      <DependentUpon>AccountInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\ChangePWD.en.resx">
+      <DependentUpon>ChangePWD.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\ChangePWD.resx">
+      <DependentUpon>ChangePWD.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\ChangePWD.zh-CN.resx">
+      <DependentUpon>ChangePWD.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\ChangePWD.zh-TW.resx">
+      <DependentUpon>ChangePWD.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\ContractList.en.resx">
+      <DependentUpon>ContractList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\ContractList.resx">
+      <DependentUpon>ContractList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\ContractList.zh-CN.resx">
+      <DependentUpon>ContractList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractMg\ContractList.zh-TW.resx">
+      <DependentUpon>ContractList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\KioskAdd.en.resx">
+      <DependentUpon>KioskAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\KioskAdd.resx">
+      <DependentUpon>KioskAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\KioskAdd.zh-CN.resx">
+      <DependentUpon>KioskAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\KioskAdd.zh-TW.resx">
+      <DependentUpon>KioskAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\KioskInfo.en.resx">
+      <DependentUpon>KioskInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\KioskInfo.resx">
+      <DependentUpon>KioskInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\KioskInfo.zh-CN.resx">
+      <DependentUpon>KioskInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\KioskInfo.zh-TW.resx">
+      <DependentUpon>KioskInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\EntityTypeInfo.en.resx">
+      <DependentUpon>EntityTypeInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\EntityTypeInfo.resx">
+      <DependentUpon>EntityTypeInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\EntityTypeInfo.zh-CN.resx">
+      <DependentUpon>EntityTypeInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\EntityTypeInfo.zh-TW.resx">
+      <DependentUpon>EntityTypeInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\StoreEdit.en.resx">
+      <DependentUpon>StoreEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\StoreEdit.resx">
+      <DependentUpon>StoreEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\StoreEdit.zh-CN.resx">
+      <DependentUpon>StoreEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\StoreEdit.zh-TW.resx">
+      <DependentUpon>StoreEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\StoreInfo.en.resx">
+      <DependentUpon>StoreInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\StoreInfo.resx">
+      <DependentUpon>StoreInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\StoreInfo.zh-TW.resx">
+      <DependentUpon>StoreInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\TypeCodeInfo.en.resx">
+      <DependentUpon>TypeCodeInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\TypeCodeInfo.resx">
+      <DependentUpon>TypeCodeInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\TypeCodeInfo.zh-CN.resx">
+      <DependentUpon>TypeCodeInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\TypeCodeInfo.zh-TW.resx">
+      <DependentUpon>TypeCodeInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\UserAdd.en.resx">
+      <DependentUpon>UserAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\UserAdd.resx">
+      <DependentUpon>UserAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\UserAdd.zh-CN.resx">
+      <DependentUpon>UserAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\CompanyEdit.en.resx">
+      <DependentUpon>CompanyEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\CompanyEdit.resx">
+      <DependentUpon>CompanyEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\CompanyEdit.zh-CN.resx">
+      <DependentUpon>CompanyEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\CompanyEdit.zh-TW.resx">
+      <DependentUpon>CompanyEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\CompanyInfo.en.resx">
+      <DependentUpon>CompanyInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\CompanyInfo.zh-CN.resx">
+      <DependentUpon>CompanyInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\CompanyInfo.zh-TW.resx">
+      <DependentUpon>CompanyInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\UserAdd.zh-TW.resx">
+      <DependentUpon>UserAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\UserDeleteReport.en.resx">
+      <DependentUpon>UserDeleteReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\UserDeleteReport.resx">
+      <DependentUpon>UserDeleteReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\UserDeleteReport.zh-CN.resx">
+      <DependentUpon>UserDeleteReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\DeptInfo.en.resx">
+      <DependentUpon>DeptInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\DeptInfo.resx">
+      <DependentUpon>DeptInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\DeptInfo.zh-CN.resx">
+      <DependentUpon>DeptInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\DeptInfo.zh-TW.resx">
+      <DependentUpon>DeptInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\UserDeleteReport.zh-TW.resx">
+      <DependentUpon>UserDeleteReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\UserEdit.en.resx">
+      <DependentUpon>UserEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\UserEdit.resx">
+      <DependentUpon>UserEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\UserEdit.zh-CN.resx">
+      <DependentUpon>UserEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\UserEdit.zh-TW.resx">
+      <DependentUpon>UserEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\UserInfo.en.resx">
+      <DependentUpon>UserInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\UserInfo.resx">
+      <DependentUpon>UserInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\CompanyInfo.resx">
+      <DependentUpon>CompanyInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\UserInfo.zh-CN.resx">
+      <DependentUpon>UserInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\UserInfo.zh-TW.resx">
+      <DependentUpon>UserInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\VendorInfo.en.resx">
+      <DependentUpon>VendorInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\VendorInfo.resx">
+      <DependentUpon>VendorInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\VendorInfo.zh-CN.resx">
+      <DependentUpon>VendorInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\StoreInfo.zh-CN.resx">
+      <DependentUpon>StoreInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\VendorInfo.zh-TW.resx">
+      <DependentUpon>VendorInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\GroupEdit.en.resx">
+      <DependentUpon>GroupEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\GroupEdit.resx">
+      <DependentUpon>GroupEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\GroupEdit.zh-CN.resx">
+      <DependentUpon>GroupEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\GroupEdit.zh-TW.resx">
+      <DependentUpon>GroupEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\ModuleEdit.en.resx">
+      <DependentUpon>ModuleEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\ModuleEdit.resx">
+      <DependentUpon>ModuleEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\ModuleEdit.zh-CN.resx">
+      <DependentUpon>ModuleEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\ModuleEdit.zh-TW.resx">
+      <DependentUpon>ModuleEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\ModuleList.en.resx">
+      <DependentUpon>ModuleList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\ModuleList.resx">
+      <DependentUpon>ModuleList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\ModuleList.zh-CN.resx">
+      <DependentUpon>ModuleList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\ModuleList.zh-TW.resx">
+      <DependentUpon>ModuleList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\SystemParameterInfo.en.resx">
+      <DependentUpon>SystemParameterInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\SystemParameterInfo.resx">
+      <DependentUpon>SystemParameterInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\SystemParameterInfo.zh-CN.resx">
+      <DependentUpon>SystemParameterInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\SystemParameterInfo.zh-TW.resx">
+      <DependentUpon>SystemParameterInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\GroupList.en.resx">
+      <DependentUpon>GroupList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\GroupList.resx">
+      <DependentUpon>GroupList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\GroupList.zh-CN.resx">
+      <DependentUpon>GroupList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\GroupList.zh-TW.resx">
+      <DependentUpon>GroupList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\UserOperationReport.en.resx">
+      <DependentUpon>UserOperationReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\UserOperationReport.resx">
+      <DependentUpon>UserOperationReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\UserOperationReport.zh-CN.resx">
+      <DependentUpon>UserOperationReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\UserOperationReport.zh-TW.resx">
+      <DependentUpon>UserOperationReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\BaseWorkflow.en.resx">
+      <DependentUpon>BaseWorkflow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\BaseWorkflow.resx">
+      <DependentUpon>BaseWorkflow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\BaseWorkflow.zh-CN.resx">
+      <DependentUpon>BaseWorkflow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\BaseWorkflow.zh-TW.resx">
+      <DependentUpon>BaseWorkflow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\Controls\TaskListBase.en.resx">
+      <DependentUpon>TaskListBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\Controls\TaskListBase.resx">
+      <DependentUpon>TaskListBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\Controls\TaskListBase.zh-CN.resx">
+      <DependentUpon>TaskListBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\Controls\TaskListBase.zh-TW.resx">
+      <DependentUpon>TaskListBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\Controls\TCalculate.en.resx">
+      <DependentUpon>TCalculate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\Controls\TCalculate.resx">
+      <DependentUpon>TCalculate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\Controls\TCalculate.zh-CN.resx">
+      <DependentUpon>TCalculate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\Controls\TCalculate.zh-TW.resx">
+      <DependentUpon>TCalculate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\Controls\TFinishedTask.en.resx">
+      <DependentUpon>TFinishedTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\Controls\TFinishedTask.zh-CN.resx">
+      <DependentUpon>TFinishedTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\Controls\TFinishedTask.zh-TW.resx">
+      <DependentUpon>TFinishedTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\Controls\TSimpleCheck.en.resx">
+      <DependentUpon>TSimpleCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\Controls\TSimpleCheck.resx">
+      <DependentUpon>TSimpleCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\Controls\TSimpleCheck.zh-CN.resx">
+      <DependentUpon>TSimpleCheck.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\Controls\TSimpleCheck.zh-TW.resx">
+      <DependentUpon>TSimpleCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\Controls\TUnFinishedTask.en.resx">
+      <DependentUpon>TUnFinishedTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\Controls\TUnFinishedTask.zh-CN.resx">
+      <DependentUpon>TUnFinishedTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\Controls\TUnFinishedTask.zh-TW.resx">
+      <DependentUpon>TUnFinishedTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\FinishedTaskDetail.en.resx">
+      <DependentUpon>FinishedTaskDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\FinishedTaskDetail.resx">
+      <DependentUpon>FinishedTaskDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\FinishedTaskDetail.zh-CN.resx">
+      <DependentUpon>FinishedTaskDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\FinishedTaskDetail.zh-TW.resx">
+      <DependentUpon>FinishedTaskDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\FinishedTaskInfo.en.resx">
+      <DependentUpon>FinishedTaskInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\FinishedTaskInfo.resx">
+      <DependentUpon>FinishedTaskInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\FinishedTaskInfo.zh-CN.resx">
+      <DependentUpon>FinishedTaskInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\FinishedTaskInfo.zh-TW.resx">
+      <DependentUpon>FinishedTaskInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\PendingTaskInfo.en.resx">
+      <DependentUpon>PendingTaskInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\PendingTaskInfo.resx">
+      <DependentUpon>PendingTaskInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\PendingTaskInfo.zh-CN.resx">
+      <DependentUpon>PendingTaskInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\PendingTaskInfo.zh-TW.resx">
+      <DependentUpon>PendingTaskInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\TaskDetail.en.resx">
+      <DependentUpon>TaskDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\TaskDetail.resx">
+      <DependentUpon>TaskDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\TaskDetail.zh-CN.resx">
+      <DependentUpon>TaskDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\TaskDetail.zh-TW.resx">
+      <DependentUpon>TaskDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\TaskInfo.en.resx">
+      <DependentUpon>TaskInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\TaskInfo.resx">
+      <DependentUpon>TaskInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\TaskInfo.zh-CN.resx">
+      <DependentUpon>TaskInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\TaskInfo.zh-TW.resx">
+      <DependentUpon>TaskInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Setting\GroupEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setting\GroupEdit.Designer.cs">
+      <DependentUpon>GroupEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setting\ModuleEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setting\ModuleEdit.Designer.cs">
+      <DependentUpon>ModuleEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setting\ModuleList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setting\ModuleList.Designer.cs">
+      <DependentUpon>ModuleList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setting\SystemParameterInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setting\SystemParameterInfo.Designer.cs">
+      <DependentUpon>SystemParameterInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setting\GroupList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setting\GroupList.Designer.cs">
+      <DependentUpon>GroupList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\UserOperationReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\UserOperationReport.Designer.cs">
+      <DependentUpon>UserOperationReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Workflow\Controls\TaskListBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Workflow\Controls\TaskListBase.Designer.cs">
+      <DependentUpon>TaskListBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Workflow\Controls\TCalculate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Workflow\Controls\TCalculate.Designer.cs">
+      <DependentUpon>TCalculate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Workflow\Controls\TFinishedTask.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Workflow\Controls\TFinishedTask.Designer.cs">
+      <DependentUpon>TFinishedTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Workflow\Controls\TSimpleCheck.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Workflow\Controls\TSimpleCheck.Designer.cs">
+      <DependentUpon>TSimpleCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Workflow\Controls\TUnFinishedTask.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Workflow\Controls\TUnFinishedTask.Designer.cs">
+      <DependentUpon>TUnFinishedTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Workflow\FinishedTaskDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Workflow\FinishedTaskDetail.Designer.cs">
+      <DependentUpon>FinishedTaskDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Workflow\FinishedTaskInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Workflow\FinishedTaskInfo.Designer.cs">
+      <DependentUpon>FinishedTaskInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Workflow\PendingTaskInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Workflow\PendingTaskInfo.Designer.cs">
+      <DependentUpon>PendingTaskInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Workflow\TaskDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Workflow\TaskDetail.Designer.cs">
+      <DependentUpon>TaskDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Workflow\TaskInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Workflow\TaskInfo.Designer.cs">
+      <DependentUpon>TaskInfo.cs</DependentUpon>
+    </Compile>
+    <None Include="Template\Contract Template.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Template\Report Template.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Template\Empty Template.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Template\User Manual en.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Template\User Manual.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UUPGroupService\GroupService.wsdl" />
+    <None Include="Service References\UUPGroupService\GroupService.xsd" />
+    <None Include="Service References\UUPGroupService\GroupService1.xsd" />
+    <None Include="Service References\UUPGroupService\GroupService2.xsd" />
+    <None Include="Service References\UUPGroupService\GroupService3.xsd" />
+    <None Include="Service References\UUPGroupService\GroupService4.xsd" />
+    <None Include="Service References\UUPModuleService\MCD.RLPlanning.Client.UUPModuleService.ModuleEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UUPModuleService\ModuleService.wsdl" />
+    <None Include="Service References\UUPModuleService\ModuleService.xsd" />
+    <None Include="Service References\UUPModuleService\ModuleService1.xsd" />
+    <None Include="Service References\UUPModuleService\ModuleService2.xsd" />
+    <None Include="Service References\UUPModuleService\ModuleService3.xsd" />
+    <None Include="Service References\UUPPopedomService\PopedomService.wsdl" />
+    <None Include="Service References\UUPPopedomService\PopedomService.xsd" />
+    <None Include="Service References\UUPPopedomService\PopedomService1.xsd" />
+    <None Include="Service References\UUPPopedomService\PopedomService2.xsd" />
+    <None Include="Resources\新建.ico" />
+    <None Include="Resources\保存.ico" />
+    <None Include="Resources\编辑.ico" />
+    <None Include="Resources\查询.BMP" />
+    <None Include="Resources\撤消.ico" />
+    <None Include="Resources\打印.ico" />
+    <None Include="Resources\打印预览.ico" />
+    <None Include="Resources\读取.ico" />
+    <None Include="Resources\关闭.ico" />
+    <None Include="Resources\删除.ico" />
+    <None Include="Resources\设置代理.BMP" />
+    <None Include="Resources\查看已删除.bmp" />
+    <None Include="Resources\导出数据.ico" />
+    <None Include="Resources\UploadTo.png" />
+    <None Include="Resources\UploadSource.png" />
+    <None Include="Resources\Move.png" />
+    <None Include="Resources\UploadTransfer.png" />
+    <None Include="Resources\menu_简体中文.png" />
+    <None Include="Resources\menu_繁体中文.png" />
+    <None Include="Resources\menu_英语.png" />
+    <None Include="Resources\menu_关于.png" />
+    <None Include="Resources\menu_帮助.png" />
+    <None Include="Resources\menu_系统管理.png" />
+    <None Include="Resources\menu_工作日设置.png" />
+    <None Include="Resources\menu_REJECT类型.png" />
+    <None Include="Resources\menu_实体类型.png" />
+    <None Include="Resources\menu_计算日期设置.png" />
+    <None Include="Resources\menu_系统参数设置.png" />
+    <None Include="Resources\menu_模块设置.png" />
+    <None Include="Resources\menu_用户组设置.png" />
+    <None Include="Resources\menu_权限设置.png" />
+    <None Include="Resources\menu_用户操作日志报表.png" />
+    <None Include="Resources\menu_已删除用户报表.png" />
+    <None Include="Resources\menu_用户Reject报表.png" />
+    <None Include="Resources\menu_事项Reject报表.png" />
+    <None Include="Resources\menu_未设置CheckList餐厅报表.png" />
+    <None Include="Resources\menu_跟进事项报表.png" />
+    <None Include="Resources\menu_报表管理.png" />
+    <None Include="Resources\menu_区域信息.png" />
+    <None Include="Resources\menu_事项类型.png" />
+    <None Include="Resources\menu_事项导入.png" />
+    <None Include="Resources\menu_事项列表.png" />
+    <None Include="Resources\menu_新增事项.png" />
+    <None Include="Resources\menu_租赁事项记录.png" />
+    <None Include="Resources\menu_密码修改.png" />
+    <None Include="Resources\menu_合同管理.png" />
+    <None Include="Resources\menu_TypeCode信息.png" />
+    <None Include="Resources\menu_科目信息.png" />
+    <None Include="Resources\menu_甜品站信息.png" />
+    <None Include="Resources\menu_餐厅信息.png" />
+    <None Include="Resources\menu_业主信息.png" />
+    <None Include="Resources\menu_代理信息.png" />
+    <None Include="Resources\menu_用户信息.png" />
+    <None Include="Resources\menu_部门信息.png" />
+    <None Include="Resources\menu_公司信息.png" />
+    <None Include="Resources\menu_基本信息.png" />
+    <None Include="Resources\menu_已办任务.png" />
+    <None Include="Resources\menu_待处理任.png" />
+    <None Include="Resources\menu_任务管理.png" />
+    <None Include="Resources\menu_语言.png" />
+    <None Include="Resources\con_change.png" />
+    <None Include="Resources\con_view.png" />
+    <None Include="Resources\con_copy.png" />
+    <None Include="Resources\注销.ico" />
+    <None Include="Resources\注销1.ico" />
+    <None Include="Resources\注销11.ico" />
+    <None Include="Resources\注销.png" />
+    <None Include="Resources\LOGO.ico" />
+    <Content Include="LOGO2.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\LOGO1.ico" />
+    <None Include="Resources\LOGO3.ico" />
+    <None Include="Resources\LOGO2.ico" />
+    <None Include="Resources\LOGO4.ico" />
+    <None Include="Resources\已禁用.png" />
+    <None Include="Resources\已启用.png" />
+    <None Include="Resources\green.gif" />
+    <None Include="Resources\red.gif" />
+    <None Include="Service References\UUPGroupService\GroupService.disco" />
+    <None Include="Service References\UUPGroupService\configuration91.svcinfo" />
+    <None Include="Service References\UUPGroupService\configuration.svcinfo" />
+    <None Include="Service References\UUPGroupService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\UUPModuleService\ModuleService.disco" />
+    <None Include="Service References\UUPModuleService\configuration91.svcinfo" />
+    <None Include="Service References\UUPModuleService\configuration.svcinfo" />
+    <None Include="Service References\UUPModuleService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\UUPPopedomService\PopedomService.disco" />
+    <None Include="Service References\UUPPopedomService\configuration91.svcinfo" />
+    <None Include="Service References\UUPPopedomService\configuration.svcinfo" />
+    <None Include="Service References\UUPPopedomService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\icon_file_unknow.gif" />
+    <None Include="Resources\icon_file_xls.gif" />
+    <None Include="Resources\icon_file_doc.gif" />
+    <None Include="Resources\icon_file_gif.gif" />
+    <None Include="Resources\icon_file_jpg.gif" />
+    <None Include="Resources\icon_file_pdf.gif" />
+    <None Include="Resources\icon_file_ppt.gif" />
+    <None Include="Resources\icon_file_txt.gif" />
+    <None Include="Resources\Junk.ico" />
+    <None Include="Resources\menu_预测租金计算.png" />
+    <None Include="Resources\menu_预测销售数据.png" />
+    <Content Include="PDF.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Stop.png" />
+    <Content Include="Resources\Stop_Hover.png" />
+    <Content Include="Resources\复制.png" />
+    <Content Include="Resources\批量复制.png" />
+    <Content Include="SystemMenu.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\MCD.Common\MCD.Common.csproj">
+      <Project>{D24BD75B-FA49-4F80-AFDB-BA1F352C5045}</Project>
+      <Name>MCD.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Controls\MCD.Controls\MCD.Controls.csproj">
+      <Project>{3EF4AFCA-861F-4FD6-A154-4C81863A3130}</Project>
+      <Name>MCD.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Controls\MCD.DockContainer\MCD.DockContainer.csproj">
+      <Project>{C75532C4-765B-418E-B09B-46D36B2ABDB1}</Project>
+      <Name>MCD.DockContainer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\MCD.Framework.Entity\MCD.Framework.Entity.csproj">
+      <Project>{D6562CCF-3003-4C59-8682-2193AF88190C}</Project>
+      <Name>MCD.Framework.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MCD.RLPlanning.Business\MCD.RLPlanning.Business.csproj">
+      <Project>{B03B00B0-97D7-48AE-A272-E33167BC0FDD}</Project>
+      <Name>MCD.RLPlanning.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MCD.RLPlanning.Entity\MCD.RLPlanning.Entity.csproj">
+      <Project>{2D9CB296-6F98-426B-8370-968202320D70}</Project>
+      <Name>MCD.RLPlanning.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\1.Server\MCD.RLPlanning.IServices\MCD.RLPlanning.IServices.csproj">
+      <Project>{C8921C20-5C85-4111-9DE0-2DE318A7964C}</Project>
+      <Name>MCD.RLPlanning.IServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\1.Server\MCD.RLPlanning.Services\MCD.RLPlanning.Services.csproj">
+      <Project>{614B93D9-3C37-44AF-AB9B-0FC1FD3426C3}</Project>
+      <Name>MCD.RLPlanning.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\UUPGroupService\" />
+    <WCFMetadataStorage Include="Service References\UUPModuleService\" />
+    <WCFMetadataStorage Include="Service References\UUPPopedomService\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>

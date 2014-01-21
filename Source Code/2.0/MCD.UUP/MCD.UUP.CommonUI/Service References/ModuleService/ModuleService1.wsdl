@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://tempuri.org/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="ModuleService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSHttpBinding_IModuleService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://张帮顺-个人电脑/UUPService/ModuleService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://张帮顺-个人电脑/UUPService/ModuleService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://张帮顺-个人电脑/UUPService/ModuleService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/MCD.UUP.Entity" />
+      <xsd:import schemaLocation="http://张帮顺-个人电脑/UUPService/ModuleService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IModuleService_InsertModule_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertModule" />
+  </wsdl:message>
+  <wsdl:message name="IModuleService_InsertModule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertModuleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModuleService_UpdateModule_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateModule" />
+  </wsdl:message>
+  <wsdl:message name="IModuleService_UpdateModule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateModuleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModuleService_DeleteModule_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteModule" />
+  </wsdl:message>
+  <wsdl:message name="IModuleService_DeleteModule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteModuleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModuleService_GetSingleModule_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSingleModule" />
+  </wsdl:message>
+  <wsdl:message name="IModuleService_GetSingleModule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSingleModuleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModuleService_SelectModules_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectModules" />
+  </wsdl:message>
+  <wsdl:message name="IModuleService_SelectModules_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectModulesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModuleService_SelectModulesBySystemCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectModulesBySystemCode" />
+  </wsdl:message>
+  <wsdl:message name="IModuleService_SelectModulesBySystemCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectModulesBySystemCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModuleService_SelectModulesWithGroupBySystemCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectModulesWithGroupBySystemCode" />
+  </wsdl:message>
+  <wsdl:message name="IModuleService_SelectModulesWithGroupBySystemCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectModulesWithGroupBySystemCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModuleService_GetFunctionByModuleID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFunctionByModuleID" />
+  </wsdl:message>
+  <wsdl:message name="IModuleService_GetFunctionByModuleID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFunctionByModuleIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModuleService_GetFunctionBySystemCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFunctionBySystemCode" />
+  </wsdl:message>
+  <wsdl:message name="IModuleService_GetFunctionBySystemCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFunctionBySystemCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModuleService_IsExistsModuleCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsExistsModuleCode" />
+  </wsdl:message>
+  <wsdl:message name="IModuleService_IsExistsModuleCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsExistsModuleCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModuleService_GetFunctionByUserOrGroupID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFunctionByUserOrGroupID" />
+  </wsdl:message>
+  <wsdl:message name="IModuleService_GetFunctionByUserOrGroupID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFunctionByUserOrGroupIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModuleService_UpdateUserOrGroupFunction_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserOrGroupFunction" />
+  </wsdl:message>
+  <wsdl:message name="IModuleService_UpdateUserOrGroupFunction_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserOrGroupFunctionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModuleService_UpdateUserOrGroupFunctionWithGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserOrGroupFunctionWithGroup" />
+  </wsdl:message>
+  <wsdl:message name="IModuleService_UpdateUserOrGroupFunctionWithGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserOrGroupFunctionWithGroupResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IModuleService">
+    <wsdl:operation name="InsertModule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModuleService/InsertModule" message="tns:IModuleService_InsertModule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModuleService/InsertModuleResponse" message="tns:IModuleService_InsertModule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateModule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModuleService/UpdateModule" message="tns:IModuleService_UpdateModule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModuleService/UpdateModuleResponse" message="tns:IModuleService_UpdateModule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteModule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModuleService/DeleteModule" message="tns:IModuleService_DeleteModule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModuleService/DeleteModuleResponse" message="tns:IModuleService_DeleteModule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSingleModule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModuleService/GetSingleModule" message="tns:IModuleService_GetSingleModule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModuleService/GetSingleModuleResponse" message="tns:IModuleService_GetSingleModule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectModules">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModuleService/SelectModules" message="tns:IModuleService_SelectModules_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModuleService/SelectModulesResponse" message="tns:IModuleService_SelectModules_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectModulesBySystemCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModuleService/SelectModulesBySystemCode" message="tns:IModuleService_SelectModulesBySystemCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModuleService/SelectModulesBySystemCodeResponse" message="tns:IModuleService_SelectModulesBySystemCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectModulesWithGroupBySystemCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModuleService/SelectModulesWithGroupBySystemCode" message="tns:IModuleService_SelectModulesWithGroupBySystemCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModuleService/SelectModulesWithGroupBySystemCodeResponse" message="tns:IModuleService_SelectModulesWithGroupBySystemCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFunctionByModuleID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModuleService/GetFunctionByModuleID" message="tns:IModuleService_GetFunctionByModuleID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModuleService/GetFunctionByModuleIDResponse" message="tns:IModuleService_GetFunctionByModuleID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFunctionBySystemCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModuleService/GetFunctionBySystemCode" message="tns:IModuleService_GetFunctionBySystemCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModuleService/GetFunctionBySystemCodeResponse" message="tns:IModuleService_GetFunctionBySystemCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsExistsModuleCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModuleService/IsExistsModuleCode" message="tns:IModuleService_IsExistsModuleCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModuleService/IsExistsModuleCodeResponse" message="tns:IModuleService_IsExistsModuleCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFunctionByUserOrGroupID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModuleService/GetFunctionByUserOrGroupID" message="tns:IModuleService_GetFunctionByUserOrGroupID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModuleService/GetFunctionByUserOrGroupIDResponse" message="tns:IModuleService_GetFunctionByUserOrGroupID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserOrGroupFunction">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModuleService/UpdateUserOrGroupFunction" message="tns:IModuleService_UpdateUserOrGroupFunction_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModuleService/UpdateUserOrGroupFunctionResponse" message="tns:IModuleService_UpdateUserOrGroupFunction_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserOrGroupFunctionWithGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModuleService/UpdateUserOrGroupFunctionWithGroup" message="tns:IModuleService_UpdateUserOrGroupFunctionWithGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModuleService/UpdateUserOrGroupFunctionWithGroupResponse" message="tns:IModuleService_UpdateUserOrGroupFunctionWithGroup_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSHttpBinding_IModuleService" type="tns:IModuleService">
+    <wsp:PolicyReference URI="#WSHttpBinding_IModuleService_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertModule">
+      <soap12:operation soapAction="http://tempuri.org/IModuleService/InsertModule" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateModule">
+      <soap12:operation soapAction="http://tempuri.org/IModuleService/UpdateModule" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteModule">
+      <soap12:operation soapAction="http://tempuri.org/IModuleService/DeleteModule" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSingleModule">
+      <soap12:operation soapAction="http://tempuri.org/IModuleService/GetSingleModule" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectModules">
+      <soap12:operation soapAction="http://tempuri.org/IModuleService/SelectModules" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectModulesBySystemCode">
+      <soap12:operation soapAction="http://tempuri.org/IModuleService/SelectModulesBySystemCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectModulesWithGroupBySystemCode">
+      <soap12:operation soapAction="http://tempuri.org/IModuleService/SelectModulesWithGroupBySystemCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFunctionByModuleID">
+      <soap12:operation soapAction="http://tempuri.org/IModuleService/GetFunctionByModuleID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFunctionBySystemCode">
+      <soap12:operation soapAction="http://tempuri.org/IModuleService/GetFunctionBySystemCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsExistsModuleCode">
+      <soap12:operation soapAction="http://tempuri.org/IModuleService/IsExistsModuleCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFunctionByUserOrGroupID">
+      <soap12:operation soapAction="http://tempuri.org/IModuleService/GetFunctionByUserOrGroupID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserOrGroupFunction">
+      <soap12:operation soapAction="http://tempuri.org/IModuleService/UpdateUserOrGroupFunction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserOrGroupFunctionWithGroup">
+      <soap12:operation soapAction="http://tempuri.org/IModuleService/UpdateUserOrGroupFunctionWithGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ModuleService">
+    <wsdl:port name="WSHttpBinding_IModuleService" binding="tns:WSHttpBinding_IModuleService">
+      <soap12:address location="http://张帮顺-个人电脑/UUPService/ModuleService.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://张帮顺-个人电脑/UUPService/ModuleService.svc</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Dns>localhost</Dns>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

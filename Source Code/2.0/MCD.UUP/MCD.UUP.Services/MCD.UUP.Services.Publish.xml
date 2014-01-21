@@ -1,0 +1,92 @@
+<publishData>
+  <publishTarget publishUrl="D:\测试环境服务\UUPService\">
+    <file relUrl="bin/MCD.Framework.Entity.dll" publishTime="06/07/2011 12:15:09" />
+    <file relUrl="LogService.svc" publishTime="02/12/2011 19:11:05" />
+    <file relUrl="bin/MCD.UUP.Entity.dll" publishTime="06/07/2011 12:15:11" />
+    <file relUrl="bin/MCD.UUP.Entity.pdb" publishTime="06/07/2011 12:15:11" />
+    <file relUrl="bin/MCD.DockContainer.Docking.dll" publishTime="06/07/2011 12:15:05" />
+    <file relUrl="Web.config" publishTime="06/13/2011 10:51:36" />
+    <file relUrl="bin/MCD.UUP.Services.dll" publishTime="06/17/2011 14:04:43" />
+    <file relUrl="UserService.svc" publishTime="02/12/2011 19:11:05" />
+    <file relUrl="bin/Microsoft.Practices.EnterpriseLibrary.Common.dll" publishTime="02/12/2011 19:10:06" />
+    <file relUrl="bin/Microsoft.Practices.EnterpriseLibrary.Common.xml" publishTime="02/12/2011 19:10:06" />
+    <file relUrl="ModuleService.svc" publishTime="02/12/2011 19:11:05" />
+    <file relUrl="bin/MCD.Framework.SqlDAL.pdb" publishTime="06/17/2011 14:04:36" />
+    <file relUrl="bin/MCD.UUP.Services.pdb" publishTime="06/17/2011 14:04:43" />
+    <file relUrl="bin/Microsoft.Practices.ObjectBuilder.dll" publishTime="02/12/2011 19:10:07" />
+    <file relUrl="bin/MCD.UUP.IServices.dll" publishTime="06/17/2011 14:04:40" />
+    <file relUrl="bin/Microsoft.Practices.EnterpriseLibrary.Data.dll" publishTime="02/12/2011 19:10:06" />
+    <file relUrl="bin/MCD.UUP.IServices.pdb" publishTime="06/17/2011 14:04:40" />
+    <file relUrl="bin/MCD.Framework.DALCommon.dll" publishTime="06/17/2011 14:04:35" />
+    <file relUrl="SystemService.svc" publishTime="02/12/2011 19:11:06" />
+    <file relUrl="bin/MCD.Framework.Entity.pdb" publishTime="06/07/2011 12:15:09" />
+    <file relUrl="bin/MCD.Framework.SqlDAL.dll" publishTime="06/17/2011 14:04:36" />
+    <file relUrl="bin/Microsoft.Practices.EnterpriseLibrary.Logging.dll" publishTime="02/12/2011 19:10:06" />
+    <file relUrl="bin/MCD.UUP.Common.dll" publishTime="06/07/2011 12:15:13" />
+    <file relUrl="bin/MCD.DockContainer.Docking.pdb" publishTime="06/07/2011 12:15:05" />
+    <file relUrl="GroupService.svc" publishTime="02/12/2011 19:11:05" />
+    <file relUrl="bin/MCD.UUP.Common.pdb" publishTime="06/07/2011 12:15:13" />
+    <file relUrl="PopedomService.svc" publishTime="02/12/2011 19:11:06" />
+    <file relUrl="bin/MCD.Framework.DALCommon.pdb" publishTime="06/17/2011 14:04:35" />
+  </publishTarget>
+  <publishTarget publishUrl="D:\RLService\UUPService\">
+    <file relUrl="bin/MCD.Framework.Entity.dll" publishTime="05/06/2011 20:41:06" />
+    <file relUrl="LogService.svc" publishTime="02/12/2011 19:11:05" />
+    <file relUrl="bin/Microsoft.Practices.ObjectBuilder.dll" publishTime="02/12/2011 19:10:07" />
+    <file relUrl="bin/MCD.UUP.Entity.pdb" publishTime="04/27/2011 18:57:43" />
+    <file relUrl="bin/MCD.UUP.Entity.dll" publishTime="04/27/2011 18:57:44" />
+    <file relUrl="Web.config" publishTime="04/20/2011 10:36:34" />
+    <file relUrl="UserService.svc" publishTime="02/12/2011 19:11:05" />
+    <file relUrl="bin/Microsoft.Practices.EnterpriseLibrary.Common.dll" publishTime="02/12/2011 19:10:06" />
+    <file relUrl="bin/Microsoft.Practices.EnterpriseLibrary.Common.xml" publishTime="02/12/2011 19:10:06" />
+    <file relUrl="ModuleService.svc" publishTime="02/12/2011 19:11:05" />
+    <file relUrl="bin/MCD.Framework.SqlDAL.pdb" publishTime="05/09/2011 18:49:16" />
+    <file relUrl="bin/MCD.UUP.IServices.dll" publishTime="04/27/2011 18:57:45" />
+    <file relUrl="bin/Microsoft.Practices.EnterpriseLibrary.Data.dll" publishTime="02/12/2011 19:10:06" />
+    <file relUrl="bin/MCD.Framework.DALCommon.dll" publishTime="05/09/2011 18:49:16" />
+    <file relUrl="bin/MCD.UUP.IServices.pdb" publishTime="04/27/2011 18:57:45" />
+    <file relUrl="bin/MCD.UUP.Services.pdb" publishTime="05/09/2011 18:49:20" />
+    <file relUrl="bin/MCD.UUP.Services.dll" publishTime="05/09/2011 18:49:20" />
+    <file relUrl="bin/MCD.Framework.Entity.pdb" publishTime="05/06/2011 20:41:06" />
+    <file relUrl="bin/MCD.DockContainer.Docking.dll" publishTime="05/06/2011 20:41:02" />
+    <file relUrl="SystemService.svc" publishTime="02/12/2011 19:11:06" />
+    <file relUrl="bin/MCD.Framework.SqlDAL.dll" publishTime="05/09/2011 18:49:16" />
+    <file relUrl="bin/Microsoft.Practices.EnterpriseLibrary.Logging.dll" publishTime="02/12/2011 19:10:06" />
+    <file relUrl="bin/MCD.UUP.Common.dll" publishTime="04/27/2011 18:57:45" />
+    <file relUrl="bin/MCD.DockContainer.Docking.pdb" publishTime="05/06/2011 20:41:01" />
+    <file relUrl="GroupService.svc" publishTime="02/12/2011 19:11:05" />
+    <file relUrl="bin/MCD.UUP.Common.pdb" publishTime="04/27/2011 18:57:45" />
+    <file relUrl="PopedomService.svc" publishTime="02/12/2011 19:11:06" />
+    <file relUrl="bin/MCD.Framework.DALCommon.pdb" publishTime="05/09/2011 18:49:15" />
+  </publishTarget>
+  <publishTarget publishUrl="D:\MCDUUPService\">
+    <file relUrl="bin/MCD.Framework.Entity.dll" publishTime="02/16/2011 22:14:44" />
+    <file relUrl="LogService.svc" publishTime="02/12/2011 19:11:05" />
+    <file relUrl="bin/Microsoft.Practices.ObjectBuilder.dll" publishTime="02/12/2011 19:10:07" />
+    <file relUrl="bin/MCD.UUP.Entity.pdb" publishTime="02/16/2011 22:14:49" />
+    <file relUrl="bin/MCD.UUP.Entity.dll" publishTime="02/16/2011 22:14:49" />
+    <file relUrl="Web.config" publishTime="02/16/2011 22:12:34" />
+    <file relUrl="UserService.svc" publishTime="02/12/2011 19:11:05" />
+    <file relUrl="bin/Microsoft.Practices.EnterpriseLibrary.Common.dll" publishTime="02/12/2011 19:10:06" />
+    <file relUrl="bin/Microsoft.Practices.EnterpriseLibrary.Common.xml" publishTime="02/12/2011 19:10:06" />
+    <file relUrl="ModuleService.svc" publishTime="02/12/2011 19:11:05" />
+    <file relUrl="bin/MCD.UUP.IServices.dll" publishTime="02/16/2011 22:14:50" />
+    <file relUrl="bin/MCD.DockContainer.Docking.pdb" publishTime="02/16/2011 22:14:40" />
+    <file relUrl="bin/Microsoft.Practices.EnterpriseLibrary.Data.dll" publishTime="02/12/2011 19:10:06" />
+    <file relUrl="bin/MCD.Framework.DALCommon.dll" publishTime="02/16/2011 22:14:44" />
+    <file relUrl="bin/MCD.UUP.IServices.pdb" publishTime="02/16/2011 22:14:50" />
+    <file relUrl="bin/MCD.UUP.Services.pdb" publishTime="02/16/2011 22:14:59" />
+    <file relUrl="bin/MCD.UUP.Services.dll" publishTime="02/16/2011 22:14:59" />
+    <file relUrl="bin/MCD.Framework.Entity.pdb" publishTime="02/16/2011 22:14:44" />
+    <file relUrl="bin/MCD.DockContainer.Docking.dll" publishTime="02/16/2011 22:14:40" />
+    <file relUrl="SystemService.svc" publishTime="02/12/2011 19:11:06" />
+    <file relUrl="bin/MCD.Framework.SqlDAL.dll" publishTime="02/16/2011 22:14:45" />
+    <file relUrl="bin/Microsoft.Practices.EnterpriseLibrary.Logging.dll" publishTime="02/12/2011 19:10:06" />
+    <file relUrl="bin/MCD.UUP.Common.dll" publishTime="02/16/2011 22:14:51" />
+    <file relUrl="bin/MCD.Framework.SqlDAL.pdb" publishTime="02/16/2011 22:14:45" />
+    <file relUrl="GroupService.svc" publishTime="02/12/2011 19:11:05" />
+    <file relUrl="bin/MCD.UUP.Common.pdb" publishTime="02/16/2011 22:14:51" />
+    <file relUrl="PopedomService.svc" publishTime="02/12/2011 19:11:06" />
+    <file relUrl="bin/MCD.Framework.DALCommon.pdb" publishTime="02/16/2011 22:14:44" />
+  </publishTarget>
+</publishData>

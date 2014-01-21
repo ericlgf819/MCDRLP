@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="dd8a6ae9-9f5d-4dbd-9e58-101d4dc8bb5e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://202.136.210.92:9001/UUPService/ModuleService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ModuleService.wsdl" MetadataType="Wsdl" ID="c0728059-538a-4adf-a5d1-827980aecdf6" SourceId="1" SourceUrl="http://张帮顺-个人电脑/UUPService/ModuleService.svc?wsdl" />
+    <MetadataFile FileName="ModuleService.disco" MetadataType="Disco" ID="eb681eda-fe60-492f-82d8-539099584c33" SourceId="1" SourceUrl="http://张帮顺-个人电脑/UUPService/ModuleService.svc?disco" />
+    <MetadataFile FileName="ModuleService.xsd" MetadataType="Schema" ID="11618d2f-5fdd-4e6d-b7bf-3d9c675cf323" SourceId="1" SourceUrl="http://张帮顺-个人电脑/UUPService/ModuleService.svc?xsd=xsd3" />
+    <MetadataFile FileName="ModuleService1.xsd" MetadataType="Schema" ID="39b93b8f-ea55-4a94-b203-b037d43c7f7d" SourceId="1" SourceUrl="http://张帮顺-个人电脑/UUPService/ModuleService.svc?xsd=xsd2" />
+    <MetadataFile FileName="ModuleService2.xsd" MetadataType="Schema" ID="895718f9-c935-4921-82d8-3f432f806943" SourceId="1" SourceUrl="http://张帮顺-个人电脑/UUPService/ModuleService.svc?xsd=xsd1" />
+    <MetadataFile FileName="ModuleService3.xsd" MetadataType="Schema" ID="63d127ab-450b-4361-82dc-42985424420e" SourceId="1" SourceUrl="http://张帮顺-个人电脑/UUPService/ModuleService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

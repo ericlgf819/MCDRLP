@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+	<Menu name="TaskMenu" text="任务管理" expand="true" shortKey="Alt+T" sort="1">
+		<Menu name="PendingTaskInfo" text="待处理任务" autoOpen="true" shortKey="Ctrl+P" height="20" form="MCD.RLPlanning.Client.Workflow.PendingTaskInfo" />
+		<Menu name="FinishedTaskInfo" text="已处理任务" shortKey="Ctrl+F" height="20" form="MCD.RLPlanning.Client.Workflow.FinishedTaskInfo" />
+	</Menu>
+	<Menu name="MasterMenu" text="基本信息" shortKey="Alt+M" sort="0">
+		<Menu name="AreaInfo" text="区域信息" shortKey="Ctrl+R" height="20" form="MCD.RLPlanning.Client.Master.AreaInfo" />
+		<Menu name="CompanyInfo" text="公司信息" shortKey="Ctrl+G" height="20" form="MCD.RLPlanning.Client.Master.CompanyInfo" />
+		<Menu name="DeptInfo" text="部门信息" shortKey="Ctrl+D" height="20" form="MCD.RLPlanning.Client.Master.DeptInfo" />
+		<Menu name="UserInfo" text="用户信息" shortKey="Ctrl+U" height="20" form="MCD.RLPlanning.Client.Master.UserInfo" />
+		<Menu name="ChangePWD" text="密码修改" shortKey="Ctrl+M" height="20" form="MCD.RLPlanning.Client.Master.ChangePWD" />
+		<Menu name="MasterSplitOne" text="-" height="1" form=""/>
+		<Menu name="VendorInfo" text="供应商信息" shortKey="Alt+V" height="20" form="MCD.RLPlanning.Client.Master.VendorInfo" />
+		<Menu name="StoreInfo" text="餐厅信息" shortKey="Ctrl+S" height="20" form="MCD.RLPlanning.Client.Master.StoreInfo" />
+		<Menu name="KioskInfo" text="甜品站信息" shortKey="Ctrl+K" height="20" form="MCD.RLPlanning.Client.Master.KioskInfo" />
+		<Menu name="AccountInfo" text="科目信息" shortKey="Ctrl+A" height="20" form="MCD.RLPlanning.Client.Master.AccountInfo" />
+		<Menu name="TypeCodeInfo" text="TypeCode信息" shortKey="Ctrl+T" height="20" form="MCD.RLPlanning.Client.Master.TypeCodeInfo" />
+		<Menu name="MasterSplitOne" text="-" height="1" form="" />
+		<Menu name="ContractList" text="合同管理" shortKey="Ctrl+Q" height="20" form="MCD.RLPlanning.Client.ContractMg.ContractList" />
+		<Menu name="ContractImport" text="合同导入" shortKey="Ctrl+I" height="20" form="MCD.RLPlanning.Client.ContractMg.ContractImport" />
+	</Menu>
+	<Menu name="ForcastSalesMenu" text="预测销售数据" expand="false" shortKey="Alt+F" sort="1">
+		<Menu name="Import" text="预测销售数据导入" shortKey="Alt+I" height="20" form="MCD.RLPlanning.Client.ForcastSales.Import" />
+		<Menu name="KeyIn" text="预测销售数据录入" shortKey="Alt+K" height="20" form="MCD.RLPlanning.Client.ForcastSales.KeyIn" />
+	</Menu>
+	<Menu name="SalesCalculateMenu" text="预测租金计算" expand="false" shortKey="Alt+R" sort="1">
+		<Menu name="Calculate" text="租金计算" shortKey="Ctrl+J" height="20" form="MCD.RLPlanning.Client.SalesCalculate.Calculate" />
+		<Menu name="CalculateResult" text="租金计算结果" height="20" visible="false" form="MCD.RLPlanning.Client.SalesCalculate.CalculateResult" />
+	</Menu>
+	<Menu name="PlanningColseManagementMenu" text="关帐" expand="false" shortKey="Alt+C" sort="1">
+		<Menu name="CloseAccountManagement" text="关帐管理" shortKey="Ctrl+W" height="20" form="MCD.RLPlanning.Client.PlanningSnapshot.CloseAccountManagement" />
+	</Menu>
+	<Menu name="SynchronizationMenu" text="数据同步" expand="false" shortKey="Alt+S" sort="1">
+		<Menu name="ScheduleList" text="同步计划设置" shortKey="Alt+J" height="20" form="MCD.RLPlanning.Client.Synchronization.ScheduleList" />
+	</Menu>
+	<Menu name="ReportMenu" text="报表管理" expand="false" shortKey="Alt+B" sort="1">
+		<Menu name="UserDeleteReport" text="已删除用户报表" height="20" form="MCD.RLPlanning.Client.Report.UserDeleteReport" />
+		<Menu name="UserOperationReport" text="用户信息操作日志报表" height="20" form="MCD.RLPlanning.Client.Report.UserOperationReport" />
+		<Menu name="MasterSplitOne" text="-" height="1" form="" />
+		<Menu name="ContractExpiresEarlyWarningReport" text="合同到期预警报表" height="20" form="MCD.RLPlanning.Client.Report.ContractExpiresEarlyWarningReport"/>
+		<Menu name="KioskStoreRelationChangReport" text="甜品店挂靠关系变更报表" height="20" form="MCD.RLPlanning.Client.Report.KioskStoreRelationChangReport"/>
+		<Menu name="MasterSplitOne" text="-" height="1" form="" />
+		<Menu name="SalesDataReport" text="销售数据报表" height="20" form="MCD.RLPlanning.Client.Report.SalesDataReport" />
+		<Menu name="RentCalculateReport" text="租金计算报表" height="20" form="MCD.RLPlanning.Client.Report.RentCalculateReport" />
+		<Menu name="ModifyRecordReport" text="修改记录报表" height="20" form="MCD.RLPlanning.Client.Report.ModifyRecordReport" />
+		<Menu name="YearlyCompareReport" text="年度对比报表" height="20" form="MCD.RLPlanning.Client.Report.YearlyCompareReport" />
+		<Menu name="AverageCompareReport" text="平均租金对比报表" height="20" form="MCD.RLPlanning.Client.Report.AverageCompareReport" />
+	</Menu>
+	<Menu name="SystemMenu" text="系统设置" expand="false" shortKey="Alt+X" sort="1">
+		<Menu name="EntityTypeInfo" text="实体类型" shortKey="Ctrl+E" height="20" form="MCD.RLPlanning.Client.Setting.EntityTypeInfo" />
+		<Menu name="SystemParameterInfo" text="系统参数" shortKey="Ctrl+O" height="20" form="MCD.RLPlanning.Client.Setting.SystemParameterInfo" />
+		<Menu name="MasterSplitOne" text="-" height="1" form="" />
+		<Menu name="ModuleList" text="模块设置" shortKey="Ctrl+B" height="20" form="MCD.RLPlanning.Client.Setting.ModuleList" />
+		<Menu name="UserInfo" text="用户信息" shortKey="Ctrl+U" height="20" form="MCD.RLPlanning.Client.Master.UserInfo" />
+		<Menu name="GroupList" text="用户组设置" shortKey="Ctrl+N" height="20" form="MCD.RLPlanning.Client.Setting.GroupList" />
+		<Menu name="GroupPermission" text="用户组权限设置" shortKey="Ctrl+L" height="20" form="MCD.RLPlanning.Client.Setting.GroupPermission" />
+	</Menu>
+	<Menu name="Language" showLeft="false" text="语言" expand="false" shortKey="Alt+L" sort="2">
+		<Menu name="SimpleChinese" text="简体中文" shortKey="Alt+Z" height="20" form="" />
+		<Menu name="English" text="English" shortKey="Alt+E" height="20" openMethod="process" form="" />
+		<Menu name="TraditionalChinese" text="繁体中文" shortKey="Alt+T" height="20" form="" />
+	</Menu>
+	<Menu name="HelpInfo" showLeft="false" text="帮助" expand="false" shortKey="Alt+H" sort="2">
+		<Menu name="About" text="关于" shortKey="Alt+A" height="20" openMethod="dialog" form="MCD.RLPlanning.Client.FrmAbout" />
+		<Menu name="Help" text="帮助" shortKey="Ctrl+H" height="20" openMethod="process" form="" />
+	</Menu>
+</Menu>
+<!--
+	name: 生成控件的名称，必须设置，不可重复
+	text: 显示在菜单中的标题，必须设置
+	expand: 左边菜单是否默认展开，可选
+	shortKey: 快捷键，可选，格式为 Alt+字母 或者 Ctrl+字母
+	autoOpen:菜单是否默认打开，可选。
+	openMethod:菜单打开的方式，可选   dialog: ShowDialog 模态窗口   show: Show 窗口  process:使用新的进程打开   空值为默认方式
+	
+	form: 菜单打开的窗体或应用程序，必须设置
+	
+	height: 左边菜单显示高度，可选
+	showLeft: 不显示在左边树形菜单中，可选
+-->

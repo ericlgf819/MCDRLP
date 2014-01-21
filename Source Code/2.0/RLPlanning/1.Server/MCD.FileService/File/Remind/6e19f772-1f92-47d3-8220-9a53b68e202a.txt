@@ -1,0 +1,37 @@
+
+
+========================================================================
+C:\Program Files\CT_Space_E800\setup\CT_Space_E800
+C:\Program Files\CT_Space_E800\setup\CT_Space_E800\drivers\drvconfig.ini
+VID_05C6&PID_6500
+VID_05C6&PID_6500
+VID_05C6&PID_6500
+VID_05C6&PID_6500
+Found Card=== [usb\vid_05c6&pid_6500&rev_0000]
+
+操作系统版本：drivers\Vista32
+原来安装情况 = 1
+操作系统版本：drivers\Vista32
+VID_05C6&PID_6500
+Install exist card!
+Found=== [usb\vid_05c6&pid_6500&rev_0000]
+
+操作系统版本：drivers\Vista32
+Found=== [usb\vid_05c6&pid_6500&rev_0000&mi_00]
+
+操作系统版本：drivers\Vista32
+C:\Program Files\CT_Space_E800\setup\CT_Space_E800\drivers\Vista32\qcmdm.inf
+usb\vid_05c6&pid_6500&rev_0000&mi_00
+Found=== [usb\vid_05c6&pid_6500&rev_0000&mi_01]
+
+操作系统版本：drivers\Vista32
+C:\Program Files\CT_Space_E800\setup\CT_Space_E800\drivers\Vista32\qcser.inf
+usb\vid_05c6&pid_6500&rev_0000&mi_01
+Found=== [usb\vid_05c6&pid_6500&rev_0000&mi_02]
+
+操作系统版本：drivers\Vista32
+C:\Program Files\CT_Space_E800\setup\CT_Space_E800\drivers\Vista32\qcser.inf
+usb\vid_05c6&pid_6500&rev_0000&mi_02
+安装返回信息：1
+LocalFree
+ALL END====================================

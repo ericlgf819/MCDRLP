@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnEdit" xml:space="preserve">
+    <value>編輯</value>
+    <comment>DataGridView控件的编辑列使用</comment>
+  </data>
+  <data name="btnSave" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="btnSubmit" xml:space="preserve">
+    <value>提交</value>
+  </data>
+  <data name="ContractEdit" xml:space="preserve">
+    <value>合同編輯</value>
+  </data>
+  <data name="dgvEntity_EntityTypeName" xml:space="preserve">
+    <value>實體類型</value>
+    <comment>dgvEntity中的列标题</comment>
+  </data>
+  <data name="dgvEntity_OpeningDate" xml:space="preserve">
+    <value>開業日</value>
+    <comment>dgvEntity中的列标题</comment>
+  </data>
+  <data name="dgvEntity_OwnerID" xml:space="preserve">
+    <value>所屬業主編號</value>
+    <comment>dgvEntity中的列标题</comment>
+  </data>
+  <data name="dgvEntity_RentEndDate" xml:space="preserve">
+    <value>租賃到期日</value>
+    <comment>dgvEntity中的列标题</comment>
+  </data>
+  <data name="dgvEntity_RentStartDate" xml:space="preserve">
+    <value>起租日</value>
+    <comment>dgvEntity中的列标题</comment>
+  </data>
+  <data name="dgvVendor_BlockPayMent" xml:space="preserve">
+    <value>BlockPayMent</value>
+    <comment>dgvVendor中的列标题</comment>
+  </data>
+  <data name="dgvVendor_PayMentType" xml:space="preserve">
+    <value>PayMentType</value>
+    <comment>dgvVendor中的列标题</comment>
+  </data>
+  <data name="dgvVendor_Status" xml:space="preserve">
+    <value>狀態</value>
+    <comment>dgvVendor中的列标题</comment>
+  </data>
+  <data name="dgvVendor_VendorName" xml:space="preserve">
+    <value>業主名稱</value>
+    <comment>dgvVendor中的列标题</comment>
+  </data>
+  <data name="dgvVendor_VendorNo" xml:space="preserve">
+    <value>業主編號</value>
+    <comment>dgvVendor中的列标题</comment>
+  </data>
+  <data name="grpContractFiles" xml:space="preserve">
+    <value>合同文件</value>
+  </data>
+  <data name="grpContractHistory" xml:space="preserve">
+    <value>合同歷史版本</value>
+  </data>
+  <data name="grpEntityInfo" xml:space="preserve">
+    <value>實體信息</value>
+  </data>
+  <data name="grpRenter" xml:space="preserve">
+    <value>承租方</value>
+  </data>
+  <data name="grpVendor" xml:space="preserve">
+    <value>出租方</value>
+  </data>
+  <data name="lblChooseCompany" xml:space="preserve">
+    <value>請選擇公司:</value>
+  </data>
+  <data name="lblCompanyRemark" xml:space="preserve">
+    <value>公司備注:</value>
+  </data>
+  <data name="lblContractNo" xml:space="preserve">
+    <value>合同編號:</value>
+  </data>
+  <data name="lblContractRemark" xml:space="preserve">
+    <value>合同備注:</value>
+  </data>
+  <data name="lblContractUpdateRemark" xml:space="preserve">
+    <value>合同更新說明:</value>
+  </data>
+  <data name="lblSimpleName" xml:space="preserve">
+    <value>公司簡稱:</value>
+  </data>
+  <data name="pagContractBasicInfo" xml:space="preserve">
+    <value>合同基礎信息</value>
+  </data>
+  <data name="pagRentCalcRule" xml:space="preserve">
+    <value>租金計算規則</value>
+  </data>
+  <data name="btnDelete" xml:space="preserve">
+    <value>刪除</value>
+    <comment>DataGridView控件中的删除列使用</comment>
+  </data>
+  <data name="lblCyclePayable" xml:space="preserve">
+    <value>結算周期應付:</value>
+  </data>
+  <data name="lblCycle" xml:space="preserve">
+    <value>結算周期</value>
+  </data>
+  <data name="lblPaymentType" xml:space="preserve">
+    <value>支付方式:</value>
+  </data>
+  <data name="lblRemark" xml:space="preserve">
+    <value>備注:</value>
+  </data>
+  <data name="lblSummary" xml:space="preserve">
+    <value>摘要:</value>
+  </data>
+  <data name="btnAddDateSegment" xml:space="preserve">
+    <value>添加日期段</value>
+  </data>
+  <data name="lblCurrentDueDate" xml:space="preserve">
+    <value>本次DueDate:</value>
+  </data>
+  <data name="lblEndDate" xml:space="preserve">
+    <value>失效日期</value>
+  </data>
+  <data name="lblEntityName" xml:space="preserve">
+    <value>實體名稱:</value>
+  </data>
+  <data name="lblFirstDueDate" xml:space="preserve">
+    <value>首次DueDate:</value>
+  </data>
+  <data name="lblLineRentCalcStartDate" xml:space="preserve">
+    <value>直線租金計算起始日:</value>
+  </data>
+  <data name="lblMarginAmount" xml:space="preserve">
+    <value>保證金額:</value>
+  </data>
+  <data name="lblMarginRemark" xml:space="preserve">
+    <value>保證金備注:</value>
+  </data>
+  <data name="lblOpeningDate" xml:space="preserve">
+    <value>開業日:</value>
+  </data>
+  <data name="lblRentStartDate" xml:space="preserve">
+    <value>起租日:</value>
+  </data>
+  <data name="lblStartDate" xml:space="preserve">
+    <value>生效日期</value>
+  </data>
+  <data name="lblTaxRate" xml:space="preserve">
+    <value>稅率:</value>
+  </data>
+  <data name="lblYearSales" xml:space="preserve">
+    <value>地產部提供預估年Sales:</value>
+  </data>
+  <data name="btnRefreshRule" xml:space="preserve">
+    <value>刷新規則</value>
+  </data>
+  <data name="NoticeChooseCompany" xml:space="preserve">
+    <value>請選擇公司！</value>
+  </data>
+  <data name="SaveDataSucc" xml:space="preserve">
+    <value>保存合同信息成功！</value>
+    <comment>弹出提示信息</comment>
+  </data>
+  <data name="CheckConditionError" xml:space="preserve">
+    <value>{0}.{1} 條件不正確</value>
+    <comment>校验提示信息</comment>
+  </data>
+  <data name="CheckEntityHasNoVendor" xml:space="preserve">
+    <value>{0}.{1} 實體沒有關聯業主</value>
+    <comment>校验提示信息</comment>
+  </data>
+  <data name="CheckEntityInfoRentTypeNotExist" xml:space="preserve">
+    <value>{0}.{1} 租金類型缺失</value>
+    <comment>校验提示信息</comment>
+  </data>
+  <data name="CheckEntityInfoSettingNotExist" xml:space="preserve">
+    <value>{0}.{1} 不存在實體信息設置數據</value>
+    <comment>校验提示信息</comment>
+  </data>
+  <data name="CheckFixedTimeIntervalError" xml:space="preserve">
+    <value>{0}.{1} 固定租金時間段不閉合或者有重疊或者最大最小值不等于實體到租日和起租日</value>
+    <comment>校验提示信息</comment>
+  </data>
+  <data name="CheckFixedTimeIntervalNotExist" xml:space="preserve">
+    <value>{0}.{1} 固定租金時間段缺失</value>
+    <comment>校验提示信息</comment>
+  </data>
+  <data name="CheckFormulaError" xml:space="preserve">
+    <value>{0}.{1} 公式不正確</value>
+    <comment>校验提示信息</comment>
+  </data>
+  <data name="CheckNotExistEntity" xml:space="preserve">
+    <value>{0}.{1} 合同中不存在實體</value>
+    <comment>校验提示信息</comment>
+  </data>
+  <data name="CheckNotExistVendor" xml:space="preserve">
+    <value>{0}.{1} 合同中不存在業主</value>
+    <comment>校验提示信息</comment>
+  </data>
+  <data name="CheckRatioConditionNotExist" xml:space="preserve">
+    <value>{0}.{1} 百分比條件公式缺失</value>
+    <comment>校验提示信息</comment>
+  </data>
+  <data name="CheckRatioCycleTypeNotExist" xml:space="preserve">
+    <value>{0}.{1} 百分比大小周期不存在</value>
+    <comment>校验提示信息</comment>
+  </data>
+  <data name="CheckRatioTimeIntervalError" xml:space="preserve">
+    <value>{0}.{1} 百分比租金時間段不閉合或者有重疊或者最大最小值不等于實體到租日和起租日</value>
+    <comment>校验提示信息</comment>
+  </data>
+  <data name="CheckRatioTimeIntervalNotExist" xml:space="preserve">
+    <value>{0}.{1} 百分比時間段不存在</value>
+    <comment>校验提示信息</comment>
+  </data>
+  <data name="CheckVendorHasNoEntity" xml:space="preserve">
+    <value>{0}.{1} 業主沒有關聯實體</value>
+    <comment>校验提示信息</comment>
+  </data>
+  <data name="CanNotDeleteVendor" xml:space="preserve">
+    <value>該業主存在關聯的實體，不允許刪除！</value>
+    <comment>弹出提示信息</comment>
+  </data>
+  <data name="DeleteEntityConfirmInfo" xml:space="preserve">
+    <value>刪除實體時，會將相關的租金規則也刪除！確定刪除當前選中的實體嗎？</value>
+    <comment>弹出提示信息</comment>
+  </data>
+  <data name="DeleteEntitySuccess" xml:space="preserve">
+    <value>成功刪除實體信息</value>
+    <comment>弹出提示信息</comment>
+  </data>
+  <data name="DeleteVendorConfirmInfo" xml:space="preserve">
+    <value>刪除業主時，會將相關的租金規則也刪除掉！確定刪除當前選中的出租方嗎？</value>
+    <comment>弹出提示信息</comment>
+  </data>
+  <data name="DeleteVendorSuccess" xml:space="preserve">
+    <value>成功刪除業主信息</value>
+    <comment>弹出提示信息</comment>
+  </data>
+  <data name="ConfirmPass" xml:space="preserve">
+    <value>確認通過申請嗎？</value>
+  </data>
+  <data name="ConfirmReject" xml:space="preserve">
+    <value>確認拒絕申請嗎？</value>
+  </data>
+  <data name="ConfirmSaveData" xml:space="preserve">
+    <value>確認保存嗎？</value>
+  </data>
+  <data name="ConfirmSend" xml:space="preserve">
+    <value>確認發送或提交流程嗎？</value>
+  </data>
+  <data name="EmptyOpinionMsg" xml:space="preserve">
+    <value>審批意見不能為空！</value>
+  </data>
+  <data name="EmptyRejectMsg" xml:space="preserve">
+    <value>請選擇拒絕類型！</value>
+  </data>
+  <data name="SaveDataSucc1" xml:space="preserve">
+    <value>保存數據成功！</value>
+  </data>
+  <data name="SendSucc" xml:space="preserve">
+    <value>發送成功！</value>
+  </data>
+  <data name="NullDescription" xml:space="preserve">
+    <value>{0}.{1} 租金規則的描述為空！</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="CheckRatioCycleError" xml:space="preserve">
+    <value>{0}.{1} 大週期的結算週期必須大於小週期的結算週期！</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="NULLAmount" xml:space="preserve">
+    <value>{0}.{1} 租金規則金額為空</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="NULLAmountFormulaDesc" xml:space="preserve">
+    <value>{0}.{1} 租金規則公式為空</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="NULLAPStartDate" xml:space="preserve">
+    <value>{0}.{1} 實體是否出AP為是時,出AP日期空</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="NULLCalendar" xml:space="preserve">
+    <value>{0}.{1} 租金規則租賃/公曆為空</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="NULLCycle" xml:space="preserve">
+    <value>{0}.{1} 租金規則結算週期為空</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="NULLEndDate" xml:space="preserve">
+    <value>{0}.{1} 租金規則時間段結束時間為空</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="NULLEntityName" xml:space="preserve">
+    <value>{0}.{1} 存在實體名稱為空的實體</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="NULLFirstDueDate" xml:space="preserve">
+    <value>{0}.{1} 租金規則首次DUEDATE為空</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="NULLIsCalculateAP" xml:space="preserve">
+    <value>{0}.{1} 實體是否出AP為空</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="NULLIsPure" xml:space="preserve">
+    <value>{0}.{1} 租金規則是否純百分比為空</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="NULLKioskNo" xml:space="preserve">
+    <value>{0}.{1} 實體為甜品店時,Kiosk編號不能為空</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="NULLPayType" xml:space="preserve">
+    <value>{0}.{1} 租金規則支付類型為空</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="NULLRealestateSales" xml:space="preserve">
+    <value>{0}.{1} 實體為餐廳/甜品店時地產提供年SALES不能為空</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="NULLRentEndDate" xml:space="preserve">
+    <value>{0}.{1} 實體租賃到期日為空</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="NULLRentStartDate" xml:space="preserve">
+    <value>{0}.{1} 實體起租日為空</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="NULLStartDate" xml:space="preserve">
+    <value>{0}.{1} 租金規則時間段開始時間為空</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="NULLStoreOrDeptNo" xml:space="preserve">
+    <value>{0}.{1} 實體餐廳/部門編號空</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="NULLTaxRate" xml:space="preserve">
+    <value>{0}.{1} 實體為餐廳/甜品店時稅率不能為空</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="dgvEntity_EntityName" xml:space="preserve">
+    <value>實體名稱</value>
+    <comment>dgvEntity中的列标题</comment>
+  </data>
+  <data name="NULLZXStartDate" xml:space="preserve">
+    <value>{0}.{1} 固定租金直線租金起始日為空</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="CheckVendorStatus" xml:space="preserve">
+    <value>{0}.業主“{1}”狀態必須為Active！</value>
+    <comment>校验提示信息</comment>
+  </data>
+  <data name="CheckAllRuleDisEnable" xml:space="preserve">
+    <value>{0}.{1} 至少要啟用一個規則</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="CheckAllRatioCycleDisEnable" xml:space="preserve">
+    <value>{0}.{1} 百分比規則不可以大小週期都禁用</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="OnlyReject" xml:space="preserve">
+    <value>您已選擇了拒絕類型，只能拒絕申請！</value>
+  </data>
+  <data name="CheckStoreDeptNotInTheCompany" xml:space="preserve">
+    <value>{0}.{1}餐廳部門編號不在合同所屬公司內！</value>
+    <comment>校验字段空值</comment>
+  </data>
+  <data name="CheckFirstDueDateError" xml:space="preserve">
+    <value>{0}.{1}</value>
+    <comment>校验提示信息</comment>
+  </data>
+  <data name="dgvEntity_StoreOrDeptNo" xml:space="preserve">
+    <value>餐廳/部門編號</value>
+  </data>
+  <data name="CheckEntityRentDate" xml:space="preserve">
+    <value>{0}.{1} 起租日大於租賃到期日</value>
+  </data>
+  <data name="CheckEntityRentEndDate" xml:space="preserve">
+    <value>{0}.{1} 合同變更賃到期日小於當前已髮起AP日期</value>
+  </data>
+  <data name="CheckZXStartDate" xml:space="preserve">
+    <value>{0}.{1} 直線起始日即不是開業日也不是起租日</value>
+  </data>
+  <data name="RentStartEndDateIntersection" xml:space="preserve">
+    <value>{0} 租賃起止時間與已生效合同 {1} 的租賃時間有重疊</value>
+    <comment>校验字段空值</comment>
+  </data>
+</root>

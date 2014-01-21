@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SqlMapConfig >
+  <!-- 数据库链接字符串名 -->
+  <Provider name="DBConnection"></Provider>
+  <Statements>
+    <Procedure id="SelectSingle" value="SRLS_USP_Master_SelectSingleUser">
+      <Parameters>
+        <!-- 参数名、参数类型、参数方式的 In 或者是 Out，默认值为 In  -->
+        <Parameter name="@ID" type="uniqueidentifier" direction="in"/>
+      </Parameters>
+    </Procedure>
+    <Procedure id="SelectTable"  value="SRLS_USP_Master_SelectUsers">
+      <Parameters>
+        <Parameter name="@UserName" type="nvarchar(32)" direction="in"/>
+        <Parameter name="@EnglishName" type="nvarchar(32)" direction="in"/>
+        <Parameter name="@DeptCode" type="nvarchar(32)" direction="in"/>
+        <Parameter name="@Status" type="tinyint" direction="in"/>
+        <Parameter name="@GroupID" type="uniqueidentifier" direction="in"/>
+        <Parameter name="@CheckUserID" type="uniqueidentifier" direction="in"/>
+      </Parameters>
+    </Procedure>
+    <Procedure id="InsertEntity" value="SRLS_USP_Master_InsertSingleUser">
+      <Parameters>
+        <Parameter name="@UserName" type="nvarchar(32)"/>
+        <Parameter name="@Password" type="nvarchar(32)"/>
+        <Parameter name="@DeptCode" type="nvarchar(32)"/>
+        <Parameter name="@DeptName" type="nvarchar(32)"/>
+        <Parameter name="@EnglishName" type="nvarchar(32)"/>
+        <Parameter name="@ChineseName" type="nvarchar(32)"/>
+        <Parameter name="@GroupID" type="uniqueidentifier"/>
+        <Parameter name="@Email" type="nvarchar(32)"/>
+        <Parameter name="@Remark" type="nvarchar(512)"/>
+        <Parameter name="@CheckUserID" type="uniqueidentifier"/>
+        <Parameter name="@CheckEnglishName" type="nvarchar(32)"/>
+        <Parameter name="@ReCheckUserID" type="uniqueidentifier"/>
+        <Parameter name="@ReCheckEnglishName" type="nvarchar(32)"/>
+        <Parameter name="@EcoinUserName" type="nvarchar(50)"/>
+        <Parameter name="@ImmediateSupervisorUserID" type="uniqueidentifier"/>
+        <Parameter name="@ImmediateSupervisorEnglishName" type="nvarchar(50)"/>
+        <Parameter name="@OperationID" type="uniqueidentifier"/>
+        <Parameter name="@Result" type="int" direction="out"/>
+      </Parameters>
+    </Procedure>
+    <Procedure id="UpdateEntity"  value="SRLS_USP_Master_UpdateSingleUser">
+      <Parameters>
+        <Parameter name="@ID" type="uniqueidentifier" direction="in"/>
+        <Parameter name="@Password" type="nvarchar(32)"/>
+        <Parameter name="@DeptCode" type="nvarchar(32)"/>
+        <Parameter name="@DeptName" type="nvarchar(32)"/>
+        <Parameter name="@EnglishName" type="nvarchar(32)"/>
+        <Parameter name="@ChineseName" type="nvarchar(32)"/>
+        <Parameter name="@GroupID" type="uniqueidentifier"/>
+        <Parameter name="@Email" type="nvarchar(32)"/>
+        <Parameter name="@Remark" type="nvarchar(512)"/>
+        <Parameter name="@CheckUserID" type="uniqueidentifier"/>
+        <Parameter name="@CheckEnglishName" type="nvarchar(32)"/>
+        <Parameter name="@ReCheckUserID" type="uniqueidentifier"/>
+        <Parameter name="@ReCheckEnglishName" type="nvarchar(32)"/>
+        <Parameter name="@Disabled" type="bit"/>
+        <Parameter name="@Locked" type="bit"/>
+        <Parameter name="@UpdateTime" type="datetime"/>
+        <Parameter name="@EcoinUserName" type="nvarchar(50)"/>
+        <Parameter name="@ImmediateSupervisorUserID" type="uniqueidentifier"/>
+        <Parameter name="@ImmediateSupervisorEnglishName" type="nvarchar(50)"/>
+        <Parameter name="@OperationID" type="uniqueidentifier"/>
+        <Parameter name="@Result" type="int" direction="out"/>
+      </Parameters>
+    </Procedure>
+    <Procedure id="DeleteEntity"  value="Framework_USP_DeleteUser">
+      <Parameters>
+        <Parameter name="@ID" type="uniqueidentifier" direction="in"/>
+      </Parameters>
+    </Procedure>
+    <Procedure id="SelectCheckUsers" value="SRLS_USP_Master_SelectCheckUser">
+      <Parameters>
+        <Parameter name="@Type" type="int" direction="in"/>
+      </Parameters>
+    </Procedure>
+    
+  </Statements>
+</SqlMapConfig>

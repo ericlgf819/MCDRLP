@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SqlMapConfig >
+	<!-- 数据库链接字符串名 -->
+	<Provider name="DBConnection"></Provider>
+	<Statements>
+		<Procedure id="SelectTable" value="RLP_Master_SelectUserCompany">
+			<Parameters>
+				<Parameter name="@UserId" type="uniqueidentifier" direction="in" />
+				<Parameter name="@AreaId" type="uniqueidentifier" direction="in" />
+				<Parameter name="@CompanyCode" type="nvarchar" direction="in" />
+				<Parameter name="@Status" type="char" direction="in" />
+			</Parameters>
+		</Procedure>
+	</Statements>
+</SqlMapConfig>

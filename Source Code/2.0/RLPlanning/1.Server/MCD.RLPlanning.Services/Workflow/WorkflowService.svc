@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="MCD.RLPlanning.Services.Workflow.WorkflowService" CodeBehind="WorkflowService.svc.cs" %>

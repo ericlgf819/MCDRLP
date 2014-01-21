@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B03B00B0-97D7-48AE-A272-E33167BC0FDD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MCD.RLPlanning.Business</RootNamespace>
+    <AssemblyName>MCD.RLPlanning.Business</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>%24/Mcdonalds/Source Code/2.0/RLPlanning/2.Client/MCD.RLPlanning.Business</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <SccAuxPath>http://202.136.210.92:8080/tfs/defaultcollection</SccAuxPath>
+    <SccProvider>{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="APGL\APBLL.cs" />
+    <Compile Include="APGL\CALBLL.cs" />
+    <Compile Include="APGL\GLBLL.cs" />
+    <Compile Include="Common\CommonBLL.cs" />
+    <Compile Include="Common\SelectBLL.cs" />
+    <Compile Include="ContractMg\ContractBLL.cs" />
+    <Compile Include="ContractMg\EntityBLL.cs" />
+    <Compile Include="ContractMg\FixedRuleBLL.cs" />
+    <Compile Include="ContractMg\RatioRuleBLL.cs" />
+    <Compile Include="ContractMg\RentRuleAllInfo.cs" />
+    <Compile Include="Common\LogBLL.cs" />
+    <Compile Include="ForecastSales\SalesBLL.cs" />
+    <Compile Include="Master\AccountBLL.cs" />
+    <Compile Include="Master\AreaBLL.cs" />
+    <Compile Include="Master\CompanyBLL.cs" />
+    <Compile Include="Master\DeptBLL.cs" />
+    <Compile Include="SalesCalculate\SalesCalculateBLL.cs" />
+    <Compile Include="Setting\EntityTypeBLL.cs" />
+    <Compile Include="Master\GLAdjustmentBLL.cs" />
+    <Compile Include="Master\KioskSalesBLL.cs" />
+    <Compile Include="Master\KioskSalesCollectionBLL.cs" />
+    <Compile Include="Setting\RentTypeBLL.cs" />
+    <Compile Include="Master\KioskBLL.cs" />
+    <Compile Include="Master\StoreBLL.cs" />
+    <Compile Include="Master\TypeCodeBLL.cs" />
+    <Compile Include="Master\UserBLL.cs" />
+    <Compile Include="Master\VendorBLL.cs" />
+    <Compile Include="Master\UserCompanyBLL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BaseBLL.cs" />
+    <Compile Include="Report\ReportBLL.cs" />
+    <Compile Include="Setting\AttachmentsBLL.cs" />
+    <Compile Include="PlanningSnapshot\CloseAccountBLL.cs" />
+    <Compile Include="Setting\SystemParameterBLL.cs" />
+    <Compile Include="Synchronization\ScheduleBLL.cs" />
+    <Compile Include="Task\TaskBLL.cs" />
+    <Compile Include="Report\UserOperationBLL.cs" />
+    <Compile Include="Workflow\WorkflowBLL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\MCD.Common\MCD.Common.csproj">
+      <Project>{D24BD75B-FA49-4F80-AFDB-BA1F352C5045}</Project>
+      <Name>MCD.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\MCD.Framework.DALCommon\MCD.Framework.DALCommon.csproj">
+      <Project>{356A5869-D40C-4FE3-B893-B825E2C8CB7B}</Project>
+      <Name>MCD.Framework.DALCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\MCD.Framework.Entity\MCD.Framework.Entity.csproj">
+      <Project>{D6562CCF-3003-4C59-8682-2193AF88190C}</Project>
+      <Name>MCD.Framework.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\MCD.Framework.SqlDAL\MCD.Framework.SqlDAL.csproj">
+      <Project>{9D3CD148-CBB9-4F1C-B17C-48298CFBB711}</Project>
+      <Name>MCD.Framework.SqlDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MCD.RLPlanning.Entity\MCD.RLPlanning.Entity.csproj">
+      <Project>{2D9CB296-6F98-426B-8370-968202320D70}</Project>
+      <Name>MCD.RLPlanning.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\1.Server\MCD.RLPlanning.IServices\MCD.RLPlanning.IServices.csproj">
+      <Project>{C8921C20-5C85-4111-9DE0-2DE318A7964C}</Project>
+      <Name>MCD.RLPlanning.IServices</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

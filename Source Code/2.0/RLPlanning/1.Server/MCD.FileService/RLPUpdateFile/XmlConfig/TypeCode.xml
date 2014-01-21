@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SqlMapConfig >
+  <!-- 数据库链接字符串名 -->
+  <Provider name="DBConnection"></Provider>
+  <Statements>
+    <Procedure id="SelectSingle" value="usp_Master_SelectSingleTypeCode">
+      <Parameters>
+        <Parameter name="@TypeCodeSnapshotID" type="nvarchar(50)" direction="in"/>
+      </Parameters>
+    </Procedure>
+    <Procedure id="SelectTable"  value="usp_Master_SelectTypeCode">
+      <Parameters>
+        <Parameter name="@TypeCode" type="nvarchar(50)" description="typecode"/>
+        <Parameter name="@RentTypeName" type="nvarchar(50)" description="租金类型"/>
+        <Parameter name="@EntityTypeName" type="nvarchar(50)" description="实体类型"/>
+        <Parameter name="@Status" type="nvarchar(50)" description="状态"/>
+      </Parameters>
+    </Procedure>
+    <Procedure id="UpdateEntity"  value="usp_Master_UpdateOrInsertSingleTypeCode">
+      <Parameters>
+        <Parameter name="@TypeCodeSnapshotID" type="nvarchar(50)" direction="in"/>
+        <Parameter name="@RentTypeName" type="varchar(50)" direction="in"/>
+        <Parameter name="@EntityTypeName" type="varchar(50)" direction="in"/>
+        <Parameter name="@TypeCode" type="varchar(50)" direction="in"/>
+        <Parameter name="@Status" type="varchar(50)" direction="in"/>
+        <Parameter name="@InvoicePrefix" type="varchar(50)" direction="in"/>
+        <Parameter name="@Description" type="varchar(2000)" direction="in"/>
+        <Parameter name="@UpdateInfo" type="varchar(2000)" direction="in"/>
+        <Parameter name="@SortIndex" type="int" direction="in"/>
+        <Parameter name="@YTGLDebit" type="varchar(100)" direction="in"/>
+        <Parameter name="@YTGLCredit" type="varchar(100)" direction="in"/>
+        <Parameter name="@YTAPNormal" type="varchar(100)" direction="in"/>
+        <Parameter name="@YFAPDifferences" type="varchar(100)" direction="in"/>
+        <Parameter name="@YTAPDifferences" type="varchar(100)" direction="in"/>
+        <Parameter name="@YTRemark" type="varchar(2000)" direction="in"/>
+        <Parameter name="@YFGLDebit" type="varchar(100)" direction="in"/>
+        <Parameter name="@YFGLCredit" type="varchar(100)" direction="in"/>
+        <Parameter name="@YFAPNormal" type="varchar(100)" direction="in"/>
+        <Parameter name="@YFRemak" type="varchar(2000)" direction="in"/>
+        <Parameter name="@ZXGLDebit" type="varchar(100)" direction="in"/>
+        <Parameter name="@ZXGLCredit" type="varchar(100)" direction="in"/>
+        <Parameter name="@ZXRemark" type="varchar(2000)" direction="in"/>
+        <Parameter name="@BFGLDebit" type="varchar(100)" direction="in"/>
+        <Parameter name="@BFGLCredit" type="varchar(100)" direction="in"/>
+        <Parameter name="@BFRemak" type="varchar(2000)" direction="in"/>
+        <Parameter name="@CreatorName" type="varchar(50)" direction="in"/>
+        <Parameter name="@OperationID" type="varchar(50)" direction="in"/>
+        <Parameter name="@Type" type="int" direction="in"/>
+        <Parameter name="@PartComment" type="varchar(1000)" direction="in"/>
+        <Parameter name="@Res" type="varchar(50)" direction="out"/>
+      </Parameters>
+    </Procedure>
+  </Statements>
+</SqlMapConfig>

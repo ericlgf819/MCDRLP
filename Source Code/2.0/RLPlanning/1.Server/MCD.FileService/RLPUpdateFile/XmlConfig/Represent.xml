@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SqlMapConfig >
+  <!-- 数据库链接字符串名 -->
+  <Provider name="DBConnection"></Provider>
+  <Statements>
+    <Procedure id="SelectSingle" value="SRLS_USP_Master_SelectSingleRepresent">
+      <Parameters>
+        <!-- 参数名、参数类型、参数方式的 In 或者是 Out，默认值为 In  -->
+        <Parameter name="@ID" type="uniqueidentifier" direction="in"/>
+      </Parameters>
+    </Procedure>
+    <Procedure id="SelectTable"  value="SRLS_USP_Master_SelectRepresent">
+      <Parameters>
+        <Parameter name="@EnglishName" type="nvarchar(32)" direction="in"/>
+        <Parameter name="@UserName" type="nvarchar(32)" direction="in"/>
+      </Parameters>
+    </Procedure>
+    <Procedure id="InsertEntity" value="SRLS_USP_Master_InsertSingleRepresent">
+      <Parameters>
+        <Parameter name="@ID" type="uniqueidentifier" direction="in"/>
+        <Parameter name="@UserID" type="uniqueidentifier"/>
+        <Parameter name="@EnglishName" type="nvarchar(32)"/>
+        <Parameter name="@ActUserID" type="uniqueidentifier"/>
+        <Parameter name="@ActEnglishName" type="nvarchar(32)"/>
+        <Parameter name="@StartDate" type="datetime"/>
+        <Parameter name="@EndDate" type="datetime"/>
+        <Parameter name="@UpdateTime" type="datetime"/>
+        <Parameter name="@OperationID" type="uniqueidentifier" direction="in"/>
+        <Parameter name="@Res" type="int" direction="out"/>
+      </Parameters>
+    </Procedure>
+    <Procedure id="UpdateEntity"  value="SRLS_USP_Master_UpdateSingleRepresent">
+      <Parameters>
+        <Parameter name="@ID" type="uniqueidentifier" direction="in"/>
+        <Parameter name="@ActUserID" type="uniqueidentifier"/>
+        <Parameter name="@ActEnglishName" type="nvarchar(32)"/>
+        <Parameter name="@StartDate" type="datetime"/>
+        <Parameter name="@EndDate" type="datetime"/>
+        <Parameter name="@UpdateTime" type="datetime"/>
+        <Parameter name="@OperationID" type="uniqueidentifier" direction="in"/>
+        <Parameter name="@Res" type="int" direction="out"/>
+      </Parameters>
+    </Procedure>
+    <Procedure id="DeleteEntity"  value="SRLS_USP_Master_DeleteSingleRepresent">
+      <Parameters>
+        <Parameter name="@ID" type="uniqueidentifier" direction="in"/>
+        <Parameter name="@OperationID" type="uniqueidentifier" direction="in"/>
+      </Parameters>
+    </Procedure>
+    <Procedure id="SelectCheckUsers" value="SRLS_USP_Master_SelectCheckUser">
+      <Parameters>
+        <Parameter name="@Type" type="int" direction="in"/>
+      </Parameters>
+    </Procedure>
+  </Statements>
+</SqlMapConfig>

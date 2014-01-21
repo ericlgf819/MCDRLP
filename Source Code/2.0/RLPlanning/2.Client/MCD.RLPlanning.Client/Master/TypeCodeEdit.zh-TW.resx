@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnSave" xml:space="preserve">
+    <value>暫存</value>
+  </data>
+  <data name="Caption" xml:space="preserve">
+    <value>Caption</value>
+  </data>
+  <data name="EntityTypeMustSel" xml:space="preserve">
+    <value>請選擇實體類型！</value>
+  </data>
+  <data name="gbBF" xml:space="preserve">
+    <value>業務類型:預付(未首次付款)</value>
+  </data>
+  <data name="gbYF" xml:space="preserve">
+    <value>業務類型:預付</value>
+  </data>
+  <data name="gbYT" xml:space="preserve">
+    <value>業務類型:預提</value>
+  </data>
+  <data name="gbZX" xml:space="preserve">
+    <value>業務類型:直線</value>
+  </data>
+  <data name="InvoicePrefixNotEmpty" xml:space="preserve">
+    <value>發票編號不能空！</value>
+  </data>
+  <data name="lblDescription" xml:space="preserve">
+    <value>Type Description:</value>
+  </data>
+  <data name="lblEntityType" xml:space="preserve">
+    <value>實體類型:</value>
+  </data>
+  <data name="lblInvoicePrefix" xml:space="preserve">
+    <value>發票編號:</value>
+  </data>
+  <data name="lblRentType" xml:space="preserve">
+    <value>租金類型:</value>
+  </data>
+  <data name="lblTypeCode" xml:space="preserve">
+    <value>TypeCode:</value>
+  </data>
+  <data name="lblUpdateInfo" xml:space="preserve">
+    <value>更新信息:</value>
+  </data>
+  <data name="lblYFAPDifferences" xml:space="preserve">
+    <value>異常:</value>
+  </data>
+  <data name="lblYFAPNormal" xml:space="preserve">
+    <value>正常:</value>
+  </data>
+  <data name="lblYTAPDifferences" xml:space="preserve">
+    <value>異常:</value>
+  </data>
+  <data name="lblYTAPNormal" xml:space="preserve">
+    <value>正常:</value>
+  </data>
+  <data name="RentTypeMustSel" xml:space="preserve">
+    <value>請選擇租金類型！</value>
+  </data>
+  <data name="SaveFailure" xml:space="preserve">
+    <value>保存失敗！</value>
+  </data>
+  <data name="SaveSuccess" xml:space="preserve">
+    <value>保存成功！</value>
+  </data>
+  <data name="TypeCodeEdit" xml:space="preserve">
+    <value>TypeCode信息</value>
+  </data>
+  <data name="TypeCodeNotEmpty" xml:space="preserve">
+    <value>TypeCode不能空！</value>
+  </data>
+  <data name="lblBFGLCredit" xml:space="preserve">
+    <value>CREDIT:</value>
+  </data>
+  <data name="lblBFGLDebit" xml:space="preserve">
+    <value>DEBIT:</value>
+  </data>
+  <data name="lblYFGLCredit" xml:space="preserve">
+    <value>CREDIT:</value>
+  </data>
+  <data name="lblYFGLDebit" xml:space="preserve">
+    <value>DEBIT:</value>
+  </data>
+  <data name="lblYTGLCredit" xml:space="preserve">
+    <value>CREDIT:</value>
+  </data>
+  <data name="lblYTGLDebit" xml:space="preserve">
+    <value>DEBIT:</value>
+  </data>
+  <data name="lblZXGLCredit" xml:space="preserve">
+    <value>CREDIT:</value>
+  </data>
+  <data name="lblZXGLDebit" xml:space="preserve">
+    <value>DEBIT:</value>
+  </data>
+  <data name="label1" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="label2" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="label3" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="label4" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="TypeCodeCannotBeTheSame" xml:space="preserve">
+    <value>數據庫已經存在該typecode，請輸入別的名稱！</value>
+  </data>
+  <data name="label10" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="label5" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="label6" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="label7" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="label8" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="label9" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="SelMustSel" xml:space="preserve">
+    <value>下拉框不能為空！</value>
+  </data>
+  <data name="gbTypeCode" xml:space="preserve">
+    <value>TypeCode信息</value>
+  </data>
+  <data name="btnApprove" xml:space="preserve">
+    <value>通過</value>
+  </data>
+  <data name="btnNewSave" xml:space="preserve">
+    <value>暫存</value>
+  </data>
+  <data name="btnReject" xml:space="preserve">
+    <value>拒絕</value>
+  </data>
+  <data name="btnSubmit" xml:space="preserve">
+    <value>提交</value>
+  </data>
+  <data name="lblApprove" xml:space="preserve">
+    <value>審批意見:</value>
+  </data>
+  <data name="SaveFirst" xml:space="preserve">
+    <value>請先保存表單數據!</value>
+  </data>
+  <data name="MustFillApprove" xml:space="preserve">
+    <value>必須填寫審批意見!</value>
+  </data>
+  <data name="btnClose" xml:space="preserve">
+    <value>關閉</value>
+  </data>
+  <data name="gpYF" xml:space="preserve">
+    <value>Journal Description</value>
+  </data>
+  <data name="lblBF" xml:space="preserve">
+    <value>Journal Description</value>
+  </data>
+  <data name="lblYF" xml:space="preserve">
+    <value>Journal Description</value>
+  </data>
+  <data name="lblZX" xml:space="preserve">
+    <value>Journal Description</value>
+  </data>
+  <data name="FailToSaveStatu" xml:space="preserve">
+    <value>更新typecode狀態失敗，操作取消！</value>
+  </data>
+  <data name="label11" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="label12" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="label13" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="label14" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="lblReject" xml:space="preserve">
+    <value>拒絕類型:</value>
+  </data>
+  <data name="MustFillRejectType" xml:space="preserve">
+    <value>必須填寫拒絕類型！</value>
+  </data>
+  <data name="groupBox12" xml:space="preserve">
+    <value>GL</value>
+  </data>
+  <data name="groupBox16" xml:space="preserve">
+    <value>GL</value>
+  </data>
+  <data name="groupBox2" xml:space="preserve">
+    <value>GL</value>
+  </data>
+  <data name="groupBox3" xml:space="preserve">
+    <value>AP</value>
+  </data>
+  <data name="groupBox7" xml:space="preserve">
+    <value>AP</value>
+  </data>
+  <data name="groupBox8" xml:space="preserve">
+    <value>GL</value>
+  </data>
+  <data name="label16" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="label17" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="label18" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="label19" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="DescriptNotEmpty" xml:space="preserve">
+    <value>Type Description不能空！</value>
+  </data>
+  <data name="JournalNotEmpty" xml:space="preserve">
+    <value>Journal Description不能空！</value>
+  </data>
+  <data name="lbViewHistory" xml:space="preserve">
+    <value>查看流轉過程</value>
+  </data>
+  <data name="ExistsRentTypeAndEntityType" xml:space="preserve">
+    <value>保存失敗，系統提示您所錄入的租金類型、實體類型組合已在系統中定義，請確認!</value>
+  </data>
+  <data name="MessageIsLocked" xml:space="preserve">
+    <value>該數據因為有關聯的AP\GL流程處於“審核”、“審批”或“生成憑證”步驟而被鎖定，不允許操作！</value>
+  </data>
+  <data name="btnForwardTo" xml:space="preserve">
+    <value>轉發任務</value>
+  </data>
+</root>

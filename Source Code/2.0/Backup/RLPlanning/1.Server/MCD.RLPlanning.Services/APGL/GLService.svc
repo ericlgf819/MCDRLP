@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="MCD.RLPlanning.Services.APGL.GLService" CodeBehind="GLService.svc.cs" %>

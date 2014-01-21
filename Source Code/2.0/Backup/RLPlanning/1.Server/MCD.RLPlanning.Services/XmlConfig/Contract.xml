@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SqlMapConfig >
+	<!-- 数据库链接字符串名 -->
+	<Provider name="DBConnection"></Provider>
+	<Statements>
+		<Procedure id="SelectSingle" value="usp_Master_SelectSingleContract">
+			<Parameters>
+				<!-- 参数名、参数类型、参数方式的 In 或者是 Out，默认值为 In  -->
+				<Parameter name="@ContractSnapshotID" type="nvarchar(50)" direction="in"/>
+			</Parameters>
+		</Procedure>
+		<Procedure id="SelectTable"  value="usp_Master_SelectContract">
+			<Parameters>
+				<Parameter name="@StoreOrDeptNo" type="nvarchar(100)" direction="in"/>
+				<Parameter name="@VendorNo" type="nvarchar(50)" direction="in"/>
+				<Parameter name="@CompanyNo" type="nvarchar(100)" direction="in"/>
+				<Parameter name="@ContractNo" type="nvarchar(100)" direction="in"/>
+				<Parameter name="@Area" type="uniqueidentifier" direction="in"/>
+				<Parameter name="@Status" type="nvarchar(100)" direction="in"/>
+			</Parameters>
+		</Procedure>
+		<Procedure id="InsertEntity" value="usp_Master_InsertContract">
+			<Parameters>
+				<Parameter name="@ContractSnapshotID" type="nvarchar(50)"/>
+				<Parameter name="@CompanyCode" type="nvarchar(32)"/>
+				<Parameter name="@ContractID" type="nvarchar(50)"/>
+				<Parameter name="@ContractNO" type="nvarchar(50)"/>
+				<Parameter name="@Version" type="nvarchar(50)"/>
+				<Parameter name="@ContractName" type="nvarchar(50)"/>
+				<Parameter name="@CompanyName" type="nvarchar(50)"/>
+				<Parameter name="@CompanySimpleName" type="nvarchar(50)"/>
+				<Parameter name="@CompanyRemark" type="nvarchar(2000)"/>
+				<Parameter name="@Status" type="nvarchar(50)"/>
+				<Parameter name="@Remark" type="nvarchar(2000)"/>
+				<Parameter name="@UpdateInfo" type="nvarchar(2000)"/>
+				<Parameter name="@IsLocked" type="bit"/>
+				<Parameter name="@CreateTime" type="datetime"/>
+				<Parameter name="@CreatorName" type="nvarchar(50)"/>
+				<Parameter name="@LastModifyTime" type="datetime"/>
+				<Parameter name="@LastModifyUserName" type="nvarchar(50)"/>
+				<Parameter name="@SnapshotCreateTime" type="datetime"/>
+				<Parameter name="@IsSave" type="bit"/>
+				<Parameter name="@OperationID" type="uniqueidentifier"/>
+				<Parameter name="@Res" type="int" direction="out"/>
+			</Parameters>
+		</Procedure>
+		<Procedure id="UpdateEntity"  value="usp_Master_UpdateSingleContract">
+			<Parameters>
+				<Parameter name="@ContractSnapshotID" type="nvarchar(50)"/>
+				<Parameter name="@CompanyCode" type="nvarchar(32)"/>
+				<Parameter name="@ContractID" type="nvarchar(50)"/>
+				<Parameter name="@ContractNO" type="nvarchar(50)"/>
+				<Parameter name="@Version" type="nvarchar(50)"/>
+				<Parameter name="@ContractName" type="nvarchar(50)"/>
+				<Parameter name="@CompanyName" type="nvarchar(50)"/>
+				<Parameter name="@CompanySimpleName" type="nvarchar(50)"/>
+				<Parameter name="@CompanyRemark" type="nvarchar(2000)"/>
+				<Parameter name="@Status" type="nvarchar(50)"/>
+				<Parameter name="@Remark" type="nvarchar(2000)"/>
+				<Parameter name="@UpdateInfo" type="nvarchar(2000)"/>
+				<Parameter name="@IsLocked" type="bit"/>
+				<Parameter name="@CreateTime" type="datetime"/>
+				<Parameter name="@CreatorName" type="nvarchar(50)"/>
+				<Parameter name="@LastModifyTime" type="datetime"/>
+				<Parameter name="@LastModifyUserName" type="nvarchar(50)"/>
+				<Parameter name="@SnapshotCreateTime" type="datetime"/>
+				<Parameter name="@IsSave" type="bit"/>
+				<Parameter name="@OperationID" type="uniqueidentifier"/>
+				<Parameter name="@Res" type="int" direction="out"/>
+			</Parameters>
+		</Procedure>
+		<Procedure id="DeleteEntity"  value="usp_Master_DeleteSingleContract">
+			<Parameters>
+				<Parameter name="@ContractSnapshotID" type="nvarchar(50)" direction="in"/>
+				<Parameter name="@OperationID" type="uniqueidentifier"/>
+				<Parameter name="@Res" type="int" direction="out"/>
+			</Parameters>
+		</Procedure>
+		<!--<Procedure id="SelectCheckUsers" value="SRLS_USP_Master_SelectCheckUser">
+      <Parameters>
+        <Parameter name="@Type" type="int" direction="in"/>
+      </Parameters>
+    </Procedure>-->
+	</Statements>
+</SqlMapConfig>

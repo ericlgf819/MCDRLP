@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SqlMapConfig >
+	<!-- 数据库链接字符串名 -->
+	<Provider name="DBConnection"></Provider>
+	<Statements>
+		<Procedure id="SelectTable" value="SRLS_USP_Master_SelectCompany">
+			<Parameters>
+				<Parameter name="@AreaId" type="uniqueidentifier" direction="in" />
+				<Parameter name="@CompanyCode" type="nvarchar(32)" direction="in" />
+				<Parameter name="@Status" type="nvarchar(8)" direction="in" />
+				<Parameter name="@FromSRLS" type="bit" direction="in" />
+				<Parameter name="@UserID" type="nvarchar(36)" direction="in" />
+			</Parameters>
+		</Procedure>
+		<Procedure id="SelectSingle" value="SRLS_USP_Master_SelectSingleCompany">
+			<Parameters>
+				<Parameter name="@CompanyCode" type="nvarchar(32)" direction="in" />
+			</Parameters>
+		</Procedure>
+
+		<Procedure id="InsertEntity" value="SRLS_USP_Master_InsertSingleCompany">
+			<Parameters>
+				<Parameter name="@AreaID" type="uniqueidentifier" direction="in" />
+				<Parameter name="@CompanyCode" type="varchar(32)" direction="in" />
+				<Parameter name="@CompanyName" type="varchar(32)" direction="in" />
+				<Parameter name="@SimpleName" type="varchar(32)" direction="in" />
+				<Parameter name="@FixedSourceCode" type="varchar(50)" direction="in" />
+				<Parameter name="@FixedManageSourceCode" type="varchar(50)" direction="in" />
+				<Parameter name="@StraightLineSourceCode" type="varchar(50)" direction="in" />
+				<Parameter name="@RatioSourceCode" type="varchar(50)" direction="in" />
+				<Parameter name="@RatioManageSourceCode" type="varchar(50)" direction="in" />
+				<Parameter name="@RatioServiceSourceCode" type="varchar(50)" direction="in" />				
+				<Parameter name="@ResponsibleUserID" type="varchar(50)" direction="in" />
+				<Parameter name="@ResponsibleEnglishName" type="varchar(50)" direction="in" />
+				<Parameter name="@Status" type="nvarchar(1)" direction="in" />
+				
+				<Parameter name="@FromSRLS" type="bit" direction="in" />
+				<Parameter name="@OperationID" type="uniqueidentifier" direction="in" />
+				<Parameter name="@UpdateTime" type="datetime" direction="in" />
+				<Parameter name="@ReturnInfo" type="int" direction="out" />
+			</Parameters>
+		</Procedure>
+		<Procedure id="UpdateEntity" value="SRLS_USP_Master_UpdateSingleCompany">
+			<Parameters>
+				<Parameter name="@AreaID" type="uniqueidentifier" direction="in" />
+				<Parameter name="@CompanyCode" type="varchar(32)" direction="in" />
+				<Parameter name="@CompanyName" type="varchar(50)" direction="in" />
+				<Parameter name="@SimpleName" type="varchar(32)" direction="in" />
+				<Parameter name="@FixedSourceCode" type="varchar(50)" direction="in" />
+				<Parameter name="@FixedManageSourceCode" type="varchar(50)" direction="in" />
+				<Parameter name="@StraightLineSourceCode" type="varchar(50)" direction="in" />
+				<Parameter name="@RatioSourceCode" type="varchar(50)" direction="in" />
+				<Parameter name="@RatioManageSourceCode" type="varchar(50)" direction="in" />
+				<Parameter name="@RatioServiceSourceCode" type="varchar(50)" direction="in" />
+				<Parameter name="@ResponsibleUserID" type="varchar(50)" direction="in" />
+				<Parameter name="@ResponsibleEnglishName" type="varchar(50)" direction="in" />
+				<Parameter name="@Status" type="nvarchar(1)" direction="in" />
+				
+				<Parameter name="@UpdateTime" type="datetime" direction="in" />
+			</Parameters>
+		</Procedure>
+		<Procedure id="DeleteEntity" value="usp_Master_DeleteCompany">
+			<Parameters>
+				<Parameter name="@CompanyCode" type="int" direction="in" />
+				<Parameter name="@Res" type="int" direction="out" />
+			</Parameters>
+		</Procedure>
+	</Statements>
+</SqlMapConfig>

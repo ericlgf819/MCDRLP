@@ -1,0 +1,7 @@
+sales模版下载不要有Inactive的实体
+sales录入可以允许Inactive的实体进行录入
+续租结束日期默认+5年
+
+反序列化对象 属于类型 System.Byte[] 时出现错误。读取 XML 数据时，超出最大数组长度配额(16384)。通过更改在创建 XML 读取器时所使用的 XmlDictionaryReaderQuotas 对象的 MaxArrayLength 属性，可增加此配额。
+
+updatesingleentity

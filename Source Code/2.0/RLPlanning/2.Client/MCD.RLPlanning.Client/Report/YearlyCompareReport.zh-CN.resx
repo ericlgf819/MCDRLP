@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AreaName" xml:space="preserve">
+    <value>区域</value>
+  </data>
+  <data name="Caption" xml:space="preserve">
+    <value>提示信息</value>
+  </data>
+  <data name="chbFixManagement" xml:space="preserve">
+    <value>固定管理费</value>
+  </data>
+  <data name="chbFixRent" xml:space="preserve">
+    <value>固定租金</value>
+  </data>
+  <data name="chbRadioManagement" xml:space="preserve">
+    <value>百分比管理费</value>
+  </data>
+  <data name="chbRadioRent" xml:space="preserve">
+    <value>百分比租金</value>
+  </data>
+  <data name="chbRadioService" xml:space="preserve">
+    <value>百分比服务费</value>
+  </data>
+  <data name="chbStraightRent" xml:space="preserve">
+    <value>直线租金</value>
+  </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>公司名称</value>
+  </data>
+  <data name="KioskNo" xml:space="preserve">
+    <value>甜品店编号</value>
+  </data>
+  <data name="lblArea" xml:space="preserve">
+    <value>区域:</value>
+  </data>
+  <data name="lblCompany" xml:space="preserve">
+    <value>公司:</value>
+  </data>
+  <data name="lblEntityScope" xml:space="preserve">
+    <value>范围:</value>
+  </data>
+  <data name="lblOnlyContainOpenBefore" xml:space="preserve">
+    <value>是否仅包含在开始年限之前开的餐厅:</value>
+  </data>
+  <data name="lblRentType" xml:space="preserve">
+    <value>租金类型:</value>
+  </data>
+  <data name="MustSelectRentType" xml:space="preserve">
+    <value>至少选择一种租金类型</value>
+    <comment>Hint</comment>
+  </data>
+  <data name="MustYear" xml:space="preserve">
+    <value>请填写合同变动年度</value>
+  </data>
+  <data name="RentType" xml:space="preserve">
+    <value>租金类型</value>
+  </data>
+  <data name="StoreNo" xml:space="preserve">
+    <value>餐厅编号</value>
+  </data>
+  <data name="YearInvalid" xml:space="preserve">
+    <value>请正确填写4位年份</value>
+  </data>
+  <data name="lblContractType" xml:space="preserve">
+    <value>合同类型:</value>
+  </data>
+  <data name="lblYear" xml:space="preserve">
+    <value>合同变动年度:</value>
+  </data>
+  <data name="radAll" xml:space="preserve">
+    <value>全部</value>
+  </data>
+  <data name="radChange" xml:space="preserve">
+    <value>变更</value>
+  </data>
+  <data name="radExtend" xml:space="preserve">
+    <value>续租</value>
+  </data>
+  <data name="radNew" xml:space="preserve">
+    <value>新建</value>
+  </data>
+  <data name="YearMonthRentColumn" xml:space="preserve">
+    <value>年月度平均租金</value>
+  </data>
+  <data name="YearlyCompareReport" xml:space="preserve">
+    <value>年度对比报表</value>
+  </data>
+  <data name="InvalidAreaInput" xml:space="preserve">
+    <value>不存在所输入的区域'{0}'!</value>
+  </data>
+  <data name="MustArea" xml:space="preserve">
+    <value>请选择区域!</value>
+  </data>
+</root>

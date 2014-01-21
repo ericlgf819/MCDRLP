@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+  <Menu name="TaskMenu" text="任务管理" expand="true" shortKey="Alt+T" sort="1">
+    <Menu name="TodoInfo" text="待办任务" autoOpen="true" shortKey="Ctrl+P" height="20" form="MCD.SRLS.Client.Workflow.Task.TodoInfo"></Menu>
+    <Menu name="DoneInfo" text="已办任务" shortKey="Ctrl+H" height="20" form="MCD.SRLS.Client.Workflow.Task.DoneInfo"></Menu>
+  </Menu>
+  <Menu name="MasterMenu" text="基本信息" shortKey="Alt+M" sort="0">
+    <Menu name="AreaInfo" text="区域设置" shortKey="Ctrl+A" height="20" form="MCD.SRLS.Client.Master.AreaSetting"/>
+    <Menu name="CompanyInfo" text="公司信息" shortKey="Alt+C" height="20" form="MCD.SRLS.Client.Master.CompanyInfo"/>
+    <Menu name="DeptInfo" text="部门信息" shortKey="Ctrl+D" height="20" form="MCD.SRLS.Client.Master.DeptInfo"/>
+    <Menu name="UserInfo" text="用户信息" shortKey="Ctrl+U" height="20" form="MCD.SRLS.Client.Master.UserInfo"/>
+    <Menu name="ChangePWD" text="密码修改" shortKey="Ctrl+E" height="20" form="MCD.SRLS.Client.Master.ChangePWD"></Menu>
+    <Menu name="RepresentList" text="代理信息" shortKey="Ctrl+A" height="20" form="MCD.SRLS.Client.Master.RepresentList"/>
+    <Menu name="MasterSplitOne" text="-" height="1" form=""/>
+    <Menu name="VendorInfo" text="业主信息" shortKey="Alt+V" height="20" form="MCD.SRLS.Client.Master.VendorInfo"/>
+    <Menu name="StoreInfo" text="餐厅信息" shortKey="Ctrl+S" height="20" form="MCD.SRLS.Client.Master.StoreInfo"/>
+    <Menu name="KioskInfo" text="甜品站信息" shortKey="Alt+K" height="20" form="MCD.SRLS.Client.Master.KioskList"/>
+    <Menu name="AccountInfo" text="科目信息" shortKey="Ctrl+K" height="20" form="MCD.SRLS.Client.Master.AccountInfo"/>
+    <Menu name="TypeCodeInfo" text="TypeCode信息" shortKey="Ctrl+O" height="20" form="MCD.SRLS.Client.Master.TypeCodeInfo"/>
+    <Menu name="MasterSplitOne" text="-" height="1" form=""/>
+    <Menu name="ContractList" text="合同管理" height="20" form="MCD.SRLS.Client.ContractMg.ContractList"></Menu>
+  </Menu>
+
+  <Menu name="MattersMenu" text="租赁事项记录" expand="false" shortKey="Alt+D" sort="1">
+    <Menu name="MattersType" text="事项类型" shortKey="Ctrl+M" height="20" form="MCD.SRLS.Client.Matters.MattersType"></Menu>
+    <Menu name="MattersNew" text="新增事项" shortKey="Ctrl+N" height="20" form="MCD.SRLS.Client.Matters.MattersEdit" openMethod="show"></Menu>
+    <Menu name="MattersList" text="事项列表" shortKey="Ctrl+L" height="20" form="MCD.SRLS.Client.Matters.MattersList"></Menu>
+    <Menu name="MattersImport" text="事项导入" shortKey="Ctrl+I" height="20" form="MCD.SRLS.Client.Matters.MattersImport"></Menu>
+  </Menu>
+  <Menu name="ReportMenu" text="报表管理" expand="false" shortKey="Alt+R" sort="1">
+    <Menu name="ReportFollowMatters" text="跟进事项报表" shortKey="Ctrl+F" height="20" form="MCD.SRLS.Client.Matters.ReportFollowMatters"></Menu>
+    <Menu name="ReportCheckListStore" text="未设置CheckList餐厅报表" shortKey="Ctrl+K" height="20" form="MCD.SRLS.Client.Matters.ReportCheckListStore"></Menu>
+    <Menu name="ReportRejectMatters" text="事项Reject报表" shortKey="Ctrl+R" height="20" form="MCD.SRLS.Client.Matters.ReportRejectMatters"></Menu>
+    <Menu name="ReportRejectUsers" text="用户Reject报表" shortKey="Ctrl+U" height="20" form="MCD.SRLS.Client.Matters.ReportRejectUsers"></Menu>
+    <Menu name="MasterSplitTwo" text="-" height="1" form=""/>
+    <Menu name="DeletedUser" text="已删除用户报表" shortKey="Ctrl+R" height="20" form="MCD.SRLS.Client.Master.UserDeleteReport"/>
+    <Menu name="UserOperation" text="用户操作日志报表" shortKey="Ctrl+E" height="20" form="MCD.SRLS.Client.UserOperation"></Menu>
+  </Menu>
+  <Menu name="SystemMenu" text="系统管理" expand="false" shortKey="Alt+S" sort="1">
+    <Menu name="MasterSplitOne" text="-" height="1" form=""/>
+    <Menu name="WorkDateInfo" text="工作日设置" shortKey="Ctrl+B" height="20" form="MCD.SRLS.Client.Master.WorkDateSetting"/>
+    <Menu name="RentTypeInfo" text="GL计算日期设置" shortKey="Ctrl+X" height="20" form="MCD.SRLS.Client.Master.RentTypeSetting"/>
+    <Menu name="EntityTypeInfo" text="实体类型" shortKey="Ctrl+E" height="20" form="MCD.SRLS.Client.Master.EntityTypeInfo"/>
+    <Menu name="RejectTypeInfo" text="REJECT类型" shortKey="Ctrl+F" height="20" form="MCD.SRLS.Client.Master.RejectTypeInfo"/>
+    <Menu name="SystemParameterInfo" text="系统参数设置" shortKey="Ctrl+W" height="20" form="MCD.SRLS.Client.Sys.SystemParameterInfo"></Menu>
+    <Menu name="MasterSplitOne" text="-" height="1" form=""/>
+    <Menu name="ModuleSetting" text="模块设置" shortKey="Ctrl+M" height="20" form="MCD.SRLS.Client.Sys.ModuleList"></Menu>
+    <Menu name="PopedomSetting" text="权限设置" shortKey="Ctrl+P" height="20" form="MCD.SRLS.Client.Sys.PopedomSetting"></Menu>
+    
+    <Menu name="UserInfo" text="用户信息" shortKey="Ctrl+U" height="20" form="MCD.SRLS.Client.Master.UserInfo"/>
+    <Menu name="UserGroup" text="用户组设置" shortKey="Ctrl+G" height="20" form="MCD.SRLS.Client.Sys.UserGroup"></Menu>
+  </Menu>
+  <Menu name="Language" showLeft="false" text="语言" expand="false" shortKey="Alt+L" sort="2">
+    <Menu name="SimpleChinese" text="简体中文" shortKey="Alt+C" height="20" form=""/>
+    <Menu name="English" text="English" shortKey="Alt+E" height="20" openMethod="process" form=""/>
+    <Menu name="TraditionalChinese" text="繁体中文" shortKey="Alt+T" height="20" form=""/>
+  </Menu>
+  <Menu name="HelpInfo" showLeft="false" text="帮助" expand="false" shortKey="Alt+H" sort="2">
+    <Menu name="About" text="关于" shortKey="alt+A" height="20" openMethod="dialog" form="MCD.SRLS.Client.FrmAbout"/>
+    <Menu name="Help" text="帮助" shortKey="CTRL|H" height="20" openMethod="process" form=""/>
+  </Menu>
+</Menu>
+<!--
+text: 显示在菜单中的标题，必须设置
+name: 生成控件的名称，必须设置，不可重复
+form: 菜单打开的窗体或应用程序，必须设置
+autoOpen:菜单是否默认打开，可选。
+openMethod:菜单打开的方式，可选   dialog: ShowDialog 模态窗口   show: Show 窗口  process:使用新的进程打开   空值为默认方式
+expand: 左边菜单是否默认展开，可选
+shortKey: 快捷键，可选，格式为 Alt+字母 或者 Ctrl+字母
+height: 左边菜单显示高度，可选
+showLeft: 不显示在左边树形菜单中，可选
+
+
+
+<Menu name="KioskInfo" text="甜品站信息" shortKey="Ctrl+K" height="20" form="MCD.SRLS.Client.Master.KioskInfo"/>
+
+<Menu name="RentCalculate" text="租金计算" expand="false" shortKey="Alt+R" sort="1">
+    <Menu name="StoreSales" text="餐厅销售额" shortKey="Ctrl+S" height="20" form="MCD.SRLS.Client.Rent.StoreSales"></Menu>
+    <Menu name="KioskSales" text="甜品站销售额" shortKey="Ctrl+K" height="20" form="MCD.SRLS.Client.Rent.KioskSales"></Menu>
+    <Menu name="sltSales" text="-" height="20" form=""></Menu>
+    <Menu name="ContractNew" text="合同信息设置" shortKey="Ctrl+N" height="20" form="MCD.SRLS.Client.Rent.ContractNew"></Menu>
+    <Menu name="ContractList" text="合同信息列表" shortKey="Ctrl+I" height="20" form="MCD.SRLS.Client.Rent.ContractList"></Menu>
+    <Menu name="sltContract" text="-" height="20" form=""></Menu>
+    <Menu name="LineRent" text="直线租金计算" shortKey="Ctrl+L" height="20" form="MCD.SRLS.Client.Rent.LineRent"></Menu>
+    <Menu name="WithholdingRent" text="预提租金计算" shortKey="Ctrl+W" height="20" form="MCD.SRLS.Client.Rent.WithholdingRent"></Menu>
+    <Menu name="PayRent" text="付款计算" shortKey="Ctrl+P" height="20" form="MCD.SRLS.Client.Rent.PayRent"></Menu>
+    <Menu name="ErrorRent" text="付款差异报表" shortKey="Ctrl+E" height="20" form="MCD.SRLS.Client.Rent.ErrorRent"></Menu>
+  </Menu>
+  <Menu name="CloseMenu" text="关帐设置" expand="false" shortKey="Alt+C" sort="1">
+    <Menu name="SystemClose" text="系统关帐" shortKey="Ctrl+C" height="20" form="MCD.SRLS.Client.Close.SystemClose"></Menu>
+    <Menu name="ContractLock" text="合同信息设置锁定" shortKey="Ctrl+L" height="20" form="MCD.SRLS.Client.Close.ContractLock"></Menu>
+  </Menu>
+  <Menu name="ModuleSetting" text="模块设置" shortKey="Ctrl+M" height="20" form="MCD.SRLS.Client.Sys.ModuleList"></Menu>
+  <Menu name="ReportKioskSales" text="Kiosk调整记录报表" shortKey="Ctrl+A" height="20" form="MCD.SRLS.Client.Report.ReportKioskSales"></Menu>
+    <Menu name="ReportKioskAdjustmentRecord" text="Kiosk Sales报表" shortKey="Ctrl+A" height="20" form="MCD.SRLS.Client.Report.ReportKioskAdjustmentRecord"></Menu>
+-->

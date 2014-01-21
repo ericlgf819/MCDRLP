@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{614B93D9-3C37-44AF-AB9B-0FC1FD3426C3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MCD.RLPlanning.Services</RootNamespace>
+    <AssemblyName>MCD.RLPlanning.Services</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SccProjectName>%24/Mcdonalds/Source Code/2.0/RLPlanning/1.Server/MCD.RLPlanning.Services</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <SccAuxPath>http://202.136.210.92:8080/tfs/defaultcollection</SccAuxPath>
+    <SccProvider>{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+    <ExcludeApp_Data>true</ExcludeApp_Data>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.Excel, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\0.Library\Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=3.1.0.0, Culture=neutral, PublicKeyToken=bbc6d63f373c92bd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\0.Library\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=3.1.0.0, Culture=neutral, PublicKeyToken=bbc6d63f373c92bd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\0.Library\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=3.1.0.0, Culture=neutral, PublicKeyToken=bbc6d63f373c92bd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\0.Library\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder, Version=1.0.51206.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\0.Library\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Vbe.Interop, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Microsoft.Vbe.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Common\SelectService.svc" />
+    <Content Include="ContractMg\ContractService.svc" />
+    <Content Include="ContractMg\EntityService.svc" />
+    <Content Include="ContractMg\FixedRuleService.svc" />
+    <Content Include="ContractMg\RatioRuleService.svc" />
+    <Content Include="ForecastSales\SalesService.svc" />
+    <Content Include="LogService.svc" />
+    <Content Include="Master\AccountService.svc" />
+    <Content Include="Master\AreaService.svc" />
+    <Content Include="Master\CompanyService.svc" />
+    <Content Include="Master\DeptService.svc" />
+    <Content Include="SalesCalculate\SalesCalculate.svc" />
+    <Content Include="Setting\EntityTypeService.svc" />
+    <Content Include="Master\KioskSalesCollectionService.svc" />
+    <Content Include="Master\KioskSalesService.svc" />
+    <Content Include="Setting\RentTypeService.svc" />
+    <Content Include="Master\KioskService.svc" />
+    <Content Include="Master\StoreService.svc" />
+    <Content Include="Master\TypeCodeService.svc" />
+    <Content Include="Master\UserService.svc" />
+    <Content Include="Master\VendorService.svc" />
+    <Content Include="Master\UserCompanyService.svc" />
+    <Content Include="Setting\AttachmentsService.svc" />
+    <Content Include="Setting\SystemParameterService.svc" />
+    <Content Include="Synchronization\ScheduleService.svc" />
+    <Content Include="Task\TaskServices.svc" />
+    <Content Include="UploadFiles\upload.txt" />
+    <Content Include="Report\UserOperationService.svc" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Workflow\WorkflowService.svc" />
+    <Content Include="XmlConfig\Account.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlConfig\Area.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlConfig\Company.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlConfig\Contract.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlConfig\SynchronizationSchedule.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlConfig\Dept.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlConfig\Store.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlConfig\SysLog.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlConfig\TypeCode.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlConfig\User.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XmlConfig\Vendor.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlConfig\UserCompany.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="APGL\APService.svc.cs">
+      <DependentUpon>APService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="APGL\CALService.svc.cs">
+      <DependentUpon>CALService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="APGL\GLService.svc.cs">
+      <DependentUpon>GLService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CommonService.svc.cs">
+      <DependentUpon>CommonService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Common\SelectService.svc.cs">
+      <DependentUpon>SelectService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="ContractMg\ContractService.svc.cs">
+      <DependentUpon>ContractService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="ContractMg\EntityService.svc.cs">
+      <DependentUpon>EntityService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="ContractMg\FixedRuleService.svc.cs">
+      <DependentUpon>FixedRuleService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="ContractMg\RatioRuleService.svc.cs">
+      <DependentUpon>RatioRuleService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="ForecastSales\SalesService.svc.cs">
+      <DependentUpon>SalesService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="LogService.svc.cs">
+      <DependentUpon>LogService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Master\AccountService.svc.cs">
+      <DependentUpon>AccountService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Master\AreaService.svc.cs">
+      <DependentUpon>AreaService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Master\CompanyService.svc.cs">
+      <DependentUpon>CompanyService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Master\DeptService.svc.cs">
+      <DependentUpon>DeptService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="SalesCalculate\SalesCalculate.svc.cs">
+      <DependentUpon>SalesCalculate.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Setting\EntityTypeService.svc.cs">
+      <DependentUpon>EntityTypeService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Master\GLAdjustmentService.svc.cs">
+      <DependentUpon>GLAdjustmentService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Master\KioskSalesCollectionService.svc.cs">
+      <DependentUpon>KioskSalesCollectionService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Master\KioskSalesService.svc.cs">
+      <DependentUpon>KioskSalesService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Setting\RentTypeService.svc.cs">
+      <DependentUpon>RentTypeService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Master\KioskService.svc.cs">
+      <DependentUpon>KioskService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Master\StoreService.svc.cs">
+      <DependentUpon>StoreService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Master\TypeCodeService.svc.cs">
+      <DependentUpon>TypeCodeService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Master\UserService.svc.cs">
+      <DependentUpon>UserService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Master\VendorService.svc.cs">
+      <DependentUpon>VendorService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Master\UserCompanyService.svc.cs">
+      <DependentUpon>UserCompanyService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\ReportService.svc.cs">
+      <DependentUpon>ReportService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Setting\AttachmentsService.svc.cs">
+      <DependentUpon>AttachmentsService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="PlanningSnapshot\CloseAccountService.svc.cs">
+      <DependentUpon>CloseAccountService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Setting\SystemParameterService.svc.cs">
+      <DependentUpon>SystemParameterService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Synchronization\ScheduleService.svc.cs">
+      <DependentUpon>ScheduleService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Task\TaskServices.svc.cs">
+      <DependentUpon>TaskServices.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Report\UserOperationService.svc.cs">
+      <DependentUpon>UserOperationService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Workflow\WorkflowService.svc.cs">
+      <DependentUpon>WorkflowService.svc</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\MCD.Framework.DALCommon\MCD.Framework.DALCommon.csproj">
+      <Project>{356A5869-D40C-4FE3-B893-B825E2C8CB7B}</Project>
+      <Name>MCD.Framework.DALCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\MCD.Framework.Entity\MCD.Framework.Entity.csproj">
+      <Project>{D6562CCF-3003-4C59-8682-2193AF88190C}</Project>
+      <Name>MCD.Framework.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\MCD.Framework.SqlDAL\MCD.Framework.SqlDAL.csproj">
+      <Project>{9D3CD148-CBB9-4F1C-B17C-48298CFBB711}</Project>
+      <Name>MCD.Framework.SqlDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\MCD.Common\MCD.Common.csproj">
+      <Project>{D24BD75B-FA49-4F80-AFDB-BA1F352C5045}</Project>
+      <Name>MCD.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\2.Client\MCD.RLPlanning.Entity\MCD.RLPlanning.Entity.csproj">
+      <Project>{2D9CB296-6F98-426B-8370-968202320D70}</Project>
+      <Name>MCD.RLPlanning.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MCD.RLPlanning.IServices\MCD.RLPlanning.IServices.csproj">
+      <Project>{C8921C20-5C85-4111-9DE0-2DE318A7964C}</Project>
+      <Name>MCD.RLPlanning.IServices</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="APGL\APService.svc" />
+    <Content Include="APGL\CALService.svc" />
+    <Content Include="APGL\GLService.svc" />
+    <Content Include="Common\CommonService.svc" />
+    <Content Include="Master\GLAdjustmentService.svc" />
+    <Content Include="Report\ReportService.svc" />
+    <Content Include="PlanningSnapshot\CloseAccountService.svc" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>9002</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/MCD.SRLS.Services</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

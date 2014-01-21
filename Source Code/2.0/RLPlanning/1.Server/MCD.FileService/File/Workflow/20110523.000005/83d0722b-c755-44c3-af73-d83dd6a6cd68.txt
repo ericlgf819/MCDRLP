@@ -1,0 +1,48 @@
+d:\Program Files\Microsoft Visual Studio 9.0\VC>InstallUtil.exe "F:\Code\TFS\BSPRJ2010101\07.系统开发\02.Code\RL\MCD.SRLS.WinService\bin\Debug\MCD.SRLS.WinService.exe"
+
+---------------------------
+服务
+---------------------------
+本地计算机 上的 RentEmailService 服务启动后停止。某些服务在未由其他服务或程序使用时将自动停止。
+---------------------------
+确定   
+---------------------------
+
+
+政策法规：      工程序号 档案号 档案名称 编制单位             存放处 状态 
+环境保护档案：  工程序号 档案号 文件名称 责任者   移交单位    存放处 状态 
+地质勘测档案类：工程序号 档案号 工程名称 工程地址             存放处 状态
+城市规划：      工程序号 档案号 文件编号 文件名称 移交单位    存放处 状态  M142LWC
+
+152.141.153.245
+
+1. SELECT * FROM dbo.Org_Users FOR XML AUTO
+<dbo.Org_Users ID="2E717F3F-647E-4D28-8712-1934F97C8E1C" DeptID="011F6A9E-2D3E-4AE0-9506-99C5B00E0305" Name="陈达进" LoginID="chendajin" Email="chendajin@jm.gd.chinamobile.com" Mobile="13902880001" Telephone="5623889" SexID="1" IsTmpUser="0" Alias="4" Enabled="1" Password="123"/>
+<dbo.Org_Users ID="EB97DF19-4495-46DF-A11C-5AC43C7A06B5" DeptID="6C35A21B-5728-4BC6-B91D-F1F6B63AA881" Name="陈丹萍" LoginID="chendanping" Email="chendanping@jm.gd.chinamobile.com" Mobile="13822332556" SexID="2" IsTmpUser="0" Alias="100000" Enabled="1" Password="123"/>
+<dbo.Org_Users ID="36D048A5-501C-4AC2-9AAA-5400C54D4B88" DeptID="6C35A21B-5728-4BC6-B91D-F1F6B63AA881" Name="陈达文" LoginID="chendawen" Mobile="13828038816" SexID="1" IsTmpUser="1" Alias="100000" Enabled="1" Password="123"/>
+<dbo.Org_Users ID="AF1DD622-A3BF-4555-9383-5CFF6767FBBE" DeptID="6C35A21B-5728-4BC6-B91D-F1F6B63AA881" Name="陈达文" LoginID="chendawen2" Email="chendawen2@jm.gd.chinamobile.com" Mobile="13828039080" SexID="1" IsTmpUser="0" Alias="999999999999" Enabled="1" Password="123"/>
+<dbo.Org_Users ID="97B62355-B332-4BBE-BEA9-CD9DF142FF0B" DeptID="C4460E35-D190-4001-A79D-9E67B4AF5D45" Name="陈德富" LoginID="chendefu" Email="chendefu@jm.gd.chinamobile.com" Mobile="13827026673" SexID="1" IsTmpUser="0" Alias="999999999999" Enabled="1" Password="123"/>
+<dbo.Org_Users ID="16696E4E-F56A-4683-9F8D-049FB8FC9EA3" DeptID="71CD9611-1B95-4F05-AEC2-A7B60F088B2C" Name="陈栋富" LoginID="chendongfu" Email="chendongfu@jm.gd.chinamobile.com" Mobile="13702293939" Telephone="07505571791" SexID="1" IsTmpUser="0" Alias="22331" Enabled="1" Password="123"/>
+<dbo.Org_Users ID="A67D2321-5AA6-4D19-A798-8EEF06B24363" DeptID="14643FF1-D737-4639-AFA0-26E16DD37A84" Name="陈方艾" LoginID="chenfangai" Email="chenfangai@jm.gd.chinamobile.com" Mobile="13702278033" Telephone="13929042172" SexID="2" IsTmpUser="0" Alias="21241" Enabled="1" Password="123"/>
+<dbo.Org_Users ID="92D26545-85D3-44E3-8422-CE883381E1B0" DeptID="EBB9AD14-4B08-452F-A38F-1755E23BFBAF" Name="陈改珍" LoginID="chengaizhen" Email="chengaizhen@jm.
+
+
+2. SELECT * FROM dbo.Org_Users FOR XML AUTO, XMLSCHEMA
+<xsd:schema targetNamespace="urn:schemas-microsoft-com:sql:SqlRowSet2" xmlns:schema="urn:schemas-microsoft-com:sql:SqlRowSet2" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sqltypes="http://schemas.microsoft.com/sqlserver/2004/sqltypes" elementFormDefault="qualified"><xsd:import namespace="http://schemas.microsoft.com/sqlserver/2004/sqltypes" schemaLocation="http://schemas.microsoft.com/sqlserver/2004/sqltypes/sqltypes.xsd"/><xsd:element name="dbo.Org_Users"><xsd:complexType><xsd:attribute name="ID" type="sqltypes:uniqueidentifier" use="required"/><xsd:attribute name="DeptID" type="sqltypes:uniqueidentifier"/><xsd:attribute name="Name"><xsd:simpleType><xsd:restriction base="sqltypes:varchar" sqltypes:localeId="2052" sqltypes:sqlCompareOptions="IgnoreCase IgnoreKanaType IgnoreWidth"><xsd:maxLength value="50"/></xsd:restriction></xsd:simpleType></xsd:attribute><xsd:attribute name="HasNew" type="sqltypes:tinyint"/><xsd:attribute name="LoginID" use="required"><xsd:simpleType><xsd:restriction base="sqltypes:varchar" sqltypes:localeId="2052" sqltypes:sqlCompareOptions="IgnoreCase IgnoreKanaType IgnoreWidth"><xsd:maxLength value="30"/></xsd:restriction></xsd:simpleType></xsd:attribute><xsd:attribute name="Email"><xsd:simpleType><xsd:restriction base="sqltypes:varchar" sqltypes:localeId="2052" sqltypes:sqlCompareOptions="IgnoreCase IgnoreKanaType IgnoreWidth"><xsd:maxLength value="100"/></xsd:restriction></xsd:simpleType></xsd:attribute><xsd:attribute name="Mobile"><xsd:simpleType><xsd:restriction base="sqltypes:varchar" sqltypes:localeId="2052" sqltypes:sqlCompareOptions="IgnoreCase IgnoreKanaType IgnoreWidth"><xsd:maxLength value="20"/></xsd:restriction></xsd:simpleType></xsd:attribute><xsd:attribute name="Telephone"><xsd:simpleType><xsd:restriction base="sqltypes:varchar" sqltypes:localeId="2052" sqltypes:sqlCompareOptions="IgnoreCase IgnoreKanaType IgnoreWidth"><xsd:maxLength value="20"/></xsd:restriction></xsd:simpleType></xsd:attribute><xsd:attribute name="IM"><xsd:simpleType><xsd:restriction ba
+
+
+3. SELECT * FROM dbo.Org_Users  FOR XML RAW('UserInfo')
+<UserInfo ID="2E717F3F-647E-4D28-8712-1934F97C8E1C" DeptID="011F6A9E-2D3E-4AE0-9506-99C5B00E0305" Name="陈达进" LoginID="chendajin" Email="chendajin@jm.gd.chinamobile.com" Mobile="13902880001" Telephone="5623889" SexID="1" IsTmpUser="0" Alias="4" Enabled="1" Password="123"/>
+<UserInfo ID="EB97DF19-4495-46DF-A11C-5AC43C7A06B5" DeptID="6C35A21B-5728-4BC6-B91D-F1F6B63AA881" Name="陈丹萍" LoginID="chendanping" Email="chendanping@jm.gd.chinamobile.com" Mobile="13822332556" SexID="2" IsTmpUser="0" Alias="100000" Enabled="1" Password="123"/>
+<UserInfo ID="36D048A5-501C-4AC2-9AAA-5400C54D4B88" DeptID="6C35A21B-5728-4BC6-B91D-F1F6B63AA881" Name="陈达文" LoginID="chendawen" Mobile="13828038816" SexID="1" IsTmpUser="1" Alias="100000" Enabled="1" Password="123"/>
+<UserInfo ID="AF1DD622-A3BF-4555-9383-5CFF6767FBBE" DeptID="6C35A21B-5728-4BC6-B91D-F1F6B63AA881" Name="陈达文" LoginID="chendawen2" Email="chendawen2@jm.gd.chinamobile.com" Mobile="13828039080" SexID="1" IsTmpUser="0" Alias="999999999999" Enabled="1" Password="123"/>
+<UserInfo ID="97B62355-B332-4BBE-BEA9-CD9DF142FF0B" DeptID="C4460E35-D190-4001-A79D-9E67B4AF5D45" Name="陈德富" LoginID="chendefu" Email="chendefu@jm.gd.chinamobile.com" Mobile="13827026673" SexID="1" IsTmpUser="0" Alias="999999999999" Enabled="1" Password="123"/>
+<UserInfo ID="16696E4E-F56A-4683-9F8D-049FB8FC9EA3" DeptID="71CD9611-1B95-4F05-AEC2-A7B60F088B2C" Name="陈栋富" LoginID="chendongfu" Email="chendongfu@jm.gd.chinamobile.com" Mobile="13702293939" Telephone="07505571791" SexID="1" IsTmpUser="0" Alias="22331" Enabled="1" Password="123"/>
+<UserInfo ID="A67D2321-5AA6-4D19-A798-8EEF06B24363" DeptID="14643FF1-D737-4639-AFA0-26E16DD37A84" Name="陈方艾" LoginID="chenfangai" Email="chenfangai@jm.gd.chinamobile.com" Mobile="13702278033" Telephone="13929042172" SexID="2" IsTmpUser="0" Alias="21241" Enabled="1" Password="123"/>
+
+
+4. SELECT * FROM dbo.Org_Users  FOR XML RAW('UserInfo'),ROOT('MyRoot'))
+
+<MyRoot>
+     <UserInfo ID="2E717F3F-647E-4D28-8712-1934F97C8E1C" DeptID="011F6A9E-2D3E-4AE0-9506-99C5B00E0305" Name="陈达进" LoginID="chendajin" Email="chendajin@jm.gd.chinamobile.com" Mobile="13902880001" Telephone="5623889" SexID="1" IsTmpUser="0" Alias="4" Enabled="1" Password="123"/>
+</MyRoot>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5c5c0bd9-5c4f-4abd-b2de-241fc7d0f8c9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/UUPService/GroupService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="GroupService1.disco" MetadataType="Disco" ID="3d7a2b90-41ae-4351-8bbf-d19dd9ffd983" SourceId="1" SourceUrl="http://张帮顺-个人电脑/UUPService/GroupService.svc?disco" />
+    <MetadataFile FileName="GroupService5.xsd" MetadataType="Schema" ID="6b1b5ac0-2734-4571-a96b-36cd680b788d" SourceId="1" SourceUrl="http://张帮顺-个人电脑/UUPService/GroupService.svc?xsd=xsd4" />
+    <MetadataFile FileName="GroupService51.xsd" MetadataType="Schema" ID="93644af7-b690-4c90-973e-d2cad2f87a84" SourceId="1" SourceUrl="http://张帮顺-个人电脑/UUPService/GroupService.svc?xsd=xsd2" />
+    <MetadataFile FileName="GroupService52.xsd" MetadataType="Schema" ID="27c20ca3-9cfe-45f5-ac59-bca4d98cd9a8" SourceId="1" SourceUrl="http://张帮顺-个人电脑/UUPService/GroupService.svc?xsd=xsd0" />
+    <MetadataFile FileName="GroupService1.wsdl" MetadataType="Wsdl" ID="e31da1a6-7751-40ee-ad8b-e07cfd9906fa" SourceId="1" SourceUrl="http://张帮顺-个人电脑/UUPService/GroupService.svc?wsdl" />
+    <MetadataFile FileName="GroupService53.xsd" MetadataType="Schema" ID="b98fb89c-090d-4438-9968-013c14be6305" SourceId="1" SourceUrl="http://张帮顺-个人电脑/UUPService/GroupService.svc?xsd=xsd1" />
+    <MetadataFile FileName="GroupService54.xsd" MetadataType="Schema" ID="8079f7af-d85b-4825-8209-60134395e5ab" SourceId="1" SourceUrl="http://张帮顺-个人电脑/UUPService/GroupService.svc?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

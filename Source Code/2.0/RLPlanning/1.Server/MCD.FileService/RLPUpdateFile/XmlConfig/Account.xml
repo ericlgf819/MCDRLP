@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SqlMapConfig >
+  <!-- 数据库链接字符串名 -->
+  <Provider name="DBConnection"></Provider>
+  <Statements>
+    <Procedure id="SelectSingle" value="usp_Master_SelectSingleAccount">
+      <Parameters>
+        <!-- 参数名、参数类型、参数方式的 In 或者是 Out，默认值为 In  -->
+        <Parameter name="@AccountNo" type="nvarchar(100)" direction="in"/>
+      </Parameters>
+    </Procedure>
+    <Procedure id="SelectTable"  value="usp_Master_SelectAccounts">
+      <Parameters>
+        <Parameter name="@AccountNo" type="nvarchar(100)" direction="in"/>
+        <Parameter name="@Status" type="nvarchar(50)" direction="in"/>
+      </Parameters>
+    </Procedure>
+    <Procedure id="InsertEntity" value="usp_Master_InsertSingleAccount">
+      <Parameters>
+        <Parameter name="@AccountNo" type="nvarchar(100)"/>
+        <Parameter name="@AC_Desc" type="nvarchar(2000)"/>
+        <Parameter name="@Status" type="nvarchar(50)"/>
+        <Parameter name="@Open_Item_AC" type="nvarchar(500)"/>
+        <Parameter name="@StoreDept_Type" type="nvarchar(50)"/>
+        <Parameter name="@CreatorName" type="nvarchar(50)"/>
+        <Parameter name="@OperationID" type="uniqueidentifier"/>
+        <Parameter name="@Result" type="int" direction="out"/>
+      </Parameters>
+    </Procedure>
+    <Procedure id="UpdateEntity"  value="usp_Master_UpdateSingleAccount">
+      <Parameters>
+        <Parameter name="@AccountNo" type="nvarchar(100)"/>
+        <Parameter name="@CreateTime" type="datetime"/>
+        <Parameter name="@OperationID" type="uniqueidentifier"/>
+        <Parameter name="@Result" type="int" direction="out"/>
+      </Parameters>
+    </Procedure>
+  </Statements>
+</SqlMapConfig>

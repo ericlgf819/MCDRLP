@@ -1,0 +1,18 @@
+<publishData>
+  <publishTarget publishUrl="D:\测试环境服务\FileService\">
+    <file relUrl="LiveUpdateDownloadHandler.ashx" publishTime="03/25/2011 13:49:53" />
+    <file relUrl="bin/MCD.FileService.pdb" publishTime="06/17/2011 14:05:01" />
+    <file relUrl="UploadHandler.ashx" publishTime="02/16/2011 22:13:41" />
+    <file relUrl="DownloadHandler.ashx" publishTime="02/16/2011 22:13:41" />
+    <file relUrl="bin/MCD.FileService.dll" publishTime="06/17/2011 14:05:01" />
+    <file relUrl="LiveUpdateHandler.ashx" publishTime="03/24/2011 16:04:50" />
+    <file relUrl="Web.config" publishTime="03/25/2011 18:00:03" />
+  </publishTarget>
+  <publishTarget publishUrl="D:\RLService\FileService\">
+    <file relUrl="bin/MCD.FileService.pdb" publishTime="02/25/2011 11:57:40" />
+    <file relUrl="UploadHandler.ashx" publishTime="02/16/2011 22:13:41" />
+    <file relUrl="DownloadHandler.ashx" publishTime="02/16/2011 22:13:41" />
+    <file relUrl="bin/MCD.FileService.dll" publishTime="02/25/2011 11:57:40" />
+    <file relUrl="Web.config" publishTime="02/16/2011 22:13:41" />
+  </publishTarget>
+</publishData>

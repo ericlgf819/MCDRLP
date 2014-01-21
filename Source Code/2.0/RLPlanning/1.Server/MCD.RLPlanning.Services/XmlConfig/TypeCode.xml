@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SqlMapConfig >
+	<!-- 数据库链接字符串名 -->
+	<Provider name="DBConnection"></Provider>
+	<Statements>
+		<Procedure id="SelectTable" value="usp_Master_SelectTypeCode">
+			<Parameters>
+				<Parameter name="@TypeCodeName" type="nvarchar(50)" direction="in" />
+				<Parameter name="@RentTypeName" type="nvarchar(50)" direction="in" />
+				<Parameter name="@EntityTypeName" type="nvarchar(50)" direction="in" />
+				<Parameter name="@Status" type="nvarchar(50)" direction="in" />
+			</Parameters>
+		</Procedure>
+		<Procedure id="SelectSingle" value="usp_Master_SelectSingleTypeCode">
+			<Parameters>
+				<Parameter name="@TypeCodeSnapshotID" type="nvarchar(50)" direction="in" />
+			</Parameters>
+		</Procedure>
+	</Statements>
+</SqlMapConfig>

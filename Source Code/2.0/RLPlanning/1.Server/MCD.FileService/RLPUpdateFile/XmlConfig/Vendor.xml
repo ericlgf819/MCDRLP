@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SqlMapConfig >
+    <!-- 数据库链接字符串名 -->
+    <Provider name="DBConnection"></Provider>
+    <Statements>
+        <Procedure id="SelectTable"  value="SRLS_USP_Master_SelectVendor">
+            <Parameters>
+                <Parameter name="@VendorName" type="nvarchar(32)" description="业主名称"/>
+                <Parameter name="@VendorNo" type="nvarchar(32)" description="业主编码"/>
+                <Parameter name="@PageIndex" type="int" description="当前显示页索引(从0开始)"/>
+                <Parameter name="@PageSize" type="int" description="每页显示的条数"/>
+                <Parameter name="@RecordCount" type="int" direction="out" description="返回总记录数"/>
+            </Parameters>
+        </Procedure>
+    </Statements>
+</SqlMapConfig>
